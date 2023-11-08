@@ -1,3 +1,10 @@
-export default function Layout() {
-  return <h1>Layout입니다.</h1>;
+import NavBar from "./NavBar";
+
+export default function Layout({ children }) {
+  return (
+    <>
+      <NavBar />
+      <div>{children}</div>
+    </>
+  );
 }

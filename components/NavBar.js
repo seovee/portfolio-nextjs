@@ -1,3 +1,14 @@
+import Link from "next/link";
+
 export default function NavBar() {
-  return <h1>Navbar입니다.</h1>;
+  return (
+    <nav>
+      <div>
+        <Link href="/"></Link>
+        <Link href="/about">About</Link>
+        <Link href="/project">Project</Link>
+        <Link href="/contact">Contact</Link>
+      </div>
+    </nav>
+  );
 }
