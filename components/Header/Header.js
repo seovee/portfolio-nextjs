@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="w-full">
-      <nav className="flex items-center justify-center h-20 bg-pink-100">
-        <ul className="flex gap-5 text-xl font-semibold">
+    <div className="relative">
+      <nav className="top-[10vh] w-full flex items-center justify-center h-20 bg-pink-100">
+        <ul className="flex gap-10 text-xl font-normal ">
           <li>
             <Link href="/">Home</Link>
           </li>
