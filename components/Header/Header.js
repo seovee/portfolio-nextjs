@@ -6,16 +6,16 @@ export default function Header() {
       <nav className="top-[10vh] w-full flex items-center justify-center h-20 bg-pink-100">
         <ul className="flex gap-10 text-xl font-normal ">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="#">Home</Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="#about">About</Link>
           </li>
           <li>
-            <Link href="/project">Project</Link>
+            <Link href="#project">Project</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="#contact">Contact</Link>
           </li>
         </ul>
       </nav>

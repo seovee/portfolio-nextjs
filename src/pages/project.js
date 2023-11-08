@@ -1,3 +1,9 @@
-export default function project() {
-  return <h1>Project this. 🥹</h1>;
+export default function Project() {
+  return (
+    <section id="project">
+      <div className="h-screen">
+        <h1>Project Page 🥹</h1>
+      </div>
+    </section>
+  );
 }
