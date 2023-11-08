@@ -2,14 +2,11 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex flex-row">
-      <div>
-        <a>Home</a>
-      </div>
-      <nav>
-        <ul className="text-pink-700">
+    <div className="w-full">
+      <nav className="flex items-center justify-center h-20 bg-pink-100">
+        <ul className="flex gap-5 text-xl font-semibold">
           <li>
-            <Link href="/"></Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
             <Link href="/about">About</Link>
@@ -22,6 +19,6 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
   );
 }
