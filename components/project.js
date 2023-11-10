@@ -1,9 +1,18 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Project() {
+  const { scrollYProgress } = useScroll();
+  const backgroundColor = useTransform(
+    scrollYProgress,
+    [0.7, 0.8],
+    ["rgb(253 186 116)", "rgb(216 180 254)"]
+  );
   return (
     <section id="project">
-      <div className="bg-orange-300 h-[100vh] flex justify-center items-center">
+      <motion.div
+        className="bg-orange-300 h-[100vh] flex justify-center items-center"
+        style={{ scrollY, backgroundColor }}
+      >
         <h1 className="text-8xl hover:font-bold cursor-pointer">
           {" "}
           <motion.p
@@ -14,7 +23,7 @@ export default function Project() {
             {`project 페이지 입니다 🥹`}
           </motion.p>
         </h1>
-      </div>
+      </motion.div>
     </section>
   );
 }

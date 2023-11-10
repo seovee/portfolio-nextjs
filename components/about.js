@@ -1,9 +1,27 @@
-import { motion } from "framer-motion";
+import {
+  motion,
+  useMotionValueEvent,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 
 export default function About() {
+  const { scrollYProgress } = useScroll();
+  const backgroundColor = useTransform(
+    scrollYProgress,
+    [0.425, 0.5],
+    ["rgb(147 197 253)", "rgb(253 186 116)"]
+  );
+
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    console.log("Page scroll: ", latest);
+  });
   return (
     <section id="about">
-      <div className="bg-blue-300 h-[100vh] flex justify-center items-center">
+      <motion.div
+        className="h-[100vh] flex justify-center items-center"
+        style={{ scrollY, backgroundColor }}
+      >
         <h1 className="text-8xl hover:font-bold cursor-pointer">
           {" "}
           <motion.p
@@ -14,7 +32,7 @@ export default function About() {
             {`소개 페이지 입니다 🥹`}
           </motion.p>
         </h1>
-      </div>
+      </motion.div>
     </section>
   );
 }

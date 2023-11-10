@@ -1,23 +1,53 @@
-import { motion } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useMotionValueEvent,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 
 export default function Home() {
+  // useScroll을 이용한 title부분 애니메이션 구현
+  const { scrollYProgress, scrollY } = useScroll();
+  const opacity = useTransform(scrollY, [0, 100], [1, 0]);
+  const scale = useTransform(scrollY, [0, 500], [1, 3]);
+  const backgroundColor = useTransform(
+    scrollYProgress,
+    [0, 0.175],
+    ["rgb(253 224 71)", "rgb(147 197 253)"]
+  );
+
   return (
     <section id="home">
-      <div className="bg-yellow-300 h-screen flex flex-col gap-[5px] justify-center items-center">
-        <h1 className="text-8xl hover:font-bold cursor-pointer mb-5 font-giants">
+      <motion.div
+        className="h-screen flex flex-col gap-[5px] justify-center items-center"
+        style={{ scrollYProgress, backgroundColor }}
+      >
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="text-8xl hover:font-bold cursor-pointer mb-5 font-giants"
+          style={{ scrollY, scale }}
+        >
           {`Hello, Every One`}
-        </h1>
-        <h2>
-          <motion.p
-            initial={{ display: "none", opacity: 0 }}
-            animate={{ display: "inline", opacity: 1 }}
-            className="text-5xl font-light"
-          >
-            프론트엔드 개발자
-          </motion.p>
-        </h2>
-        <h3 className="text-4xl font-semibold">김진섭 입니다.</h3>
-      </div>
+        </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { delay: 1 } }}
+          className="text-5xl font-light"
+          style={{ scrollY, opacity }}
+        >
+          프론트엔드 개발자
+        </motion.h2>
+        <motion.h3
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { delay: 1.5 } }}
+          className="text-4xl font-semibold"
+          style={{ scrollY, opacity }}
+        >
+          김진섭 입니다.
+        </motion.h3>
+      </motion.div>
     </section>
   );
 }
