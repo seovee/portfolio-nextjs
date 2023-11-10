@@ -32,6 +32,11 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+html {
+  /* #주소로 scroll 이동할 때 부드럽게 이동  */
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 18px;
   line-height: 1.6;
