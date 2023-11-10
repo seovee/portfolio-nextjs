@@ -13,14 +13,11 @@ export default function About() {
     ["rgb(147 197 253)", "rgb(253 186 116)"]
   );
 
-  useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    console.log("Page scroll: ", latest);
-  });
   return (
     <section id="about">
       <motion.div
         className="h-[100vh] flex justify-center items-center"
-        style={{ scrollY, backgroundColor }}
+        style={{ scrollYProgress, backgroundColor }}
       >
         <h1 className="text-8xl hover:font-bold cursor-pointer">
           {" "}

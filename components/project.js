@@ -11,7 +11,7 @@ export default function Project() {
     <section id="project">
       <motion.div
         className="bg-orange-300 h-[100vh] flex justify-center items-center"
-        style={{ scrollY, backgroundColor }}
+        style={{ scrollYProgress, backgroundColor }}
       >
         <h1 className="text-8xl hover:font-bold cursor-pointer">
           {" "}
