@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <section id="home">
       <div className="bg-yellow-300 h-screen flex flex-col gap-[5px] justify-center items-center">
-        <h1 className="text-8xl hover:font-bold cursor-pointer mb-5">
-          {`Hello, Every One🥹`}
+        <h1 className="text-8xl hover:font-bold cursor-pointer mb-5 font-giants">
+          {`Hello, Every One`}
         </h1>
         <h2>
           <motion.p
