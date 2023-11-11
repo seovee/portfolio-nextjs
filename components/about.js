@@ -1,9 +1,6 @@
-import {
-  motion,
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import Image from "next/image";
+import Profile from "../public/profile.jpeg";
 
 export default function About() {
   const { scrollYProgress } = useScroll();
@@ -16,19 +13,24 @@ export default function About() {
   return (
     <section id="about">
       <motion.div
-        className="h-[100vh] flex justify-center items-center"
+        className="relative h-[100vh] flex justify-evenly items-center"
         style={{ scrollYProgress, backgroundColor }}
       >
-        <h1 className="text-8xl hover:font-bold cursor-pointer">
-          {" "}
-          <motion.p
-            initial={{ display: "none", opacity: 0 }}
-            animate={{ display: "inline", opacity: 1 }}
-            className="text-5xl font-bold md:text-9xl"
-          >
-            {`소개 페이지 입니다 🥹`}
-          </motion.p>
-        </h1>
+        <h2 className="absolute top-0 font-gmarket font-bold">ABOUT</h2>
+        <div>
+          <Image
+            src={Profile}
+            alt="김진섭의 프로필 사진"
+            width={400}
+            height={400}
+            className="rounded-full"
+          />
+        </div>
+        <div>
+          <ul>
+            <li>Data를 map으로 써서 넣어보자!!!!!!!!!!!!!!!!!!!</li>
+          </ul>
+        </div>
       </motion.div>
     </section>
   );
