@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Contact() {
   return (
     <section id="contact">
-      <div className="bg-purple-300 h-[100vh] flex justify-center items-center">
+      <div className="bg-sky-300 h-[100vh] flex justify-center items-center">
         <h1 className="text-8xl hover:font-bold cursor-pointer">
           <motion.p
             initial={{ display: "none", opacity: 0 }}
