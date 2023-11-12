@@ -14,28 +14,40 @@ export default function About() {
   return (
     <section id="about" className="flex flex-col justify-center items-center">
       <motion.div
-        className="relative h-[100vh] flex justify-around items-center"
+        className="relative h-[100vh] w-full flex justify-evenly items-center"
         style={{ scrollYProgress, backgroundColor }}
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1, transition: { duration: 1 } }}
       >
         <h2 className="absolute top-10 font-thin">- A B O U T -</h2>
-        <div>
+        <div className="h-[32rem] w-[32rem]">
           <Image
             src={Profile}
             alt="김진섭의 프로필 사진"
-            width={400}
-            height={400}
+            width="auto"
+            height="auto"
             className="rounded-full"
           />
         </div>
-        <div className="w-1/2">
+        {/* 소개 타이틀 & 내용 */}
+        <div className="w-1/3">
           <ul className="cursor-default">
             {aboutData.map((data, index) => (
               <li key={index}>
-                <p className="font-jaram text-4xl mt-10 mb-1 font-medium hover:font-black">
+                <motion.p
+                  className="font-gmarket text-2xl mt-10 mb-1 font-medium"
+                  whileHover={{
+                    scale: 1.1,
+                    x: 40,
+                    fontWeight: 800,
+                    color: "rgb(0, 128, 255)",
+                    transition: {
+                      type: "tween",
+                    },
+                  }}
+                >
                   {data.title}
-                </p>
+                </motion.p>
                 <p className="font-thin text-xl">{data.contetnt}</p>
               </li>
             ))}
@@ -63,25 +75,24 @@ export default function About() {
             }}
             className="bg-gray-200 flex flex-row justify-evenly items-center"
           >
-            <motion.div
-              animate={{ scale: [0, 1], transition: { delay: 2.5 } }}
-              className="w-4 h-4 rounded-full bg-black cursor-pointer"
-            ></motion.div>
-            <motion.div
-              animate={{ scale: [0, 1], transition: { delay: 2.5 } }}
-              className="w-4 h-4 rounded-full bg-black cursor-pointer"
-            ></motion.div>
-            <motion.div
-              animate={{ scale: [0, 1], transition: { delay: 2.5 } }}
-              className="w-4 h-4 rounded-full bg-black cursor-pointer"
-            ></motion.div>
-            <motion.div
-              animate={{ scale: [0, 1], transition: { delay: 2.5 } }}
-              className="w-4 h-4 rounded-full bg-black cursor-pointer"
-            ></motion.div>
+            <ButtonCircle />
+            <ButtonCircle />
+            <ButtonCircle />
+            <ButtonCircle />
           </motion.div>
         </div>
       </motion.div>
     </section>
+  );
+}
+
+// 버튼안 Circle 컴포넌트 분리
+function ButtonCircle() {
+  return (
+    <motion.div
+      animate={{ scale: [0, 1], transition: { delay: 2.5 } }}
+      whileHover={{ backgroundColor: "rgb(0, 125, 255)" }}
+      className="w-4 h-4 rounded-full bg-black cursor-pointer"
+    ></motion.div>
   );
 }
