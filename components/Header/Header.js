@@ -9,33 +9,59 @@ export default function Header() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 2 } }}
     >
-      <h1 className="absolute flex items-center justify-center left-0 w-36 h-20 text-2xl font-bold bg-gray-500/10">
+      <motion.h1
+        className="absolute flex items-center justify-center left-0 w-36 h-20 text-2xl font-bold"
+        animate={{
+          rotate: [0, 180, 360, 0],
+          transition: {
+            duration: 5,
+            repeat: Infinity,
+          },
+        }}
+      >
+        {/* Link에 애니메이션 추가 하기 */}
         <Link href="/" className="italic">
-          Logo!
+          PORTFOLIO<p className="font-extralight text-center text-sm">jinseob</p>
         </Link>
-      </h1>
+      </motion.h1>
       <nav className="w-full h-20 flex items-center justify-center">
         <ul className="flex gap-20 text-xl font-normal font-giants">
-          <li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ duration: 0.2 }}
+          >
             <Link href="#" className="font-semibold">
               HOME
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ duration: 0.2 }}
+          >
             <Link href="#about" className="font-semibold ">
               ABOUT
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ duration: 0.2 }}
+          >
             <Link href="#project" className="font-semibold">
               PROJECT
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ duration: 0.2 }}
+          >
             <Link href="#contact" className="font-semibold">
               CONTACT
             </Link>
-          </li>
+          </motion.li>
         </ul>
       </nav>
     </motion.header>
