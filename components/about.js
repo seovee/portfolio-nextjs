@@ -16,11 +16,13 @@ export default function About() {
       <motion.div
         className="relative h-[100vh] w-full flex justify-evenly items-center"
         style={{ scrollYProgress, backgroundColor }}
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1, transition: { duration: 1 } }}
       >
         <h2 className="absolute top-10 font-thin">- A B O U T -</h2>
-        <div className="h-[32rem] w-[32rem]">
+        <motion.div
+          className="h-[32rem] w-[32rem]"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0, transition: { delay: 0.5 } }}
+        >
           <Image
             src={Profile}
             alt="김진섭의 프로필 사진"
@@ -28,9 +30,13 @@ export default function About() {
             height="auto"
             className="rounded-full"
           />
-        </div>
+        </motion.div>
         {/* 소개 타이틀 & 내용 */}
-        <div className="w-1/3">
+        <motion.div
+          className="w-1/3"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0, transition: { delay: 0.5 } }}
+        >
           <ul className="cursor-default">
             {aboutData.map((data, index) => (
               <li key={index}>
@@ -52,12 +58,12 @@ export default function About() {
               </li>
             ))}
           </ul>
-        </div>
+        </motion.div>
         {/* Button 컴포넌트 */}
         <div className="absolute bottom-10">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
-            animate={{
+            whileInView={{
               opacity: [0, 1, 0],
               scale: [0, 1.5, 0],
               transition: { delay: 1.2, duration: 1.5 },
@@ -67,7 +73,7 @@ export default function About() {
         </div>
         <div className="absolute bottom-10">
           <motion.div
-            animate={{
+            whileInView={{
               width: [0, 80, 80, 240],
               height: [0, 80, 80, 80],
               borderRadius: [0, 80, 80, 80],
@@ -90,7 +96,7 @@ export default function About() {
 function ButtonCircle() {
   return (
     <motion.div
-      animate={{ scale: [0, 1], transition: { delay: 2.5 } }}
+      whileInView={{ scale: [0, 1], transition: { delay: 2.5 } }}
       whileHover={{ backgroundColor: "rgb(0, 125, 255)" }}
       className="w-4 h-4 rounded-full bg-black cursor-pointer"
     ></motion.div>
