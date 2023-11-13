@@ -18,18 +18,20 @@ export default function Header() {
             repeat: Infinity,
           },
         }}
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
       >
         {/* Link에 애니메이션 추가 하기 */}
         <Link href="/" className="italic">
-          PORTFOLIO<p className="font-extralight text-center text-sm">jinseob</p>
+          PORTFOLIO
+          <p className="font-extralight text-center text-sm">jinseob</p>
         </Link>
       </motion.h1>
       <nav className="w-full h-20 flex items-center justify-center">
         <ul className="flex gap-20 text-xl font-normal font-giants">
           <motion.li
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ duration: 0.2 }}
+            whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
           >
             <Link href="#" className="font-semibold">
               HOME
@@ -37,8 +39,7 @@ export default function Header() {
           </motion.li>
           <motion.li
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ duration: 0.2 }}
+            whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
           >
             <Link href="#about" className="font-semibold ">
               ABOUT
@@ -46,8 +47,7 @@ export default function Header() {
           </motion.li>
           <motion.li
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ duration: 0.2 }}
+            whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
           >
             <Link href="#project" className="font-semibold">
               PROJECT
@@ -55,8 +55,7 @@ export default function Header() {
           </motion.li>
           <motion.li
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ duration: 0.2 }}
+            whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
           >
             <Link href="#contact" className="font-semibold">
               CONTACT
