@@ -5,7 +5,7 @@ export default function Project() {
   const backgroundColor = useTransform(
     scrollYProgress,
     [0.7, 0.8],
-    ["rgb(190 242 100)", "rgb(125 211 252)"]
+    ["rgb(253 186 116)", "rgb(190 242 100)"]
   );
   return (
     <section id="project">
