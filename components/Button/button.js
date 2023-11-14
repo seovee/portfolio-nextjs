@@ -16,7 +16,7 @@ export default function Button({ children, onClick }) {
             width: [0, 60, 60, 180],
             height: [0, 60, 60, 60],
             borderRadius: [0, 60, 60, 60],
-            transition: { delay: 1, duration: 1.5 },
+            transition: { delay: 0.5, duration: 1.5 },
           }}
           className="absolute z-10 bg-gray-200 flex flex-row justify-evenly items-center"
         >
@@ -27,7 +27,7 @@ export default function Button({ children, onClick }) {
           whileInView={{
             opacity: [0, 1, 0],
             scale: [0, 1.1, 0],
-            transition: { delay: 1.2, duration: 1.5 },
+            transition: { delay: 0.5, duration: 1.5 },
           }}
           className="bg-blue-500 h-20 w-20 rounded-full"
         ></motion.div>
