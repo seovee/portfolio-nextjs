@@ -5,6 +5,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
+import { FiChevronDown } from "react-icons/fi";
 
 export default function Home() {
   // useScroll을 이용한 title부분 애니메이션 구현
@@ -18,7 +19,7 @@ export default function Home() {
   );
 
   return (
-    <section id="home">
+    <section id="home" className="relative">
       <motion.div
         className="h-screen flex flex-col gap-[5px] justify-center items-center overflow-hidden	"
         style={{ scrollYProgress, backgroundColor }}
@@ -50,6 +51,18 @@ export default function Home() {
         >
           김진섭 입니다.
         </motion.h3>
+        <motion.div
+          className="absolute bottom-10 font-light text-3xl"
+          animate={{
+            opacity: [0, 1, 0],
+            transition: {
+              duration: 1,
+              repeat: Infinity,
+            },
+          }}
+        >
+          <FiChevronDown />
+        </motion.div>
       </motion.div>
     </section>
   );
