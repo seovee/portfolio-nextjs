@@ -1,10 +1,4 @@
-import {
-  motion,
-  useMotionValue,
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { FiChevronDown } from "react-icons/fi";
 
 export default function Home() {
