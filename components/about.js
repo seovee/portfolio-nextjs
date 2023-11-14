@@ -38,7 +38,6 @@ export default function About() {
             className="h-[32rem] w-[32rem]"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0, transition: { delay: 0.5 } }}
-            onClick={toggleView}
           >
             <Image
               src={Profile}
@@ -86,15 +85,16 @@ export default function About() {
             className="fixed top-0 w-full h-full bg-black/50"
             onClick={toggleView}
             key="overlay"
+            layoutId="overlay"
           >
             <motion.div className="absolute left-0 right-0 top-[100px] h-[70vh] w-[80vw] mx-auto my-0 bg-white "></motion.div>
           </motion.div>
         ) : null}
       </AnimatePresence>
-      <Button>
+      <Button onClick={toggleView}>
         <motion.p
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { delay: 2 } }}
+          whileInView={{ opacity: 1, transition: { delay: 2.1 } }}
           className="font-gmarket text-sm"
         >
           더 알아보기

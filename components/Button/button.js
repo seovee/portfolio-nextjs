@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
 
-export default function Button({ children }) {
+export default function Button({ children, onClick }) {
   return (
     <>
-      <div className="absolute bottom-5 flex flex-col justify-center items-center">
+      <motion.div
+        className="absolute bottom-10 flex flex-col justify-center items-center cursor-pointer"
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
+        onClick={onClick}
+      >
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{
@@ -13,7 +18,7 @@ export default function Button({ children }) {
             borderRadius: [0, 60, 60, 60],
             transition: { delay: 1, duration: 1.5 },
           }}
-          className="absolute bg-gray-200 flex flex-row justify-evenly items-center"
+          className="absolute z-10 bg-gray-200 flex flex-row justify-evenly items-center"
         >
           {children}
         </motion.div>
@@ -26,7 +31,7 @@ export default function Button({ children }) {
           }}
           className="bg-blue-500 h-20 w-20 rounded-full"
         ></motion.div>
-      </div>
+      </motion.div>
     </>
   );
 }
