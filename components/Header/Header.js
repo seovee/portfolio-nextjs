@@ -5,7 +5,7 @@ export default function Header() {
   return (
     // 불투명한 배너 사용(backdrop)
     <motion.header
-      className="fixed top-0 left-0 right-0 z-10 flex flex-row backdrop-blur-md"
+      className="fixed top-0 left-0 right-0 z-30 flex flex-row backdrop-blur-md"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 2 } }}
     >
