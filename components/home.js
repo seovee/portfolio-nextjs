@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <section id="home">
       <motion.div
-        className="h-screen flex flex-col gap-[5px] justify-center items-center"
+        className="h-screen flex flex-col gap-[5px] justify-center items-center overflow-hidden	"
         style={{ scrollYProgress, backgroundColor }}
       >
         <motion.h1
