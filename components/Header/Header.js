@@ -33,7 +33,10 @@ export default function Header() {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
           >
-            <Link href="#" className="font-semibold">
+            <Link
+              href="#"
+              className="font-semibold hover:underline hover:underline-offset-8"
+            >
               HOME
             </Link>
           </motion.li>
@@ -41,7 +44,10 @@ export default function Header() {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
           >
-            <Link href="#about" className="font-semibold ">
+            <Link
+              href="#about"
+              className="font-semibold hover:underline hover:underline-offset-8"
+            >
               ABOUT
             </Link>
           </motion.li>
@@ -49,7 +55,10 @@ export default function Header() {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
           >
-            <Link href="#project" className="font-semibold">
+            <Link
+              href="#project"
+              className="font-semibold hover:underline hover:underline-offset-8"
+            >
               PROJECT
             </Link>
           </motion.li>
@@ -57,7 +66,10 @@ export default function Header() {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
           >
-            <Link href="#contact" className="font-semibold">
+            <Link
+              href="#contact"
+              className="font-semibold hover:underline hover:underline-offset-8"
+            >
               CONTACT
             </Link>
           </motion.li>
