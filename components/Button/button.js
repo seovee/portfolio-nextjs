@@ -18,7 +18,7 @@ export default function Button({ children, onClick }) {
             borderRadius: [0, 60, 60, 60],
             transition: { delay: 0.5, duration: 1.5 },
           }}
-          className="absolute z-10 bg-gray-200 flex flex-row justify-evenly items-center"
+          className="absolute z-10 bg-gray-200 flex flex-row justify-evenly items-center shadow-2xl"
         >
           {children}
         </motion.div>
