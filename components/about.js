@@ -51,7 +51,7 @@ export default function About() {
               alt="김진섭의 프로필 사진"
               width="auto"
               height="auto"
-              className="rounded-full"
+              className="rounded-full shadow-2xl"
             />
           </motion.div>
           {/* 소개 타이틀 & 내용 */}
