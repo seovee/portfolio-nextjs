@@ -8,6 +8,7 @@ import Image from "next/image";
 import Profile from "../public/profile.jpeg";
 import { aboutData } from "../data/aboutData";
 import { useState } from "react";
+import Button from "./Button/button";
 
 export default function About() {
   const { scrollYProgress } = useScroll();
@@ -22,10 +23,13 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="flex flex-col justify-center items-center">
+    <section
+      id="about"
+      className="relative flex flex-col justify-center items-center"
+    >
       <AnimatePresence>
         <motion.div
-          className="relative h-[100vh] w-full flex justify-evenly items-center"
+          className=" h-[100vh] w-full flex justify-evenly items-center"
           style={{ scrollYProgress, backgroundColor }}
           key="aboutContainer"
         >
@@ -87,6 +91,15 @@ export default function About() {
           </motion.div>
         ) : null}
       </AnimatePresence>
+      <Button>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, transition: { delay: 2 } }}
+          className="font-gmarket text-sm"
+        >
+          더 알아보기
+        </motion.p>
+      </Button>
     </section>
   );
 }

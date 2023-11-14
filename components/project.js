@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+import Button from "./Button/button";
 
 export default function Project() {
   const { scrollYProgress } = useScroll();
@@ -14,14 +15,11 @@ export default function Project() {
         style={{ scrollYProgress, backgroundColor }}
       >
         <h1 className="text-8xl hover:font-bold cursor-pointer">
-          {" "}
           <motion.p
             initial={{ display: "none", opacity: 0 }}
             animate={{ display: "inline", opacity: 1 }}
             className="text-5xl font-bold md:text-9xl"
-          >
-            {`project 페이지 입니다 🥹`}
-          </motion.p>
+          ></motion.p>
         </h1>
       </motion.div>
     </section>
