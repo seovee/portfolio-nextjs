@@ -68,10 +68,10 @@ export default function About() {
               {aboutData.map((data, index) => (
                 <li key={index}>
                   <motion.p
-                    className="font-gmarket text-2xl mt-10 mb-1 font-medium"
+                    className="font-gmarket text-2xl mt-10 mb-1 font-medium hover:underline hover:underline-offset-8"
                     whileHover={{
                       scale: 1.1,
-                      x: 40,
+                      x: 10,
                       fontWeight: 800,
                       color: "rgb(0, 128, 255)",
                       transition: {
@@ -90,14 +90,19 @@ export default function About() {
         {/* 오버레이 */}
         {view ? (
           <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 0.5 } }}
             exit={{ opacity: 0 }}
             className="fixed top-0 w-full h-full bg-black/50 z-20"
             onClick={toggleView}
             key="overlay"
           >
-            <motion.div className="absolute left-0 right-0 top-[100px] h-[70vh] w-[80vw] mx-auto my-0 rounded-[25px] bg-white ">
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
+              exit={{ opacity: 0, y: 10 }}
+              className="absolute left-0 right-0 top-[100px] h-[70vh] w-[80vw] mx-auto my-0 rounded-[25px] bg-white "
+            >
               여기를 채우자
             </motion.div>
           </motion.div>
