@@ -72,34 +72,6 @@ export default function About() {
               ))}
             </ul>
           </motion.div>
-          {/* Button 컴포넌트 */}
-          <div className="absolute bottom-10">
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              whileInView={{
-                opacity: [0, 1, 0],
-                scale: [0, 1.5, 0],
-                transition: { delay: 1.2, duration: 1.5 },
-              }}
-              className="bg-blue-500 w-20 h-20 rounded-full"
-            ></motion.div>
-          </div>
-          <div className="absolute bottom-10">
-            <motion.div
-              whileInView={{
-                width: [0, 80, 80, 240],
-                height: [0, 80, 80, 80],
-                borderRadius: [0, 80, 80, 80],
-                transition: { delay: 1, duration: 1.5 },
-              }}
-              className="bg-gray-200 flex flex-row justify-evenly items-center"
-            >
-              <ButtonCircle />
-              <ButtonCircle />
-              <ButtonCircle />
-              <ButtonCircle />
-            </motion.div>
-          </div>
         </motion.div>
         {/* 오버레이 */}
         {view ? (
@@ -116,16 +88,5 @@ export default function About() {
         ) : null}
       </AnimatePresence>
     </section>
-  );
-}
-
-// 버튼안 Circle 컴포넌트 분리
-function ButtonCircle() {
-  return (
-    <motion.div
-      whileInView={{ scale: [0, 1], transition: { delay: 2.5 } }}
-      whileHover={{ backgroundColor: "rgb(0, 125, 255)" }}
-      className="w-4 h-4 rounded-full bg-black cursor-pointer"
-    ></motion.div>
   );
 }
