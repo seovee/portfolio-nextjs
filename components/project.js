@@ -9,19 +9,17 @@ export default function Project() {
     ["rgb(253 186 116)", "rgb(190 242 100)"]
   );
   return (
-    <section id="project">
+    <section
+      id="project"
+      className="relative flex flex-col justify-center items-center"
+    >
       <motion.div
-        className="bg-orange-300 h-[100vh] flex justify-center items-center"
+        className="bg-orange-300 h-[100vh] w-full flex justify-center items-center"
         style={{ scrollYProgress, backgroundColor }}
       >
-        <h1 className="text-8xl hover:font-bold cursor-pointer">
-          <motion.p
-            initial={{ display: "none", opacity: 0 }}
-            animate={{ display: "inline", opacity: 1 }}
-            className="text-5xl font-bold md:text-9xl"
-          ></motion.p>
-        </h1>
+        <h2 className="absolute top-10 font-thin">- P R O J E C T -</h2>
       </motion.div>
+      <Button></Button>
     </section>
   );
 }

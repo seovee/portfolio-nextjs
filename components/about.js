@@ -9,8 +9,10 @@ import Profile from "../public/profile.jpeg";
 import { aboutData } from "../data/aboutData";
 import { useState } from "react";
 import Button from "./Button/button";
+import { useRouter } from "next/router";
 
 export default function About() {
+  const router = useRouter();
   const { scrollYProgress } = useScroll();
   const backgroundColor = useTransform(
     scrollYProgress,
@@ -20,6 +22,7 @@ export default function About() {
   const [view, setView] = useState(false);
   const toggleView = () => {
     setView((prev) => !prev);
+    router.push("#about");
   };
 
   return (
@@ -82,12 +85,13 @@ export default function About() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
             exit={{ opacity: 0 }}
-            className="fixed top-0 w-full h-full bg-black/50"
+            className="fixed top-0 w-full h-full bg-black/50 z-20"
             onClick={toggleView}
             key="overlay"
-            layoutId="overlay"
           >
-            <motion.div className="absolute left-0 right-0 top-[100px] h-[70vh] w-[80vw] mx-auto my-0 bg-white "></motion.div>
+            <motion.div className="absolute left-0 right-0 top-[100px] h-[70vh] w-[80vw] mx-auto my-0 bg-white ">
+              여기를 채우자
+            </motion.div>
           </motion.div>
         ) : null}
       </AnimatePresence>
