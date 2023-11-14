@@ -97,7 +97,7 @@ export default function About() {
             onClick={toggleView}
             key="overlay"
           >
-            <motion.div className="absolute left-0 right-0 top-[100px] h-[70vh] w-[80vw] mx-auto my-0 bg-white ">
+            <motion.div className="absolute left-0 right-0 top-[100px] h-[70vh] w-[80vw] mx-auto my-0 rounded-[25px] bg-white ">
               여기를 채우자
             </motion.div>
           </motion.div>
@@ -106,7 +106,7 @@ export default function About() {
       <Button onClick={toggleView}>
         <motion.p
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { delay: 2.1 } }}
+          whileInView={{ opacity: 1, transition: { delay: 1.5 } }}
           className="font-gmarket text-sm"
         >
           더 알아보기
