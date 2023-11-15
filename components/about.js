@@ -54,7 +54,6 @@ export default function About() {
               className="rounded-full shadow-2xl"
             />
           </motion.div>
-          {/* 소개 타이틀 & 내용 */}
           <motion.div
             className="w-1/3"
             initial={{ opacity: 0, x: -50 }}
@@ -114,7 +113,7 @@ export default function About() {
           whileInView={{ opacity: 1, transition: { delay: 1.5 } }}
           className="font-gmarket text-sm"
         >
-          더 알아보기
+          더 알아보기 🤔
         </motion.p>
       </Button>
     </section>
