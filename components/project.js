@@ -13,11 +13,18 @@ export default function Project() {
       id="project"
       className="relative flex flex-col justify-center items-center"
     >
+      <h2 className="absolute top-10 font-thin">- P R O J E C T -</h2>
       <motion.div
-        className="bg-orange-300 h-[100vh] w-full flex justify-center items-center"
+        className="bg-orange-300 h-[100vh] w-full flex justify-start items-center"
         style={{ scrollYProgress, backgroundColor }}
       >
-        <h2 className="absolute top-10 font-thin">- P R O J E C T -</h2>
+        <div className="inline-flex ">
+          {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+            <div key={i} className="w-[400px] h-[400px] bg-lime-400 mr-[80px]">
+              {i}
+            </div>
+          ))}
+        </div>
       </motion.div>
       <Button></Button>
     </section>
