@@ -25,7 +25,7 @@ export default function Header() {
         {/* Link에 애니메이션 추가 하기 */}
         <Link href="/" className="italic text-md">
           seovee
-          <p className="font-extralight text-center text-xs">PORTFOLIO</p>
+          <p className="font-extralight text-xs">PORTFOLIO</p>
         </Link>
       </motion.h1>
       <nav className="w-full h-20 flex items-center justify-center">
