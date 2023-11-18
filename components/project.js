@@ -43,7 +43,7 @@ export default function Project() {
   return (
     <section
       id="project"
-      className="relative project-section flex flex-col items-center"
+      className="relative project-section flex flex-col items-center overflow-hidden"
     >
       <h2 className="absolute top-10 font-thin">- P R O J E C T -</h2>
 
