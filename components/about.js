@@ -6,7 +6,7 @@ import {
 } from "framer-motion";
 import Image from "next/image";
 import Profile from "../public/profile.jpeg";
-import { aboutData } from "../data/aboutData";
+import { aboutData } from "../data/index";
 import { useState } from "react";
 import Button from "./Button/button";
 import { useRouter } from "next/router";

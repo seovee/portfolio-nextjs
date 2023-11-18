@@ -1,5 +1,4 @@
-//* 소개페이지에 들어갈 Data
-
+// 소개 Data
 export const aboutData = [
   {
     title: "프론트엔드 스페셜리스트로 성장하고 싶습니다.",
@@ -15,5 +14,30 @@ export const aboutData = [
     title: "함께 일하고 싶은 동료가 되고 싶습니다.",
     contetnt:
       "경험을 바탕으로 개발자로서도 주변 분위기를 밝히고 동료들과 원활한 협업을 이뤄낼 수 있는 장점을 통해 프로젝트를 성공적으로 완수해 나가겠습니다. ",
+  },
+];
+
+// 프로젝트 Data
+export const projectData = [
+  {
+    num: 1,
+    title: "타이틀1",
+    desc: "상세내용입니다!!!!!!!!!!!!!!!!!!!",
+    img: "/",
+    url: "https://www.naver.com",
+  },
+  {
+    num: 2,
+    title: "타이틀2",
+    desc: "상세내용입니다!!!!!!!!!!!!!!!!!!!",
+    img: "/",
+    url: "https://www.naver.com",
+  },
+  {
+    num: 3,
+    title: "타이틀3",
+    desc: "상세내용입니다!!!!!!!!!!!!!!!!!!!",
+    img: "/",
+    url: "https://www.naver.com",
   },
 ];
