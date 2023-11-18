@@ -1,8 +1,9 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import Button from "./Button/button";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { projectData } from "../data";
+import Image from "next/image";
 
 export default function Project() {
   const { scrollYProgress } = useScroll();
@@ -43,22 +44,44 @@ export default function Project() {
   return (
     <section
       id="project"
-      className="relative project-section flex flex-col items-center overflow-hidden"
+      className="project-section relative flex flex-col items-center overflow-hidden"
     >
-      <h2 className="absolute top-10 font-thin">- P R O J E C T -</h2>
-
+      <h2 className="project-title absolute top-10 font-thin">
+        - P R O J E C T -
+      </h2>
       <motion.div
         ref={triggerRef}
-        className="bg-orange-300 h-[100vh] w-full flex items-center"
+        className="project-wrapper bg-orange-300 h-[100vh] w-full flex items-center"
         style={{ scrollYProgress, backgroundColor }}
       >
         <div ref={sectionRef} className="flex flex-row">
-          {[1, 2, 3, 4, 5, 6, 7].map((i) => (
+          {projectData.map((data, index) => (
             <div
-              key={i}
-              className="w-[850px] h-[850px] bg-gray-400/30 mr-[200px] flex justify-center items-center text-4xl font-lg"
+              key={index}
+              className="relative w-[850px] h-[850px] px-16 py-24 bg-white/30 mr-[200px] rounded-[30px] flex justify-center items-center"
             >
-              {i}
+              <div className=" flex flex-col h-full items-center gap-20">
+                <span className="absolute top-5 left-[-40px] text-white text-9xl font-extrabold italic">
+                  {data.num}
+                </span>
+                <motion.h3
+                  className="font-gmarket text-center text-4xl font-bold tracking-wider"
+                  whileHover={{ scale: 1.2 }}
+                >
+                  {data.title}
+                </motion.h3>
+                <a href="https://www.naver.com" target="_blank">
+                  <Image
+                    src={data.img}
+                    alt={data.title}
+                    width={400}
+                    height={400}
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </a>
+
+                <p className="font-gmarket p-10">{data.desc}</p>
+              </div>
             </div>
           ))}
         </div>
