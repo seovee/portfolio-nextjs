@@ -5,7 +5,7 @@ import {
   useTransform,
 } from "framer-motion";
 import Image from "next/image";
-import Profile from "../public/profile.jpeg";
+import Profile from "../public/assets/profile/profile2.jpg";
 import { aboutData } from "../data/index";
 import { useState } from "react";
 import Button from "./Button/button";

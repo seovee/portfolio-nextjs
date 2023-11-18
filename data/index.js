@@ -1,7 +1,7 @@
 // Image에서 사진은 import해서 보내야 사진이 보여진다.
-import Project_1 from "../public/project1.png";
-import Project_2 from "../public/project2.png";
-import Project_3 from "../public/project3.png";
+import Project_1 from "../public/assets/project/project1.png";
+import Project_2 from "../public/assets/project/project2.png";
+import Project_3 from "../public/assets/project/project3.png";
 
 // 소개 Data
 export const aboutData = [
