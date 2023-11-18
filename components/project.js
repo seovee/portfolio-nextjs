@@ -32,7 +32,6 @@ export default function Project() {
           scrub: 0.7,
           invalidateOnRefresh: true,
           pin: ".project-section",
-          anticipatePin: 1,
         },
       }
     );
@@ -54,14 +53,14 @@ export default function Project() {
         className="project-wrapper bg-orange-300 h-[100vh] w-full flex items-center"
         style={{ scrollYProgress, backgroundColor }}
       >
-        <div ref={sectionRef} className="flex flex-row">
+        <div ref={sectionRef} className="flex flex-row mt-16">
           {projectData.map((data, index) => (
             <div
               key={index}
-              className="relative w-[850px] h-[850px] px-16 py-24 bg-white/30 mr-[200px] rounded-[30px] flex justify-center items-center"
+              className="relative w-[850px] h-[850px] px-16 py-24 bg-white/30 mr-[200px] rounded-[30px] flex justify-center items-center shadow-2xl"
             >
               <div className=" flex flex-col h-full items-center gap-20">
-                <span className="absolute top-5 left-[-40px] text-white text-9xl font-extrabold italic">
+                <span className="absolute top-5 left-[-40px] text-white text-9xl font-extrabold italic drop-shadow-xl">
                   {data.num}
                 </span>
                 <motion.h3
@@ -70,7 +69,11 @@ export default function Project() {
                 >
                   {data.title}
                 </motion.h3>
-                <a href="https://www.naver.com" target="_blank">
+                <a
+                  href="https://www.naver.com"
+                  target="_blank"
+                  className="shadow-2xl"
+                >
                   <Image
                     src={data.img}
                     alt={data.title}
@@ -79,7 +82,6 @@ export default function Project() {
                     style={{ width: "100%", height: "auto" }}
                   />
                 </a>
-
                 <p className="font-gmarket p-10">{data.desc}</p>
               </div>
             </div>
