@@ -1,3 +1,8 @@
+// Image에서 사진은 import해서 보내야 사진이 보여진다.
+import Project_1 from "../public/project1.png";
+import Project_2 from "../public/project2.png";
+import Project_3 from "../public/project3.png";
+
 // 소개 Data
 export const aboutData = [
   {
@@ -21,23 +26,60 @@ export const aboutData = [
 export const projectData = [
   {
     num: 1,
-    title: "타이틀1",
-    desc: "상세내용입니다!!!!!!!!!!!!!!!!!!!",
-    img: "/",
+    title: "김진섭 Portfolio ",
+    desc: "제가 만든 첫 포트폴리오 페이지입니다. NextJS를 이용해서 만들었고, framer-motion, Gsap을 이용한 애니메이션을 통해 인터렉티브하게 만들어보았습니다.",
+    img: Project_1,
     url: "https://www.naver.com",
   },
   {
     num: 2,
-    title: "타이틀2",
-    desc: "상세내용입니다!!!!!!!!!!!!!!!!!!!",
-    img: "/",
-    url: "https://www.naver.com",
+    title: "Netflix 클론코딩",
+    desc: "React를 이용한 넷플릭스 클론코딩입니다. 영화 API를 불러와 최신, 인기 영화를 표시하는 웹페이지입니다.",
+    img: Project_2,
+    url: "https://seovee.github.io/masterClass-Fin/",
   },
   {
     num: 3,
-    title: "타이틀3",
-    desc: "상세내용입니다!!!!!!!!!!!!!!!!!!!",
-    img: "/",
-    url: "https://www.naver.com",
+    title: "I's gallary",
+    desc: "리액트, framer-motion, firebase를 이용한 갤러리 웹페이지입니다.",
+    img: Project_3,
+    url: "https://likelion-fe4-rp11.github.io/Asparagus/",
+  },
+  {
+    num: 4,
+    title: "I's gallary",
+    desc: "리액트, framer-motion, firebase를 이용한 갤러리 웹페이지입니다.",
+    img: Project_3,
+    url: "https://likelion-fe4-rp11.github.io/Asparagus/",
+  },
+  {
+    num: 5,
+    title: "I's gallary",
+    desc: "리액트, framer-motion, firebase를 이용한 갤러리 웹페이지입니다.",
+    img: Project_3,
+    url: "https://likelion-fe4-rp11.github.io/Asparagus/",
+  },
+  {
+    num: 6,
+    title: "I's gallary",
+    desc: "리액트, framer-motion, firebase를 이용한 갤러리 웹페이지입니다.",
+    img: Project_3,
+    url: "https://likelion-fe4-rp11.github.io/Asparagus/",
+  },
+];
+
+// 연락처 Data
+export const contactData = [
+  {
+    title: "mail : jinseob102@naver.com",
+    link: "mailto:jinseob102@naver.com",
+  },
+  {
+    title: "Github - seovee",
+    link: "https://github.com/seovee",
+  },
+  {
+    title: "Velog - seovee",
+    link: "https://velog.io/@jinseob102",
   },
 ];
