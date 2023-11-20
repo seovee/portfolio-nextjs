@@ -12,17 +12,15 @@ export default function Header() {
       <motion.h1
         className="absolute flex items-center justify-center left-0 w-36 h-20 text-2xl font-bold"
         animate={{
-          rotate: [0, 0, 360, 0, 0],
           y: [-10, 10, -10, 10, -10],
           transition: {
             duration: 3,
             repeat: Infinity,
           },
         }}
-        whileHover={{ scale: 1.2 }}
+        whileHover={{ scale: 1.5 }}
         whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
       >
-        {/* Link에 애니메이션 추가 하기 */}
         <Link href="/" className="italic text-md">
           seovee
           <p className="font-extralight text-xs">PORTFOLIO</p>
