@@ -25,9 +25,15 @@ export default function About() {
     ["rgb(125 211 252)", "rgb(253 186 116)"]
   );
   const [view, setView] = useState(false);
-  const toggleView = () => {
+  // overlay 실행 함수
+  const toggleView = (e) => {
     setView((prev) => !prev);
     router.push("#about");
+  };
+
+  // overlay 버블링 방지 함수
+  const WrapperClick = (e) => {
+    e.stopPropagation();
   };
 
   return (
@@ -105,16 +111,17 @@ export default function About() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
               exit={{ opacity: 0, y: 10 }}
-              className="absolute left-0 right-0 top-[100px] h-[70vh] w-[80vw] mx-auto my-0 rounded-[25px] bg-white "
+              className="absolute left-0 right-0 top-[100px] h-[70vh] w-[80vw] mx-auto my-0 rounded-[25px] bg-white"
+              onClick={WrapperClick}
             >
               <section className="flex flex-row p-10 h-full gap-10">
-                <div className="flex flex-row justify-center items-center w-1/2 h-full">
+                <div className="grid grid-cols-2 gap-5 w-1/2 h-full">
                   <Image
                     src={Profile2}
                     alt="김진섭의 프로필 사진"
                     width={600}
                     height={600}
-                    style={{ width: "40%", height: "auto" }}
+                    style={{ width: "100%", height: "auto" }}
                     className="shadow-2xl"
                   />
                   <Image
@@ -122,15 +129,7 @@ export default function About() {
                     alt="김진섭의 프로필 사진"
                     width={600}
                     height={600}
-                    style={{ width: "40%", height: "auto" }}
-                    className="shadow-2xl"
-                  />
-                  <Image
-                    src={Profile4}
-                    alt="김진섭의 프로필 사진"
-                    width={600}
-                    height={600}
-                    style={{ width: "40%", height: "auto" }}
+                    style={{ width: "100%", height: "auto" }}
                     className="shadow-2xl"
                   />
                   <Image
@@ -138,15 +137,33 @@ export default function About() {
                     alt="김진섭의 프로필 사진"
                     width={600}
                     height={600}
-                    style={{ width: "40%", height: "auto" }}
+                    style={{ width: "100%", height: "auto" }}
+                    className="shadow-2xl"
+                  />
+                  <Image
+                    src={Profile6}
+                    alt="김진섭의 프로필 사진"
+                    width={600}
+                    height={600}
+                    style={{ width: "100%", height: "auto" }}
                     className="shadow-2xl"
                   />
                 </div>
                 <div className=" justify-center items-center w-1/2 h-full">
+                  <Image
+                    src={Profile4}
+                    alt="김진섭의 프로필 사진"
+                    width={600}
+                    height={600}
+                    style={{ width: "100%", height: "auto" }}
+                    className="shadow-2xl"
+                  />
                   <p>이름 : 김진섭</p>
                   <p>생년월일 : 1991년 11월 29일</p>
                   <p>별자리 : 사수자리</p>
                   <p>MBTI : INFJ</p>
+                  <p>좋아하는 것 : 운동, 커피, 드라이브, 산책</p>
+                  <p>싫어하는 것 : 우기는 것</p>
                   <p>
                     간단소개 : 체계가 정립되지 않은 공직업무 수행 중 효율적인
                     방법을 찾으려 노력했습니다. 이경험으로 효율성과 혁신을
@@ -156,6 +173,7 @@ export default function About() {
                     인터페이스를 구현하는 프론트엔드 개발자로서 성장하고
                     싶습니다.
                   </p>
+                  <p>Instagram : @_seovee</p>
                 </div>
               </section>
             </motion.div>
