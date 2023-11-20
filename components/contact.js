@@ -30,16 +30,16 @@ export default function Contact() {
         <h3 className="font-gmarket font-bold text-9xl">CONTACT_ME</h3>
         <ul className="flex mt-10 gap-10 ml-5 justify-start items-center">
           <li>
-            <a href="https://github.com/seovee">
+            <a href="https://github.com/seovee" target="_blank">
               <FaGithub size="50" className="hover:text-white" />
             </a>
           </li>
-          <a href="https://velog.io/@jinseob102">
+          <a href="https://velog.io/@jinseob102" target="_blank">
             <li>
               <SiVelog size="45" className="hover:text-white" />
             </li>
           </a>
-          <a href="mailto:jinseob102@naver.com">
+          <a href="mailto:jinseob102@naver.com" target="_blank">
             <li>
               <RiMailFill size="56" className="hover:text-white" />
             </li>
