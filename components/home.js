@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <section id="home" className="relative">
       <motion.div
-        className="h-screen flex flex-col gap-[5px] justify-center items-center overflow-hidden	"
+        className="h-[150vh] flex flex-col gap-[5px] pt-[45vh] justify-start items-center overflow-hidden	"
         style={{ scrollYProgress, backgroundColor }}
       >
         <motion.h1
@@ -23,9 +23,6 @@ export default function Home() {
           animate={{ opacity: 1, transition: { type: "spring" } }}
           className="text-8xl hover:font-bold cursor-pointer mb-5 font-giants"
           style={{ scrollY, scale }}
-          drag
-          dragSnapToOrigin
-          dragMomentum
         >
           {`Hello, Every One`}
         </motion.h1>
@@ -46,7 +43,7 @@ export default function Home() {
           김진섭 입니다.
         </motion.h3>
         <motion.div
-          className="absolute bottom-10 font-light text-3xl"
+          className="absolute bottom-[50vh] font-light text-3xl"
           animate={{
             opacity: [0, 1, 0],
             transition: {
