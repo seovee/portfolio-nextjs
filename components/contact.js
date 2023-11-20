@@ -1,7 +1,7 @@
 import { RiMailFill } from "react-icons/ri";
 import { SiVelog } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
-import Iphone from "../public/iphone.png";
+import IPhone from "../public/iphone.png";
 import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
 
@@ -17,18 +17,18 @@ export default function Contact() {
         - C O N T A C T -
       </h2>
       <motion.div
-        className="flex w-1/3 h-full items-center mt-28"
+        className="flex w-2/5 h-full items-center mt-28"
         style={{ scrollYProgress, x }}
       >
         <Image
-          src={Iphone}
+          src={IPhone}
           alt="휴대폰 사진"
           style={{ width: "100%", height: "auto" }}
         />
       </motion.div>
-      <div className="w-2/3">
+      <div className="w-3/5">
         <h3 className="font-gmarket font-bold text-9xl">CONTACT_ME</h3>
-        <ul className="flex mt-10 ml-5 gap-10 items-center">
+        <ul className="flex mt-10 gap-10 ml-5 justify-start items-center">
           <li>
             <a href="https://github.com/seovee">
               <FaGithub size="50" className="hover:text-white" />
