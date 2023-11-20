@@ -1,9 +1,9 @@
-import { RiMailFill } from "react-icons/ri";
-import { SiVelog } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
-import IPhone from "../public/iphone.png";
-import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
+import { RiMailFill } from "react-icons/ri";
+import { FaGithub } from "react-icons/fa";
+import { SiVelog } from "react-icons/si";
+import Image from "next/image";
+import IPhone from "../public/iphone.png";
 
 export default function Contact() {
   const { scrollYProgress } = useScroll();

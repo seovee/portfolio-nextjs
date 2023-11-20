@@ -1,15 +1,14 @@
 import {
   AnimatePresence,
   motion,
-  useMotionValueEvent,
   useScroll,
   useTransform,
 } from "framer-motion";
-import Image from "next/image";
 import { aboutData } from "../data/index";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import Button from "./Button/button";
-import { useRouter } from "next/router";
+import Image from "next/image";
 import Profile from "../public/assets/profile/profile.jpeg";
 import Profile2 from "../public/assets/profile/profile2.jpg";
 import Profile3 from "../public/assets/profile/profile3.jpg";
@@ -20,10 +19,7 @@ import Profile6 from "../public/assets/profile/profile6.jpg";
 export default function About() {
   const router = useRouter();
   const { scrollYProgress } = useScroll();
-  // Y 비율 확인 함수
-  // useMotionValueEvent(scrollYProgress, "change", (latest) => {
-  //   console.log("Page scroll: ", latest);
-  // });
+
   const backgroundColor = useTransform(
     scrollYProgress,
     [0.35, 0.43],
