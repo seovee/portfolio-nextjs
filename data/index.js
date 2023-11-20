@@ -22,6 +22,18 @@ export const aboutData = [
   },
 ];
 
+export const skillData = [
+  "HTML / CSS",
+  "JavaScript",
+  "React",
+  "NextJS",
+  "Vue.js",
+  "TypeScript",
+  "Gatsby",
+  "Github",
+  "Notion",
+];
+
 // 프로젝트 Data
 export const projectData = [
   {
