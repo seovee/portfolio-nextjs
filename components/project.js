@@ -69,10 +69,11 @@ export default function Project() {
                 >
                   {data.title}
                 </motion.h3>
-                <a
+                <motion.a
                   href="https://www.naver.com"
                   target="_blank"
                   className="shadow-2xl"
+                  whileHover={{ y: -10 }}
                 >
                   <Image
                     src={data.img}
@@ -81,7 +82,7 @@ export default function Project() {
                     height={400}
                     style={{ width: "100%", height: "auto" }}
                   />
-                </a>
+                </motion.a>
                 <p className="font-gmarket p-10">{data.desc}</p>
               </div>
             </div>
