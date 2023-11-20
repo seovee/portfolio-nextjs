@@ -8,7 +8,7 @@ export default function Home() {
   const scale = useTransform(scrollY, [0, 500], [1, 3]);
   const backgroundColor = useTransform(
     scrollYProgress,
-    [0, 0.175],
+    [0, 0.1],
     ["rgb(253 224 71)", "rgb(125 211 252)"]
   );
 
