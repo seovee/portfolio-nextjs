@@ -5,7 +5,7 @@ import Project from "../../components/project";
 
 export default function Main() {
   return (
-    <main className="relative w-11/12 mx-auto md:w-full">
+    <main className="relative mx-auto w-full">
       <Home />
       <About />
       <Project />
