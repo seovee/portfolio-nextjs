@@ -57,10 +57,10 @@ export default function Project() {
           {projectData.map((data, index) => (
             <div
               key={index}
-              className="relative w-[850px] h-[850px] px-16 py-24 bg-white/30 mr-[200px] rounded-[30px] flex justify-center items-center shadow-2xl"
+              className="relative w-[850px] h-[850px] px-16 py-24 bg-white/20 mr-[200px] rounded-[30px] flex justify-center items-center shadow-md"
             >
               <div className=" flex flex-col h-full items-center gap-20">
-                <span className="absolute top-5 left-[-40px] text-white text-9xl font-extrabold italic drop-shadow-xl">
+                <span className="absolute top-5 left-[-40px] text-white text-9xl font-extrabold italic drop-shadow-md">
                   {data.num}
                 </span>
                 <motion.h3
