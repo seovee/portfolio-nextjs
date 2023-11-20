@@ -7,7 +7,9 @@ import IPhone from "../public/iphone.png";
 
 export default function Contact() {
   const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0.8, 1], [-600, 0]);
+  const minusFadeIn = useTransform(scrollYProgress, [0.8, 0.9], [-600, 0]);
+  const plusFadeIn = useTransform(scrollYProgress, [0.8, 0.93], [600, 0]);
+  const plusFadeIn_2 = useTransform(scrollYProgress, [0.8, 1], [600, 0]);
   return (
     <section
       id="contact"
@@ -18,7 +20,7 @@ export default function Contact() {
       </h2>
       <motion.div
         className="flex w-2/5 h-full items-center mt-28"
-        style={{ scrollYProgress, x }}
+        style={{ scrollYProgress, x: minusFadeIn }}
       >
         <Image
           src={IPhone}
@@ -27,8 +29,16 @@ export default function Contact() {
         />
       </motion.div>
       <div className="w-3/5">
-        <h3 className="font-gmarket font-bold text-9xl">CONTACT_ME</h3>
-        <ul className="flex mt-10 gap-10 ml-5 justify-start items-center">
+        <motion.h3
+          className="font-gmarket font-bold text-9xl"
+          style={{ scrollYProgress, x: plusFadeIn }}
+        >
+          CONTACT_ME
+        </motion.h3>
+        <motion.ul
+          className="flex mt-10 gap-10 ml-5 justify-start items-center"
+          style={{ scrollYProgress, x: plusFadeIn_2 }}
+        >
           <li>
             <a href="https://github.com/seovee" target="_blank">
               <FaGithub size="50" className="hover:text-white" />
@@ -44,7 +54,7 @@ export default function Contact() {
               <RiMailFill size="56" className="hover:text-white" />
             </li>
           </a>
-        </ul>
+        </motion.ul>
       </div>
     </section>
   );
