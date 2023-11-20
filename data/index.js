@@ -67,19 +67,3 @@ export const projectData = [
     url: "https://likelion-fe4-rp11.github.io/Asparagus/",
   },
 ];
-
-// 연락처 Data
-export const contactData = [
-  {
-    title: "mail : jinseob102@naver.com",
-    link: "mailto:jinseob102@naver.com",
-  },
-  {
-    title: "Github - seovee",
-    link: "https://github.com/seovee",
-  },
-  {
-    title: "Velog - seovee",
-    link: "https://velog.io/@jinseob102",
-  },
-];
