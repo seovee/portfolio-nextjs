@@ -23,15 +23,15 @@ export default function Project() {
       sectionRef.current,
       { translateX: 100 },
       {
-        translateX: -6400,
+        translateX: "-250vw",
         ease: "none",
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
-          end: "bottom center",
+          end: () =>
+            `+=${document.querySelector(".project-section").offsetHeight}`,
+          pin: "#project",
           scrub: 0.7,
-          invalidateOnRefresh: true,
-          pin: ".project-section",
         },
       }
     );
@@ -41,28 +41,28 @@ export default function Project() {
   }, []);
 
   return (
-    <section
+    <motion.section
       id="project"
-      className="project-section relative flex flex-col items-center overflow-hidden"
+      className="project-section relative flex flex-col items-center h-[100vh] w-full overflow-hidden "
+      style={{ scrollYProgress, backgroundColor }}
     >
       <h2 className="project-title absolute top-10 font-thin">
         - P R O J E C T -
       </h2>
-      <motion.div
+      <div
         ref={triggerRef}
-        className="project-wrapper bg-orange-300 h-[100vh] w-full flex items-center"
-        style={{ scrollYProgress, backgroundColor }}
+        className="project-wrapper flex items-center h-full w-full"
       >
-        <div ref={sectionRef} className="flex flex-row mt-16">
+        <div ref={sectionRef} className="relative flex flex-row mt-16">
           {projectData.map((data, index) => (
             <div
               key={index}
-              className="relative w-[45rem] h-[45rme] px-16 py-24 bg-white/20 mr-[200px] rounded-[30px] flex justify-center items-center shadow-md"
+              className="relative w-[45rem] px-16 py-24 bg-white/20 mr-[200px] rounded-[30px] flex justify-center items-center shadow-md"
             >
-              <div className=" flex flex-col h-full items-center gap-20">
-                <span className="absolute top-5 left-[-40px] text-white text-9xl font-extrabold italic drop-shadow-md">
-                  {data.num}
-                </span>
+              <span className="absolute top-5 left-[-40px] text-white text-9xl font-extrabold italic drop-shadow-md">
+                {data.num}
+              </span>
+              <div className="flex flex-col h-full items-center gap-20">
                 <motion.h3
                   className="font-gmarket text-center text-4xl font-bold tracking-wider"
                   whileHover={{ scale: 1.2 }}
@@ -88,7 +88,7 @@ export default function Project() {
             </div>
           ))}
         </div>
-      </motion.div>
-    </section>
+      </div>
+    </motion.section>
   );
 }
