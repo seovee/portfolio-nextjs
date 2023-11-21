@@ -29,8 +29,8 @@ export default function Project() {
           trigger: triggerRef.current,
           start: "top top",
           end: () =>
-            `+=${document.querySelector(".project-section").offsetHeight}`,
-          pin: "#project",
+            `+=${document.querySelector(".project-wrapper").offsetHeight}`,
+          pin: true,
           scrub: 0.7,
         },
       }
@@ -43,7 +43,7 @@ export default function Project() {
   return (
     <motion.section
       id="project"
-      className="project-section relative flex flex-col items-center h-[100vh] w-full overflow-hidden "
+      className="project-section overflow-hidden "
       style={{ scrollYProgress, backgroundColor }}
     >
       <h2 className="project-title absolute top-10 font-thin">
@@ -51,7 +51,7 @@ export default function Project() {
       </h2>
       <div
         ref={triggerRef}
-        className="project-wrapper flex items-center h-full w-full"
+        className="project-wrapper flex items-center h-[100vh] w-full"
       >
         <div ref={sectionRef} className="relative flex flex-row mt-16">
           {projectData.map((data, index) => (
