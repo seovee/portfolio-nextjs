@@ -10,7 +10,7 @@ export default function Project() {
   const backgroundColor = useTransform(
     scrollYProgress,
     [0.7, 0.75],
-    ["rgb(253 186 116)", "rgb(190 242 100)"]
+    ["rgb(251 146 60)", "rgb(190 242 100)"]
   );
 
   const sectionRef = useRef(null);
@@ -21,9 +21,9 @@ export default function Project() {
   useEffect(() => {
     const pin = gsap.fromTo(
       sectionRef.current,
-      { translateX: 100 },
+      { translateX: "5vw" },
       {
-        translateX: "-250vw",
+        translateX: "-610vw",
         ease: "none",
         scrollTrigger: {
           trigger: triggerRef.current,
@@ -31,7 +31,7 @@ export default function Project() {
           end: () =>
             `+=${document.querySelector(".project-wrapper").offsetHeight}`,
           pin: true,
-          scrub: 0.7,
+          scrub: 1,
         },
       }
     );
@@ -57,7 +57,7 @@ export default function Project() {
           {projectData.map((data, index) => (
             <div
               key={index}
-              className="relative w-[45rem] px-16 py-24 bg-white/20 mr-[200px] rounded-[30px] flex justify-center items-center shadow-md"
+              className="relative w-[90vw] px-16 py-24 bg-white/20 mr-[200px] rounded-[30px] flex justify-center items-center shadow-md"
             >
               <span className="absolute top-5 left-[-40px] text-white text-9xl font-extrabold italic drop-shadow-md">
                 {data.num}
