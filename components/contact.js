@@ -7,9 +7,9 @@ import IPhone from "../public/iphone.png";
 
 export default function Contact() {
   const { scrollYProgress } = useScroll();
-  const minusFadeIn = useTransform(scrollYProgress, [0.8, 0.9], [-600, 0]);
-  const plusFadeIn = useTransform(scrollYProgress, [0.8, 0.93], [600, 0]);
-  const plusFadeIn_2 = useTransform(scrollYProgress, [0.8, 1], [600, 0]);
+  const minusFadeIn = useTransform(scrollYProgress, [0.7, 0.9], [-1000, 0]);
+  const plusFadeIn = useTransform(scrollYProgress, [0.7, 0.9], [1000, 0]);
+  const plusFadeIn_2 = useTransform(scrollYProgress, [0.7, 0.95], [1000, 0]);
   return (
     <section
       id="contact"
