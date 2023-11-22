@@ -10,7 +10,7 @@ export default function Project() {
   const backgroundColor = useTransform(
     scrollYProgress,
     [0.7, 0.75],
-    ["rgb(251 146 60)", "rgb(190 242 100)"]
+    ["rgb(253 224 71)", "rgb(190 242 100)"]
   );
 
   const sectionRef = useRef(null);
@@ -57,7 +57,7 @@ export default function Project() {
           {projectData.map((data, index) => (
             <div
               key={index}
-              className="relative w-[90vw] px-16 py-24 bg-white/20 mr-[200px] rounded-[30px] flex justify-center items-center shadow-md"
+              className="relative w-[90vw] px-16 py-24 bg-white/50 mr-[200px] rounded-[30px] flex justify-center items-center shadow-md"
             >
               <span className="absolute top-5 left-[-40px] text-white text-9xl font-extrabold italic drop-shadow-md">
                 {data.num}
