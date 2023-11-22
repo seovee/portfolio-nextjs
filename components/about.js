@@ -18,7 +18,7 @@ export default function About() {
   const backgroundColor = useTransform(
     scrollYProgress,
     [0.35, 0.43],
-    ["rgb(125 211 252)", "rgb(253 186 116)"]
+    ["rgb(125 211 252)", "rgb(251 146 60)"]
   );
   const [view, setView] = useState(false);
   // overlay 실행 함수
