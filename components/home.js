@@ -58,16 +58,22 @@ export default function Home() {
               onInit={(typewriter) => {
                 typewriter
                   .pauseFor(1500)
-                  .typeString("공무원?")
+                  .typeString("공무원 김진섭?")
                   .pauseFor(2000)
                   .deleteAll()
                   .pauseFor(2000)
                   .typeString(
                     `프론트엔드 개발자 <br><span style="font-weight:600;margin-top: 10px;"}>김진섭</span> 입니다.`
                   )
+                  .pauseFor(5000)
                   .start();
               }}
-              options={{ delay: 100, deleteSpeed: 200 }}
+              options={{
+                delay: 100,
+                deleteSpeed: 200,
+                autoStart: true,
+                loop: true,
+              }}
             />
           </span>
         </motion.div>
