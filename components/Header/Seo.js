@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function Seo() {
   return (
     <Head>
-      <title>Portfolio | 김진섭 😎</title>
+      <title>김진섭 포트폴리오 😎</title>
     </Head>
   );
 }
