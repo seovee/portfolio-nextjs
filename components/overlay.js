@@ -38,14 +38,8 @@ export default function Overlay({ toggleView }) {
                 className="shadow-md"
               />
             </div>
-            <motion.div
-              className="flex items-center justify-center overflow-hidden font-giants text-5xl"
-              animate={{
-                rotate: 360,
-                transition: { duration: 0.5, repeat: Infinity, repeatDelay: 1 },
-              }}
-            >
-              Calm
+            <motion.div className="flex items-center justify-center overflow-hidden font-giants text-5xl">
+              HTML/CSS, JavaScript
             </motion.div>
             <motion.div
               className="flex items-center justify-center overflow-hidden font-giants text-5xl"
@@ -54,7 +48,7 @@ export default function Overlay({ toggleView }) {
                 transition: { duration: 0.8, repeat: Infinity, repeatDelay: 2 },
               }}
             >
-              Steady
+              React, NextJS, Vue.js
             </motion.div>
             <div className="relative overflow-hidden">
               <Image
@@ -78,7 +72,7 @@ export default function Overlay({ toggleView }) {
                 className="shadow-md"
               />
             </div>
-            <div className="h-1/2 font-gmarket flex flex-col justify-between">
+            <div className="h-1/2 font-gmarket flex flex-col justify-between pb-2">
               <h2 className="text-xl font-bold">
                 김진섭(Kim JinSeob), 1991. 11. 29.
               </h2>
