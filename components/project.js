@@ -69,7 +69,7 @@ export default function Project() {
               </div>
               <div className="flex flex-col font-gmarket w-3/5">
                 <motion.a
-                  href="https://www.naver.com"
+                  href={data.url}
                   target="_blank"
                   className="shadow-2xl w-full"
                   whileHover={{ y: -10 }}
@@ -83,7 +83,7 @@ export default function Project() {
                   />
                 </motion.a>
               </div>
-              <div className="w-2/5 flex flex-col gap-10">
+              <div className="w-2/5 flex flex-col justify-evenly h-full">
                 <div className="flex flex-wrap gap-2">
                   {data.skill.map((i, index) => (
                     <span
@@ -95,16 +95,16 @@ export default function Project() {
                   ))}
                 </div>
                 <div>
-                  <p className="font-gmarket">React 프로젝트 / 개인프로젝트</p>
-                  <p className="text-4xl font-thin">2023. 11. 07. ~ 11. 24.</p>
+                  <p className="font-gmarket">{data.category}</p>
+                  <p className="text-4xl font-thin">{data.date}</p>
                 </div>
                 <div className="flex flex-col gap-2">
-                  <p className="font-gmarket">{data.desc}</p>
+                  <p className="font-gmarket font-thin">{data.desc}</p>
                   <div className="flex gap-5">
-                    <a href="https://github.com/seovee" target="_blank">
+                    <a href={data.github_url} target="_blank">
                       <FaGithub size="40" className="hover:text-white" />
                     </a>
-                    <a href="https://github.com/seovee" target="_blank">
+                    <a href={data.url} target="_blank">
                       <MdOutlineWeb size="40" className="hover:text-white" />
                     </a>
                   </div>
