@@ -7,9 +7,9 @@ import IPhone from "../public/iphone.png";
 
 export default function Contact() {
   const { scrollYProgress } = useScroll();
-  const minusFadeIn = useTransform(scrollYProgress, [0.7, 0.9], [-1000, 0]);
-  const plusFadeIn = useTransform(scrollYProgress, [0.7, 0.9], [1000, 0]);
-  const plusFadeIn_2 = useTransform(scrollYProgress, [0.7, 0.95], [1000, 0]);
+  const minusFadeIn = useTransform(scrollYProgress, [0.8, 0.9], [-2000, 0]);
+  const plusFadeIn = useTransform(scrollYProgress, [0.82, 0.9], [-1500, 0]);
+
   return (
     <section
       id="contact"
@@ -28,30 +28,30 @@ export default function Contact() {
           style={{ width: "100%", height: "auto" }}
         />
       </motion.div>
-      <div className="w-3/5">
+      <div className="w-3/5 relative h-full">
         <motion.h3
-          className="font-jalnan font-bold text-9xl"
-          style={{ scrollYProgress, x: plusFadeIn }}
+          className="absolute top-[25vh] right-0 font-jalnan font-bold text-9xl tracking-widest"
+          style={{ scrollYProgress, y: plusFadeIn }}
         >
           CONTACT ME
         </motion.h3>
         <motion.ul
-          className="flex mt-10 gap-10 ml-5 justify-start items-center"
-          style={{ scrollYProgress, x: plusFadeIn_2 }}
+          className="absolute top-[40vh] right-[10px] flex mt-10 gap-20 ml-5 justify-start items-center"
+          style={{ scrollYProgress, y: plusFadeIn }}
         >
           <li>
             <a href="https://github.com/seovee" target="_blank">
-              <FaGithub size="50" className="hover:text-white" />
+              <FaGithub size="70" className="hover:text-white" />
             </a>
           </li>
           <a href="https://velog.io/@jinseob102" target="_blank">
             <li>
-              <SiVelog size="45" className="hover:text-white" />
+              <SiVelog size="65" className="hover:text-white" />
             </li>
           </a>
           <a href="mailto:jinseob102@naver.com" target="_blank">
             <li>
-              <RiMailFill size="56" className="hover:text-white" />
+              <RiMailFill size="76" className="hover:text-white" />
             </li>
           </a>
         </motion.ul>
