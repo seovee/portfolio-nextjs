@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { projectData, skillData } from "../data";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
-import { SiVercel } from "react-icons/si";
+import { MdOutlineWeb } from "react-icons/md";
 
 export default function Project() {
   const { scrollYProgress } = useScroll();
@@ -83,7 +83,7 @@ export default function Project() {
                   />
                 </motion.a>
               </div>
-              <div className="w-2/5 flex flex-col gap-16">
+              <div className="w-2/5 flex flex-col gap-10">
                 <div className="flex flex-wrap gap-2">
                   {data.skill.map((i, index) => (
                     <span
@@ -96,18 +96,18 @@ export default function Project() {
                 </div>
                 <div>
                   <p className="font-gmarket">React 프로젝트 / 개인프로젝트</p>
-                  <p className="text-4xl font-thin italic text-gray-500">
-                    2023. 11. 07. ~ 11. 24.
-                  </p>
+                  <p className="text-4xl font-thin">2023. 11. 07. ~ 11. 24.</p>
                 </div>
-                <p className="font-gmarket">{data.desc}</p>
-                <div>
-                  <a href="https://github.com/seovee" target="_blank">
-                    <FaGithub size="40" className="hover:text-white" />
-                  </a>
-                  <a href="https://github.com/seovee" target="_blank">
-                    <SiVercel size="40" className="hover:text-white" />
-                  </a>
+                <div className="flex flex-col gap-2">
+                  <p className="font-gmarket">{data.desc}</p>
+                  <div className="flex gap-5">
+                    <a href="https://github.com/seovee" target="_blank">
+                      <FaGithub size="40" className="hover:text-white" />
+                    </a>
+                    <a href="https://github.com/seovee" target="_blank">
+                      <MdOutlineWeb size="40" className="hover:text-white" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
