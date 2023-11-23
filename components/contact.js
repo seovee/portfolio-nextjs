@@ -30,10 +30,10 @@ export default function Contact() {
       </motion.div>
       <div className="w-3/5">
         <motion.h3
-          className="font-gmarket font-bold text-9xl"
+          className="font-jalnan font-bold text-9xl"
           style={{ scrollYProgress, x: plusFadeIn }}
         >
-          CONTACT_ME
+          CONTACT ME
         </motion.h3>
         <motion.ul
           className="flex mt-10 gap-10 ml-5 justify-start items-center"

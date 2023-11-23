@@ -44,21 +44,21 @@ export default function Home() {
               duration: 1,
             },
           }}
-          className="text-9xl hover:font-bold mb-5 font-giants"
+          className="text-9xl mb-5 font-bold font-samlip"
           style={{ scrollY, scale }}
         >
-          Hello, Every One
+          {`Hello, Every One`}
         </motion.h1>
         <motion.div
-          className="flex flex-col items-center"
+          className="flex flex-col items-center mt-10"
           style={{ scrollY, opacity }}
         >
-          <span className="text-5xl text-center font-light mt-10 tracking-wide">
+          <span className="text-5xl text-center font-light tracking-wide">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
                   .pauseFor(1000)
-                  .typeString("한때 공무원이었던...")
+                  .typeString("공무원?")
                   .pauseFor(1500)
                   .deleteAll()
                   .pauseFor(1500)
@@ -72,7 +72,6 @@ export default function Home() {
                 delay: 100,
                 deleteSpeed: 200,
                 autoStart: true,
-                loop: true,
               }}
             />
           </span>

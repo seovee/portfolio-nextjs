@@ -38,11 +38,11 @@ export default function Overlay({ toggleView }) {
                 className="shadow-md"
               />
             </div>
-            <motion.div className="flex items-center justify-center overflow-hidden font-giants text-5xl">
+            <motion.div className="flex items-center justify-center overflow-hidden font-jalnan text-5xl">
               HTML/CSS, JavaScript
             </motion.div>
             <motion.div
-              className="flex items-center justify-center overflow-hidden font-giants text-5xl"
+              className="flex items-center justify-center overflow-hidden font-jalnan text-5xl"
               animate={{
                 rotate: 360,
                 transition: { duration: 0.8, repeat: Infinity, repeatDelay: 2 },

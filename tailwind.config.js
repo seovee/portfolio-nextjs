@@ -15,9 +15,11 @@ module.exports = {
     },
     // font custom: 폰트를 tailwind에서 사용하려면 등록!
     fontFamily: {
-      giants: ["Giants-Inline", "Helvetica", "Arial", "sans-serif"],
+      normal: ["sans-serif", "Helvetica", "Arial"],
+      jalnan: ["JalnanGothic", "Helvetica", "Arial", "sans-serif"],
       gmarket: ["GmarketSansMedium", "Helvetica", "Arial", "sans-serif"],
-      jaram: ["iceJaram-Rg", "Helvetica", "Arial", "sans-serif"],
+      aggro: ["SBAggroB", "Helvetica", "Arial", "sans-serif"],
+      samlip: ["SDSamliphopangche_Outline", "Helvetica", "Arial", "sans-serif"],
     },
   },
   plugins: [],

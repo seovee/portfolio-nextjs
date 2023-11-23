@@ -21,13 +21,15 @@ export default function Header() {
         whileHover={{ scale: 1.5 }}
         whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
       >
-        <Link href="/" className="italic text-md">
+        <Link href="/" className="text-md font-samlip">
           seovee
-          <p className="font-extralight text-xs">PORTFOLIO</p>
+          <p className="font-normal font-extralight text-xs text-center">
+            PORTFOLIO
+          </p>
         </Link>
       </motion.h1>
       <nav className="w-full h-20 flex items-center justify-center">
-        <ul className="flex gap-20 text-xl font-normal font-giants">
+        <ul className="flex gap-20 text-xl font-normal font-samlip">
           <motion.li
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
