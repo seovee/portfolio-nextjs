@@ -44,16 +44,16 @@ export default function Home() {
               duration: 1,
             },
           }}
-          className="text-9xl mb-5 font-bold font-samlip"
+          className="text-6xl mb-5 font-samlip lg:text-9xl"
           style={{ scrollY, scale }}
         >
           {`Hello, Every One`}
         </motion.h1>
         <motion.div
-          className="flex flex-col items-center mt-10"
+          className="flex flex-col items-center mt-2 lg:mt-10"
           style={{ scrollY, opacity }}
         >
-          <span className="text-5xl text-center font-light tracking-wide">
+          <span className="text-3xl text-center font-light tracking-wide lg:text-5xl">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -76,7 +76,7 @@ export default function Home() {
           </span>
         </motion.div>
         <motion.div
-          className="absolute flex gap-2 justify-center items-center bottom-[50vh] my-0 font-thin text-3xl cursor-pointer w-screen h-20 hover:bg-white/30"
+          className="absolute flex gap-2 justify-center items-center bottom-[50vh] my-0 font-thin text-xl cursor-pointer w-screen h-16 hover:bg-white/30 lg:text-3xl lg:h-20"
           initial={{ opacity: 0 }}
           animate={{
             opacity: [0, 1, 0],
@@ -90,7 +90,7 @@ export default function Home() {
         >
           <div className="flex">
             <FiChevronDown />
-            <span className="text-lg">Next</span>
+            <span className="text-sm lg:text-lg">Next</span>
           </div>
         </motion.div>
       </motion.div>
