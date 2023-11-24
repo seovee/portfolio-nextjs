@@ -38,16 +38,14 @@ export default function About() {
         <motion.div
           className="relative h-screen flex justify-evenly items-center"
           key="aboutContainer"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.5, duration: 1 },
+          }}
         >
-          <motion.div
-            className="h-[35rem] w-[35rem] p-10"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: { delay: 0.2, duration: 1 },
-            }}
-          >
+          <motion.div className="h-[35rem] w-[35rem] p-10">
             <Image
               src={Profile}
               alt="김진섭 메인프로필 사진"
@@ -57,15 +55,7 @@ export default function About() {
               className="rounded-full shadow-2xl"
             />
           </motion.div>
-          <motion.div
-            className="w-1/3"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: { delay: 0.2, duration: 1 },
-            }}
-          >
+          <motion.div className="w-1/3">
             <ul className="cursor-default">
               {aboutData.map((data, index) => (
                 <li key={index}>
@@ -91,7 +81,7 @@ export default function About() {
           <Button onClick={toggleView}>
             <motion.p
               initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, transition: { delay: 1.5 } }}
+              whileInView={{ opacity: 1, transition: { delay: 2 } }}
               className="font-gmarket text-sm"
             >
               더 알아보기 🤔
