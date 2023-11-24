@@ -10,7 +10,7 @@ export default function Header() {
       animate={{ opacity: 1, transition: { delay: 2 } }}
     >
       <motion.h1
-        className="absolute flex items-center justify-center left-0 w-36 h-20 text-2xl font-bold"
+        className="absolute hidden items-center justify-center left-0 w-36 h-20 text-2xl font-bold lg:flex"
         animate={{
           y: [-10, 10, -10, 10, -10],
           transition: {
@@ -29,7 +29,7 @@ export default function Header() {
         </Link>
       </motion.h1>
       <nav className="w-full h-20 flex items-center justify-center">
-        <ul className="flex gap-20 text-xl font-normal font-samlip">
+        <ul className="flex gap-10 text-md font-normal font-samlip lg:gap-20 lg:text-xl">
           <motion.li
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
