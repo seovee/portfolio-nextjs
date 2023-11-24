@@ -59,13 +59,12 @@ export default function Home() {
                 typewriter
                   .pauseFor(1000)
                   .typeString("공무원?")
-                  .pauseFor(1500)
+                  .pauseFor(500)
                   .deleteAll()
                   .pauseFor(1500)
                   .typeString(
                     `프론트엔드 개발자 <br><span style="font-weight:600;"}>김진섭</span> 입니다.`
                   )
-                  .pauseFor(5000)
                   .start();
               }}
               options={{
@@ -77,17 +76,22 @@ export default function Home() {
           </span>
         </motion.div>
         <motion.div
-          className="absolute flex justify-center items-center bottom-[50vh] my-0 font-light text-3xl cursor-pointer w-screen h-20 hover:bg-white/30 "
+          className="absolute flex gap-2 justify-center items-center bottom-[50vh] my-0 font-thin text-3xl cursor-pointer w-screen h-20 hover:bg-white/30"
+          initial={{ opacity: 0 }}
           animate={{
             opacity: [0, 1, 0],
             transition: {
               duration: 1,
               repeat: Infinity,
+              delay: 8,
             },
           }}
           onClick={titleClick}
         >
-          <FiChevronDown />
+          <div className="flex">
+            <FiChevronDown />
+            <span className="text-lg">Next</span>
+          </div>
         </motion.div>
       </motion.div>
     </section>
