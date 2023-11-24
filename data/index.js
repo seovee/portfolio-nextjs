@@ -1,7 +1,8 @@
 // Image에서 사진은 import해서 보내야 사진이 보여진다.
 import Project_1 from "../public/assets/project/project1.png";
 import Project_2 from "../public/assets/project/project2.png";
-import Project_4 from "../public/assets/project/Project4.png";
+import Project_3 from "../public/assets/project/project3.png";
+import Project_4 from "../public/assets/project/project4.png";
 import Project_5 from "../public/assets/project/project5.png";
 import Project_6 from "../public/assets/project/project6.png";
 
@@ -53,7 +54,7 @@ export const projectData = [
   {
     num: 2,
     title: "넷플릭스 클론 사이트",
-    category: "개인프로젝트",
+    category: "개인프로젝트 - Nomad Coder",
     date: "2023. 11. 07. ~ 11. 24.",
     refacDate: "2023.11.07. ~ 11. 24",
     desc: "React를 이용한 넷플릭스 클론코딩입니다. 영화API를 불러와 최신, 인기 영화의 정보를 전달합니다.",
@@ -64,30 +65,30 @@ export const projectData = [
   },
   {
     num: 3,
-    title: "티빙 클론 사이트 - Taing",
-    category: "팀프로젝트(5명)",
-    date: "2023. 11. 07. ~ 11. 24.",
-    desc: "리액트, framer-motion, firebase를 이용한 갤러리 웹페이지입니다.",
-    img: Project_2,
-    url: "https://likelion-fe4-rp11.github.io/Asparagus/",
-    github_url: "https://github.com/seovee/masterClass-Fin",
-    skill: ["NextJS", "React", "Framer-motion", "Gsap", "TypeWriter-effect"],
-  },
-  {
-    num: 4,
     title: "I's gallary 갤러리",
-    category: "팀프로젝트(5명)",
+    category: "팀프로젝트(5명) - 멋쟁이사자처럼 FE스쿨 4기",
     date: "2023. 11. 07. ~ 11. 24.",
-    desc: "리액트, framer-motion, firebase를 이용한 갤러리 웹페이지입니다. 멋쟁이사자처럼 FE스쿨 4기에서 참여했던 프로젝트입니다.",
-    img: Project_4,
+    desc: "멋쟁이사자처럼 FE스쿨 4기에서 참여했던 리액트 프로젝트입니다. SNS 웹페이지 테마로 기획&제작한 프로젝트입니다. Firebase로 회원가입/로그인을 연동하여 구현했습니다.",
+    img: Project_3,
     url: "https://likelion-fe4-rp11.github.io/Asparagus/",
     github_url: "https://github.com/seovee/masterClass-Fin",
     skill: ["React", "Framer-motion", "Firebase", "Figma"],
   },
   {
+    num: 4,
+    title: "티빙 클론 사이트 - Taing",
+    category: "팀프로젝트(5명) - 멋쟁이사자처럼 FE스쿨 4기",
+    date: "2023. 11. 07. ~ 11. 24.",
+    desc: "멋쟁이사자처럼 FE스쿨 4기에서 참여했던 바닐라 프로젝트입니다. Tving 웹페이지를 클론한 사이트이며 순수 HTML, CSS, JavaScript만으로 제작하였습니다.",
+    img: Project_4,
+    url: "https://likelion-fe4-rp11.github.io/Asparagus/",
+    github_url: "https://github.com/seovee/masterClass-Fin",
+    skill: ["NextJS", "React", "Framer-motion", "Gsap", "TypeWriter-effect"],
+  },
+  {
     num: 5,
     title: "회원가입 페이지",
-    category: "팀프로젝트(5명)",
+    category: "개인프로젝트",
     date: "2023. 11. 07. ~ 11. 24.",
     desc: "회원가입, 로그인 기능구현 웹페이지입니다.",
     img: Project_5,

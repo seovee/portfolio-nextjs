@@ -23,7 +23,7 @@ export default function Project() {
   useEffect(() => {
     const pin = gsap.fromTo(
       sectionRef.current,
-      { translateX: "10vw" },
+      { translateX: "15vw" },
       {
         translateX: "-610vw",
         ease: "none",
@@ -59,7 +59,7 @@ export default function Project() {
           {projectData.map((data, index) => (
             <div
               key={index}
-              className="relative w-[80vw] h-[80vh] px-20 pb-24 pt-36  mr-[15vw] rounded-[30px] flex flex-row gap-20 justify-around items-center shadow-xl bg-white/40"
+              className="relative w-[70vw] h-[80vh] px-20 pb-24 pt-36  mr-[15vw] rounded-[30px] flex flex-row gap-20 justify-around items-center shadow-xl bg-white/40"
             >
               <span className="absolute top-5 left-[-40px] text-white text-9xl font-extrabold italic drop-shadow-md">
                 {data.num}
@@ -80,6 +80,7 @@ export default function Project() {
                     width={400}
                     height={400}
                     style={{ width: "100%", height: "auto" }}
+                    quality={100}
                   />
                 </motion.a>
               </div>
@@ -94,9 +95,14 @@ export default function Project() {
                     </span>
                   ))}
                 </div>
-                <div>
-                  <p className="font-gmarket">{data.category}</p>
+                <div className="flex flex-col gap-2">
+                  <p className="font-gmarket text-xl">{data.category}</p>
                   <p className="text-4xl font-thin">{data.date}</p>
+                  {data.refacDate && (
+                    <p className="font-thin text-lg">
+                      리팩토링 : {data.refacDate}
+                    </p>
+                  )}
                 </div>
                 <div className="flex flex-col gap-2">
                   <p className="font-gmarket font-thin">{data.desc}</p>
