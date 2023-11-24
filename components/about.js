@@ -36,7 +36,7 @@ export default function About() {
       <h2 className="absolute top-10 font-thin">- A B O U T -</h2>
       <AnimatePresence>
         <motion.div
-          className="relative h-screen flex justify-evenly items-center"
+          className="relative h-screen flex flex-col lg:justify-evenly  items-center lg:flex-row"
           key="aboutContainer"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{
@@ -45,7 +45,7 @@ export default function About() {
             transition: { delay: 0.5, duration: 1 },
           }}
         >
-          <motion.div className="h-[35rem] w-[35rem] p-10">
+          <motion.div className="h-[20rem] w-[20rem] lg:h-[35rem] lg:w-[35rem] p-10">
             <Image
               src={Profile}
               alt="김진섭 메인프로필 사진"
@@ -55,7 +55,7 @@ export default function About() {
               className="rounded-full shadow-2xl"
             />
           </motion.div>
-          <motion.div className="w-1/3">
+          <motion.div className="w-4/5 lg:w-1/3">
             <ul className="cursor-default">
               {aboutData.map((data, index) => (
                 <li key={index}>
