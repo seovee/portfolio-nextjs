@@ -13,13 +13,13 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative flex flex-row justify-between items-center bg-gradient-to-b from-lime-300 to-emerald-400 w-full h-[100vh] overflow-hidden"
+      className="relative flex flex-row justify-between items-center bg-gradient-to-b from-lime-300 to-emerald-400 w-full h-[50vh] lg:h-[100vh] overflow-hidden"
     >
       <h2 className="absolute top-10 text-center w-full font-thin">
         - C O N T A C T -
       </h2>
       <motion.div
-        className="flex w-2/5 h-full items-center mt-28"
+        className="w-2/5 hidden h-full items-center mt-28 lg:flex"
         style={{ scrollYProgress, x: minusFadeIn }}
       >
         <Image
@@ -28,15 +28,15 @@ export default function Contact() {
           style={{ width: "100%", height: "auto" }}
         />
       </motion.div>
-      <div className="w-3/5 relative h-full">
+      <div className="lg:w-3/5 relative w-full h-full">
         <motion.h3
-          className="absolute top-[25vh] right-0 font-jalnan font-bold text-9xl tracking-widest"
+          className="absolute top-[25vh] right-0 font-jalnan font-bold text-6xl lg:text-8xl 2xl:text-9xl"
           style={{ scrollYProgress, y: plusFadeIn }}
         >
           CONTACT ME
         </motion.h3>
         <motion.ul
-          className="absolute top-[40vh] right-[10px] flex mt-10 gap-20 ml-5 justify-start items-center"
+          className="absolute top-[40vh] right-[10px] flex mt-2 lg:mt-10 gap-10 lg:gap-20 ml-5 justify-start items-center"
           style={{ scrollYProgress, y: plusFadeIn }}
         >
           <li>
