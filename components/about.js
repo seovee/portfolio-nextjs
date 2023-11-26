@@ -36,7 +36,7 @@ export default function About() {
       <h2 className="absolute sm:top-10 font-thin">- A B O U T -</h2>
       <AnimatePresence>
         <motion.div
-          className="relative h-screen flex flex-col justify-center lg:justify-evenly items-center lg:flex-row"
+          className="relative h-screen flex flex-col mt-12 sm:mt-auto items-center sm:justify-center lg:justify-evenly lg:flex-row"
           key="aboutContainer"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{
@@ -45,7 +45,7 @@ export default function About() {
             transition: { delay: 0.5, duration: 1 },
           }}
         >
-          <motion.div className="h-[15rem] w-[15rem] sm:h-[20rem] sm:w-[20rem] lg:h-[35rem] lg:w-[35rem] sm:p-10">
+          <motion.div className="h-[10rem] w-[10rem] sm:h-[20rem] sm:w-[20rem] lg:h-[35rem] lg:w-[35rem] sm:p-10">
             <Image
               src={Profile}
               alt="김진섭 메인프로필 사진"
@@ -60,7 +60,7 @@ export default function About() {
               {aboutData.map((data, index) => (
                 <li key={index}>
                   <motion.p
-                    className="font-gmarket text-lg sm:text-2xl mt-5 sm:mt-10 mb-1 font-medium hover:underline hover:underline-offset-8"
+                    className="font-gmarket text-sm sm:text-2xl mt-5 sm:mt-10 mb-1 font-medium hover:underline hover:underline-offset-8"
                     whileHover={{
                       scale: 1.1,
                       x: 10,
