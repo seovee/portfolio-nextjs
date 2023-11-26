@@ -59,12 +59,12 @@ export default function Project() {
           {projectData.map((data, index) => (
             <div
               key={index}
-              className="relative justify-start w-[80vw] h-[70vh] px-8 sm:px-10 lg:px-20 pb-24 pt-20 sm:pt-28 lg:pt-36 mr-[15vw] gap-2 rounded-[30px] flex flex-col lg:flex-row items-center shadow-xl bg-white/40 lg:gap-20 lg:justify-around sm:w-[70vw] lg:h-[80vh]"
+              className="relative justify-start w-[85vw] h-[70vh] px-6 sm:px-10 lg:px-20 pb-24 pt-16 sm:pt-28 lg:pt-36 mr-[15vw] gap-2 rounded-[30px] flex flex-col lg:flex-row items-center shadow-xl bg-white/40 lg:gap-20 lg:justify-around sm:w-[70vw] lg:h-[80vh]"
             >
               <span className="absolute top-5 text-white font-extrabold italic drop-shadow-md text-6xl sm:text-7xl left-[-20px] lg:left-[-40px] lg:text-9xl">
                 {data.num}
               </span>
-              <div className="absolute font-gmarket top-12">
+              <div className="absolute font-gmarket top-8 sm:top-12">
                 <h3 className="text-center font-bold text-xl sm:text-3xl lg:text-6xl">
                   {data.title}
                 </h3>
