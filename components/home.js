@@ -44,7 +44,7 @@ export default function Home() {
               duration: 1,
             },
           }}
-          className="text-6xl mb-5 font-samlip lg:text-9xl"
+          className="text-4xl mb-5 font-samlip sm:text-6xl lg:text-9xl"
           style={{ scrollY, scale }}
         >
           {`Hello, Every One`}
@@ -53,12 +53,12 @@ export default function Home() {
           className="flex flex-col items-center mt-2 lg:mt-10"
           style={{ scrollY, opacity }}
         >
-          <span className="text-3xl text-center font-light tracking-wide lg:text-5xl">
+          <span className="text-xl text-center font-light tracking-wide sm:text-3xl lg:text-5xl">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
                   .pauseFor(1000)
-                  .typeString("공무원?")
+                  .typeString("공무원 김지ㄴ")
                   .pauseFor(500)
                   .deleteAll()
                   .pauseFor(1500)

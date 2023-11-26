@@ -59,13 +59,13 @@ export default function Project() {
           {projectData.map((data, index) => (
             <div
               key={index}
-              className="relative w-[70vw] justify-start h-[60vh] px-10 lg:px-20 pb-24 pt-28 lg:pt-36 mr-[15vw] gap-2 rounded-[30px] flex flex-col lg:flex-row items-center shadow-xl bg-white/40 lg:gap-20 lg:justify-around lg:h-[80vh]"
+              className="relative justify-start w-[80vw] h-[70vh] px-8 sm:px-10 lg:px-20 pb-24 pt-20 sm:pt-28 lg:pt-36 mr-[15vw] gap-2 rounded-[30px] flex flex-col lg:flex-row items-center shadow-xl bg-white/40 lg:gap-20 lg:justify-around sm:w-[70vw] lg:h-[80vh]"
             >
-              <span className="absolute top-5 left-[-20px] text-white text-7xl font-extrabold italic drop-shadow-md lg:left-[-40px] lg:text-9xl">
+              <span className="absolute top-5 text-white font-extrabold italic drop-shadow-md text-6xl sm:text-7xl left-[-20px] lg:left-[-40px] lg:text-9xl">
                 {data.num}
               </span>
               <div className="absolute font-gmarket top-12">
-                <h3 className="text-center text-3xl font-bold lg:text-6xl">
+                <h3 className="text-center font-bold text-xl sm:text-3xl lg:text-6xl">
                   {data.title}
                 </h3>
               </div>
@@ -86,12 +86,12 @@ export default function Project() {
                   />
                 </motion.a>
               </div>
-              <div className="flex flex-col justify-evenly h-full lg:w-2/5">
-                <div className="flex flex-wrap justify-center gap-2 lg:justify-start">
+              <div className="flex flex-col mt-2 sm:mt-10 justify-evenly h-full lg:w-2/5">
+                <div className="flex flex-wrap justify-center gap-1 sm:gap-2 lg:justify-start">
                   {data.skill.map((i, index) => (
                     <span
                       key={index}
-                      className="inline-block text-xs bg-gray-300 px-2 py-1 rounded-md text-blue-600 font-bold whitespace-nowrap italic lg:text-lg"
+                      className="inline-blockt text-[10px] bg-gray-300 px-2 py-1 rounded-md text-blue-600 font-bold whitespace-nowrap italic sm:text-xs lg:text-lg"
                     >
                       {i}
                     </span>
@@ -101,15 +101,17 @@ export default function Project() {
                   <p className="font-gmarket text-xl hidden lg:block">
                     {data.category}
                   </p>
-                  <p className="text-lg lg:text-4xl font-thin">{data.date}</p>
+                  <p className="text-lg lg:text-4xl font-thin whitespace-nowrap">
+                    {data.date}
+                  </p>
                   {data.refacDate && (
-                    <p className="font-thin text-lg">
+                    <p className="font-thin text-sm sm:text-lg">
                       리팩토링 : {data.refacDate}
                     </p>
                   )}
                 </div>
                 <div className="flex flex-col gap-2">
-                  <p className="font-gmarket font-md">{data.desc}</p>
+                  <p className="font-gmarket text-sm sm:text-lg">{data.desc}</p>
                   <div className="flex gap-5">
                     <a href={data.github_url} target="_blank">
                       <FaGithub size="40" className="hover:text-white" />
