@@ -6,10 +6,6 @@ import Image from "next/image";
 import IPhone from "../public/iphone.png";
 
 export default function Contact() {
-  const { scrollYProgress } = useScroll();
-  const minusFadeIn = useTransform(scrollYProgress, [0.8, 0.9], [-2000, 0]);
-  const plusFadeIn = useTransform(scrollYProgress, [0.82, 0.9], [-1500, 0]);
-
   return (
     <section
       id="contact"
@@ -20,7 +16,12 @@ export default function Contact() {
       </h2>
       <motion.div
         className="w-1/2 lg:w-2/5 hidden h-full items-center mt-28 md:flex"
-        style={{ scrollYProgress, x: minusFadeIn }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { delay: 0.5, duration: 1 },
+        }}
       >
         <Image
           src={IPhone}
@@ -31,13 +32,23 @@ export default function Contact() {
       <div className="w-1/2 lg:w-3/5 relative w-full h-full">
         <motion.h3
           className="absolute top-[25vh] right-0 font-jalnan font-bold text-3xl sm:text-6xl lg:text-8xl 2xl:text-9xl"
-          style={{ scrollYProgress, y: plusFadeIn }}
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: { delay: 0.5, duration: 1 },
+          }}
         >
           CONTACT ME
         </motion.h3>
         <motion.ul
           className="absolute top-[30vh] sm:top-[40vh] right-0 sm:right-[10px] flex mt-2 lg:mt-10 gap-1 sm:gap-10 lg:gap-20 ml-5 justify-start items-center"
-          style={{ scrollYProgress, y: plusFadeIn }}
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: { delay: 0.5, duration: 1 },
+          }}
         >
           <li className="scale-50 sm:scale-100">
             <a href="https://github.com/seovee" target="_blank">
