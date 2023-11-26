@@ -59,7 +59,7 @@ export default function Project() {
           {projectData.map((data, index) => (
             <div
               key={index}
-              className="relative w-[70vw] justify-start h-[70vh] px-10 lg:px-20 pb-24 pt-28 lg:pt-36 mr-[15vw] gap-2 rounded-[30px] flex flex-col lg:flex-row items-center shadow-xl bg-white/40 lg:gap-20 lg:justify-around lg:h-[80vh]"
+              className="relative w-[70vw] justify-start h-[60vh] px-10 lg:px-20 pb-24 pt-28 lg:pt-36 mr-[15vw] gap-2 rounded-[30px] flex flex-col lg:flex-row items-center shadow-xl bg-white/40 lg:gap-20 lg:justify-around lg:h-[80vh]"
             >
               <span className="absolute top-5 left-[-20px] text-white text-7xl font-extrabold italic drop-shadow-md lg:left-[-40px] lg:text-9xl">
                 {data.num}

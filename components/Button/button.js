@@ -4,7 +4,7 @@ export default function Button({ children, onClick }) {
   return (
     <>
       <motion.div
-        className="absolute bottom-[-10vh] lg:bottom-10 flex flex-col justify-center items-center cursor-pointer"
+        className="absolute bottom-10 flex flex-col justify-center items-center cursor-pointer"
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
         onClick={onClick}

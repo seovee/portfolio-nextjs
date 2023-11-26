@@ -36,7 +36,7 @@ export default function About() {
       <h2 className="absolute top-10 font-thin">- A B O U T -</h2>
       <AnimatePresence>
         <motion.div
-          className="relative h-screen flex flex-col lg:justify-evenly  items-center lg:flex-row"
+          className="relative h-screen flex flex-col justify-center lg:justify-evenly items-center lg:flex-row"
           key="aboutContainer"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{
