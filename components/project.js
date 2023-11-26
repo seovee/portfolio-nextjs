@@ -112,12 +112,18 @@ export default function Project() {
                 </div>
                 <div className="flex flex-col gap-2">
                   <p className="font-gmarket text-sm sm:text-lg">{data.desc}</p>
-                  <div className="flex gap-5">
+                  <div className="flex gap-1 sm:gap-5">
                     <a href={data.github_url} target="_blank">
-                      <FaGithub size="40" className="hover:text-white" />
+                      <FaGithub
+                        size="40"
+                        className="scale-[70%] sm:scale-100 hover:text-white"
+                      />
                     </a>
                     <a href={data.url} target="_blank">
-                      <MdOutlineWeb size="40" className="hover:text-white" />
+                      <MdOutlineWeb
+                        size="40"
+                        className="scale-[70%] sm:scale-100 hover:text-white"
+                      />
                     </a>
                   </div>
                 </div>
