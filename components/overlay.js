@@ -23,12 +23,12 @@ export default function Overlay({ toggleView }) {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
         exit={{ opacity: 0, y: 10 }}
-        className="absolute left-0 right-0 top-[100px] h-[80vh] w-[80vw] mx-auto my-0 rounded-[25px] bg-white"
+        className="absolute left-0 right-0 mx-auto my-0 top-[100px] h-[70vh] lg:h-[80vh] w-[80vw] rounded-[25px] bg-white"
         onClick={WrapperClick}
       >
-        <section className="flex flex-row p-8 xl:p-12 h-full gap-10">
-          <div className="grid grid-cols-2 gap-5 w-1/2">
-            <div className="overflow-hidden rounded-tl-[25px]">
+        <section className="flex flex-row p-8 lg:p-12 h-full gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 w-1/2">
+            <div className="hidden lg:block overflow-hidden rounded-tl-[25px]">
               <Image
                 src={BackImg1}
                 alt="첫번째 배경 이미지"
@@ -38,7 +38,7 @@ export default function Overlay({ toggleView }) {
                 className="shadow-md"
               />
             </div>
-            <motion.div className="flex flex-col justify-between overflow-hidden font-jalnan text-4xl">
+            <div className="flex flex-col justify-between overflow-hidden font-jalnan text-lg sm:text-3xl lg:text-4xl">
               <p className="text-amber-400">
                 HTML,
                 <br />
@@ -53,9 +53,9 @@ export default function Overlay({ toggleView }) {
                 <br />
                 Notion
               </p>
-            </motion.div>
+            </div>
             <motion.div
-              className="flex items-center justify-center overflow-hidden font-jalnan text-5xl text-sky-300"
+              className="flex items-center justify-center overflow-hidden font-jalnan text-xl sm:text-4xl lg:text-5xl text-sky-300"
               animate={{
                 rotate: 360,
                 transition: {
@@ -74,7 +74,7 @@ export default function Overlay({ toggleView }) {
               <br />
               Gatsby
             </motion.div>
-            <div className="relative overflow-hidden">
+            <div className="relative hidden sm:block overflow-hidden rounded-bl-[25px]">
               <Image
                 src={BackImg2}
                 alt="두번째 배경 이미지"
@@ -86,7 +86,7 @@ export default function Overlay({ toggleView }) {
             </div>
           </div>
           <div className="w-1/2 flex flex-col h-full gap-5">
-            <div className="h-1/2 overflow-hidden rounded-tr-[25px]">
+            <div className="h-1/2 hidden sm:block overflow-hidden rounded-tr-[25px]">
               <Image
                 src={Profile}
                 alt="소개페이지 사진"
@@ -96,26 +96,60 @@ export default function Overlay({ toggleView }) {
                 className="shadow-md"
               />
             </div>
-            <div className="h-1/2 font-gmarket flex flex-col justify-between">
-              <h2 className="text-3xl font-bold">
+            <div className="h-4/5 lg:h-1/2 font-gmarket justify-between flex flex-col gap-5 sm:gap-10">
+              <h2 className="text-sm sm:text-xl lg:text-3xl font-bold">
                 김진섭(Kim JinSeob), 1991. 11. 29.
               </h2>
-
               <div>
-                <span className="text-2xl font-semibold">경력 & 교육</span>
+                <span className="text-sm sm:text-lg lg:text-2xl font-semibold">
+                  {`경력 / 교육`}
+                </span>
                 <ul>
-                  <li>
-                    ✓ 2022.11.28. - 2023.03.30. 멋쟁이사자처럼 프론트엔드 4기
-                    수료
+                  <li className="flex flex-col lg:flex-row lg:items-center lg:gap-2">
+                    <p className="text-xs sm:text-md italic">
+                      ✓ 2022.12. - 2023.04.
+                    </p>
+                    <p className="text-xs sm:text-sm mb-2 lg:mb-0 lg:text-lg">
+                      멋쟁이사자처럼 FE 4기 수료
+                    </p>
                   </li>
-                  <li>✓ 2020.07. - 2022.11. 포천시청 공무원</li>
-                  <li>✓ 2010.03. - 2018.02. 강원대학교 환경공학과</li>
+                  <li className="flex flex-col lg:flex-row lg:items-center lg:gap-2">
+                    <p className="text-xs sm:text-md italic">
+                      2020.07. - 2022.11.
+                    </p>
+                    <p className="text-xs sm:text-sm mb-2 lg:mb-0 lg:text-lg">
+                      포천시청 공무원
+                    </p>
+                  </li>
+                  <li className="flex flex-col lg:flex-row lg:items-center lg:gap-2">
+                    <p className="text-xs sm:text-md italic">
+                      ✓ 2010.03. - 2018.02.
+                    </p>
+                    <p className="text-xs sm:text-sm mb-2 lg:mb-0 lg:text-lg">
+                      강원대학교 환경공학과
+                    </p>
+                  </li>
                 </ul>
               </div>
-              <ul className="flex gap-5 ">
-                <li>이력서 : 링크</li>
-                <li>블로그 : 링크</li>
-                <li>인스타그램 : 링크</li>
+              <ul className="flex flex-col sm:flex-row gap-1 sm:gap-5 text-sm sm:text-lg">
+                <motion.li whileHover={{ scale: 1.2 }}>
+                  <a
+                    href="https://ink-kite-3ad.notion.site/Kim-JinSeob-d88f62b3aaaa497a975b17d834cd85d2?pvs=4"
+                    target="_blank"
+                  >
+                    이력서
+                  </a>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.2 }}>
+                  <a href="https://velog.io/@jinseob102" target="_blank">
+                    블로그
+                  </a>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.2 }}>
+                  <a href="https://www.instagram.com/_seovee/" target="_blank">
+                    인스타그램
+                  </a>
+                </motion.li>
               </ul>
             </div>
           </div>
