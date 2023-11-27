@@ -26,7 +26,7 @@ export default function Overlay({ toggleView }) {
         className="absolute left-0 right-0 mx-auto my-0 top-[100px] h-[70vh] lg:h-[80vh] w-[80vw] rounded-[25px] bg-white"
         onClick={WrapperClick}
       >
-        <section className="flex flex-row p-8 lg:p-12 h-full gap-10">
+        <section className="flex flex-row p-5 sm:p-8 lg:p-12 h-full gap-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 w-1/2">
             <div className="hidden lg:block overflow-hidden rounded-tl-[25px]">
               <Image
