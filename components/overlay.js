@@ -106,7 +106,7 @@ export default function Overlay({ toggleView }) {
                 </span>
                 <ul>
                   <li className="flex flex-col lg:flex-row lg:items-center lg:gap-2">
-                    <p className="text-xs sm:text-md italic">
+                    <p className="text-xs sm:text-lg italic">
                       ✓ 2022.12. - 2023.04.
                     </p>
                     <p className="text-xs sm:text-sm mb-2 lg:mb-0 lg:text-lg">
@@ -114,15 +114,15 @@ export default function Overlay({ toggleView }) {
                     </p>
                   </li>
                   <li className="flex flex-col lg:flex-row lg:items-center lg:gap-2">
-                    <p className="text-xs sm:text-md italic">
-                      2020.07. - 2022.11.
+                    <p className="text-xs sm:text-lg italic">
+                      ✓ 2020.07. - 2022.11.
                     </p>
                     <p className="text-xs sm:text-sm mb-2 lg:mb-0 lg:text-lg">
                       포천시청 공무원
                     </p>
                   </li>
                   <li className="flex flex-col lg:flex-row lg:items-center lg:gap-2">
-                    <p className="text-xs sm:text-md italic">
+                    <p className="text-xs sm:text-lg italic">
                       ✓ 2010.03. - 2018.02.
                     </p>
                     <p className="text-xs sm:text-sm mb-2 lg:mb-0 lg:text-lg">
