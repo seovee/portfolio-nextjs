@@ -73,6 +73,7 @@ export default function Project() {
                 <motion.a
                   href={data.url}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="shadow-2xl w-full"
                   whileHover={{ y: -10 }}
                 >

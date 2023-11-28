@@ -51,17 +51,29 @@ export default function Contact() {
           }}
         >
           <li className="scale-50 sm:scale-100">
-            <a href="https://github.com/seovee" target="_blank">
+            <a
+              href="https://github.com/seovee"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub size="70" className="hover:text-white" />
             </a>
           </li>
           <li className="scale-50 sm:scale-100">
-            <a href="https://velog.io/@jinseob102" target="_blank">
+            <a
+              href="https://velog.io/@jinseob102"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <SiVelog size="65" className="hover:text-white" />
             </a>
           </li>
           <li className="scale-50 sm:scale-100">
-            <a href="mailto:jinseob102@naver.com" target="_blank">
+            <a
+              href="mailto:jinseob102@naver.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <RiMailFill size="76" className="hover:text-white" />
             </a>
           </li>

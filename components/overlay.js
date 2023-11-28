@@ -136,17 +136,26 @@ export default function Overlay({ toggleView }) {
                   <a
                     href="https://ink-kite-3ad.notion.site/Kim-JinSeob-d88f62b3aaaa497a975b17d834cd85d2?pvs=4"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     이력서
                   </a>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.2 }}>
-                  <a href="https://velog.io/@jinseob102" target="_blank">
+                  <a
+                    href="https://velog.io/@jinseob102"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     블로그
                   </a>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.2 }}>
-                  <a href="https://www.instagram.com/_seovee/" target="_blank">
+                  <a
+                    href="https://www.instagram.com/_seovee/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     인스타그램
                   </a>
                 </motion.li>
