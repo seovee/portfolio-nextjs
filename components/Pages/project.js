@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { projectData, skillData } from "../data";
+import { projectData, skillData } from "../../data";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineWeb } from "react-icons/md";

@@ -4,13 +4,13 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import { aboutData } from "../data/index";
+import { aboutData } from "../../data/index";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import Button from "./Button/button";
+import Button from "../Button/button";
 import Image from "next/image";
-import Profile from "../public/assets/profile/profile.jpeg";
-import Overlay from "./overlay";
+import Profile from "../../public/assets/profile/profile.jpeg";
+import Overlay from "../overlay";
 
 export default function About() {
   const router = useRouter();
