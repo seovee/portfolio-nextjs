@@ -1,8 +1,8 @@
-import { useScroll, useTransform, motion } from "framer-motion";
-import { RiMailFill } from "react-icons/ri";
-import { FaGithub } from "react-icons/fa";
-import { SiVelog } from "react-icons/si";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { SiVelog } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+import { RiMailFill } from "react-icons/ri";
 import IPhone from "../../public/iphone.png";
 
 export default function Contact() {
@@ -25,7 +25,7 @@ export default function Contact() {
       >
         <Image
           src={IPhone}
-          alt="휴대폰 사진"
+          alt="Contact 페이지 이미지"
           style={{ width: "100%", height: "auto" }}
         />
       </motion.div>
