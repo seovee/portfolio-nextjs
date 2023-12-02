@@ -73,7 +73,7 @@ export const projectData = [
   {
     num: 3,
     title: "I's gallary 갤러리",
-    category: "팀프로젝트(5명) - 멋쟁이사자처럼 FE스쿨 4기",
+    category: "팀프로젝트(5명) - 멋쟁이사자처럼",
     date: "2023. 03. 01. ~ 03. 29.",
     refacDate: "예정",
     desc: "React, Vite로 구성한 SNS 웹페이지입니다. 기획 & 디자인 & 개발을 직접 수행했습니다. Firebase로 회원가입/로그인을 연동하여 구현하고, Framer-Motion을 이용하여 애니메이션을 추가했습니다.",
@@ -85,7 +85,7 @@ export const projectData = [
   {
     num: 4,
     title: "티빙 클론 사이트 - Taing",
-    category: "팀프로젝트(5명) - 멋쟁이사자처럼 FE스쿨 4기",
+    category: "팀프로젝트(5명) - 멋쟁이사자처럼",
     date: "2023. 01. 27. ~ 02. 09.",
     refacDate: "예정",
     desc: "순수 HTML, CSS, JavaScript만으로 제작한 Tving 클론코딩 웹페이지입니다. Swiper 라이브러리를 이용해 캐러셀 기능을 추가했고, Fetch를 이용해 이미지를 불러오게 구현했습니다.",
@@ -97,7 +97,7 @@ export const projectData = [
   {
     num: 5,
     title: "회원가입 페이지",
-    category: "개인프로젝트",
+    category: "개인프로젝트 - 원티드",
     date: "2023. 08. 12. ~ 08. 16.",
     refacDate: "예정",
     desc: "회원가입, 로그인 기능구현 웹페이지입니다.",
@@ -109,7 +109,7 @@ export const projectData = [
   {
     num: 6,
     title: "반응형 구현 페이지",
-    category: "개인프로젝트",
+    category: "개인프로젝트 - 원티드",
     date: "2023. 08. 21. ~ 08. 24.",
     refacDate: "예정",
     desc: `HTML, CSS로만 반응형을 구현한 웹페이지입니다. 데스크톱, 태블릿, 모바일용 3가지 레이아웃을 적용했습니다.`,
