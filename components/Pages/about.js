@@ -57,7 +57,7 @@ export default function About() {
               className="rounded-full shadow-2xl"
             />
           </motion.div>
-          <motion.div className="relative w-4/5 lg:w-1/3">
+          <motion.div className="relative w-[80%] lg:w-1/2">
             <ul className="relative cursor-default">
               {aboutData.map((data, index) => (
                 <li key={index}>

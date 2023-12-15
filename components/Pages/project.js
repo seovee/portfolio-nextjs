@@ -23,7 +23,7 @@ export default function Project() {
   useEffect(() => {
     const pin = gsap.fromTo(
       sectionRef.current,
-      { translateX: "10vw" },
+      { translateX: "5vw" },
       {
         translateX: "-610vw",
         ease: "none",
@@ -54,12 +54,12 @@ export default function Project() {
       <div ref={triggerRef} className="project-wrapper flex h-[100vh] w-full">
         <div
           ref={sectionRef}
-          className="relative flex flex-row items-center mt-10"
+          className="relative flex flex-row items-center mt-12"
         >
           {projectData.map((data, index) => (
             <div
               key={index}
-              className="relative justify-center h-[85vh] w-[90vw] px-6 sm:px-10 lg:px-20 pt-16 pb-10 sm:pt-28 lg:pt-36 mr-[10vw] gap-2 rounded-[30px] flex flex-col lg:flex-row items-center shadow-xl bg-white/40 lg:gap-16 lg:justify-around "
+              className="relative justify-center h-[85vh] w-[90vw] px-6 sm:px-10 lg:px-20 pt-16 pb-10 sm:pt-28 lg:pt-36 mr-[10vw] gap-2 rounded-[10px] flex flex-col lg:flex-row items-center shadow-xl bg-white/60 lg:gap-16 lg:justify-around "
             >
               <span className="absolute top-5 text-white font-extrabold italic drop-shadow-md text-6xl sm:text-7xl left-[-20px] lg:left-[-40px] lg:text-9xl">
                 {data.num}
@@ -74,7 +74,7 @@ export default function Project() {
                   href={data.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="shadow-2xl w-full "
+                  className="shadow-2xl w-full block rounded-[10px] overflow-hidden"
                   whileHover={{ y: -30 }}
                 >
                   <Image
@@ -88,7 +88,7 @@ export default function Project() {
                 </motion.a>
               </div>
               <div className="flex flex-col mt-2 justify-evenly h-full w-[90%] lg:w-2/5">
-                <div className="flex flex-wrap justify-center gap-1 sm:gap-2 lg:justify-start mb-2">
+                <div className="flex flex-wrap gap-1 sm:gap-2 mb-2">
                   {data.skill.map((i, index) => (
                     <span
                       key={index}

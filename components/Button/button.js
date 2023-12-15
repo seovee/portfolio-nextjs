@@ -15,7 +15,7 @@ export default function Button({ children, onClick }) {
             scale: 1,
             width: [0, 60, 60, 180],
             height: [0, 60, 60, 60],
-            borderRadius: [0, 60, 60, 25],
+            borderRadius: [0, 60, 60, 30],
             transition: { delay: 1, duration: 1 },
           }}
           className="absolute z-10 bg-gray-200 flex flex-row justify-evenly items-center drop-shadow-lg"
