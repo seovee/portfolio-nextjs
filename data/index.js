@@ -64,10 +64,10 @@ export const projectData = [
     skill: [
       "React",
       "TypeScript",
-      "Framer-motion",
       "Recoil",
-      "React-Query",
       "React-route",
+      "Framer-motion",
+      "React-Query",
     ],
   },
   {

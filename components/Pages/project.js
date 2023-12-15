@@ -23,7 +23,7 @@ export default function Project() {
   useEffect(() => {
     const pin = gsap.fromTo(
       sectionRef.current,
-      { translateX: "15vw" },
+      { translateX: "10vw" },
       {
         translateX: "-610vw",
         ease: "none",
@@ -59,23 +59,23 @@ export default function Project() {
           {projectData.map((data, index) => (
             <div
               key={index}
-              className="relative justify-start h-[80vh] w-[85vw] px-6 sm:px-10 lg:px-20 pb-24 pt-16 sm:pt-28 lg:pt-36 mr-[15vw] gap-2 rounded-[30px] flex flex-col lg:flex-row items-center shadow-xl bg-white/40 lg:gap-20 lg:justify-around sm:w-[70vw]"
+              className="relative justify-center h-[75vh] sm:h-[85vh] w-[90vw] px-6 sm:px-10 lg:px-20 pt-16 pb-10 sm:pt-28 lg:pt-36 mr-[10vw] gap-2 rounded-[30px] flex flex-col lg:flex-row items-center shadow-xl bg-white/40 lg:gap-16 lg:justify-around "
             >
               <span className="absolute top-5 text-white font-extrabold italic drop-shadow-md text-6xl sm:text-7xl left-[-20px] lg:left-[-40px] lg:text-9xl">
                 {data.num}
               </span>
               <div className="absolute font-gmarket top-8 sm:top-12">
-                <h3 className="text-center font-bold text-xl sm:text-3xl lg:text-6xl">
+                <h3 className="text-center font-bold text-xl sm:text-3xl lg:text-6xl ">
                   {data.title}
                 </h3>
               </div>
-              <div className="flex flex-col font-gmarket lg:w-3/5">
+              <div className="flex font-gmarket items-start justify-start lg:w-3/5 mt-5 ">
                 <motion.a
                   href={data.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="shadow-2xl w-full"
-                  whileHover={{ y: -10 }}
+                  className="shadow-2xl w-full "
+                  whileHover={{ y: -30 }}
                 >
                   <Image
                     src={data.img}
@@ -87,8 +87,8 @@ export default function Project() {
                   />
                 </motion.a>
               </div>
-              <div className="flex flex-col mt-2 sm:mt-10 justify-evenly h-full lg:w-2/5">
-                <div className="flex flex-wrap justify-center gap-1 sm:gap-2 lg:justify-start">
+              <div className="flex flex-col mt-2 justify-evenly h-full w-[90%] lg:w-2/5">
+                <div className="flex flex-wrap justify-center gap-1 sm:gap-2 lg:justify-start mb-2">
                   {data.skill.map((i, index) => (
                     <span
                       key={index}
