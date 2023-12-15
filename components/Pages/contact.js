@@ -42,7 +42,7 @@ export default function Contact() {
           CONTACT ME
         </motion.h3>
         <motion.ul
-          className="flex mt-2 lg:mt-10 gap-1 sm:gap-10 lg:gap-20 ml-5 justify-start items-center"
+          className="flex mt-2 lg:mt-10 gap-1 sm:gap-10 lg:gap-20 justify-start items-center"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{
             opacity: 1,
