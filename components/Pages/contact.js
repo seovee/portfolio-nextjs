@@ -9,13 +9,13 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative flex flex-row justify-between items-center bg-gradient-to-b from-lime-300 to-emerald-400 w-full h-[50vh] sm:h-[100vh] overflow-hidden"
+      className="relative flex flex-row lg:justify-between items-center bg-gradient-to-b from-lime-300 to-emerald-400 w-full h-[100vh] overflow-hidden pt-20"
     >
       <h2 className="absolute hidden sm:block top-0 text-center w-full font-thin">
         - C O N T A C T -
       </h2>
       <motion.div
-        className="w-1/2 lg:w-2/5 hidden h-full items-center mt-28 md:flex"
+        className="w-full lg:w-2/5 hidden h-full items-center md:flex"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{
           opacity: 1,
@@ -29,9 +29,9 @@ export default function Contact() {
           style={{ width: "100%", height: "auto" }}
         />
       </motion.div>
-      <div className="w-1/2 lg:w-3/5 relative w-full h-full">
+      <div className="flex flex-col justify-center items-center lg:items-end w-full">
         <motion.h3
-          className="absolute top-[25vh] right-0 font-jalnan font-bold text-3xl sm:text-6xl lg:text-8xl 2xl:text-9xl"
+          className="font-jalnan font-bold text-5xl lg:text-8xl 2xl:text-9xl"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{
             opacity: 1,
@@ -42,7 +42,7 @@ export default function Contact() {
           CONTACT ME
         </motion.h3>
         <motion.ul
-          className="absolute top-[30vh] sm:top-[40vh] right-0 sm:right-[10px] flex mt-2 lg:mt-10 gap-1 sm:gap-10 lg:gap-20 ml-5 justify-start items-center"
+          className="flex mt-2 lg:mt-10 gap-1 sm:gap-10 lg:gap-20 ml-5 justify-start items-center"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{
             opacity: 1,
@@ -50,7 +50,7 @@ export default function Contact() {
             transition: { delay: 0.5, duration: 1 },
           }}
         >
-          <li className="scale-50 sm:scale-100">
+          <li className="scale-[70%] sm:scale-100">
             <a
               href="https://github.com/seovee"
               target="_blank"
@@ -59,7 +59,7 @@ export default function Contact() {
               <FaGithub size="70" className="hover:text-white" />
             </a>
           </li>
-          <li className="scale-50 sm:scale-100">
+          <li className="scale-[70%] sm:scale-100">
             <a
               href="https://velog.io/@jinseob102"
               target="_blank"
@@ -68,7 +68,7 @@ export default function Contact() {
               <SiVelog size="65" className="hover:text-white" />
             </a>
           </li>
-          <li className="scale-50 sm:scale-100">
+          <li className="scale-[70%] sm:scale-100">
             <a
               href="mailto:jinseob102@naver.com"
               target="_blank"
