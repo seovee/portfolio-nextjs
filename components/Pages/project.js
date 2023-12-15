@@ -48,7 +48,7 @@ export default function Project() {
       className="relative project-section overflow-hidden "
       style={{ scrollYProgress, backgroundColor }}
     >
-      <h2 className="absolute top-10 w-full text-center font-thin">
+      <h2 className="absolute hidden sm:block top-0 text-center w-full font-thin">
         - P R O J E C T -
       </h2>
       <div ref={triggerRef} className="project-wrapper flex h-[100vh] w-full">

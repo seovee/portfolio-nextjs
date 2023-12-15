@@ -11,7 +11,7 @@ export default function Contact() {
       id="contact"
       className="relative flex flex-row justify-between items-center bg-gradient-to-b from-lime-300 to-emerald-400 w-full h-[50vh] sm:h-[100vh] overflow-hidden"
     >
-      <h2 className="absolute hidden sm:block top-10 text-center w-full font-thin">
+      <h2 className="absolute hidden sm:block top-0 text-center w-full font-thin">
         - C O N T A C T -
       </h2>
       <motion.div

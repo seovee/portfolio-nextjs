@@ -33,7 +33,9 @@ export default function About() {
       className="h-[150vh] w-full relative flex flex-col items-center"
       style={{ scrollYProgress, backgroundColor }}
     >
-      <h2 className="absolute sm:top-10 font-thin">- A B O U T -</h2>
+      <h2 className="absolute hidden sm:block top-0 text-center w-full font-thin">
+        - A B O U T -
+      </h2>
       <AnimatePresence>
         <motion.div
           className="h-screen flex flex-col items-center justify-center lg:justify-evenly lg:flex-row"
@@ -79,15 +81,7 @@ export default function About() {
                 </li>
               ))}
             </ul>
-            <Button onClick={toggleView}>
-              <motion.p
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1, transition: { delay: 2 } }}
-                className="font-gmarket text-sm"
-              >
-                더 알아보기 🤔
-              </motion.p>
-            </Button>
+            <Button onClick={toggleView}>더 알아보기 🤔</Button>
           </motion.div>
         </motion.div>
         {view ? <Overlay toggleView={toggleView} /> : null}
