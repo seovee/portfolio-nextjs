@@ -36,7 +36,7 @@ export default function About() {
       <h2 className="absolute sm:top-10 font-thin">- A B O U T -</h2>
       <AnimatePresence>
         <motion.div
-          className="relative h-screen flex flex-col mt-12 sm:mt-0 items-center sm:justify-center lg:justify-evenly lg:flex-row"
+          className="h-screen flex flex-col items-center justify-center lg:justify-evenly lg:flex-row"
           key="aboutContainer"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{
@@ -55,12 +55,12 @@ export default function About() {
               className="rounded-full shadow-2xl"
             />
           </motion.div>
-          <motion.div className="w-4/5 lg:w-1/3">
-            <ul className="cursor-default">
+          <motion.div className="relative w-4/5 lg:w-1/3">
+            <ul className="relative cursor-default">
               {aboutData.map((data, index) => (
                 <li key={index}>
                   <motion.p
-                    className="font-gmarket text-sm sm:text-2xl mt-5 sm:mt-10 mb-1 font-medium hover:underline hover:underline-offset-8"
+                    className="font-gmarket text-sm lg:text-2xl mt-5 sm:mt-10 mb-1 font-medium hover:underline hover:underline-offset-8"
                     whileHover={{
                       scale: 1.1,
                       x: 10,
@@ -73,22 +73,22 @@ export default function About() {
                   >
                     {data.title}
                   </motion.p>
-                  <p className="font-thin text-sm sm:text-xl">
+                  <p className="font-thin text-sm lg:text-xl">
                     {data.contetnt}
                   </p>
                 </li>
               ))}
             </ul>
+            <Button onClick={toggleView}>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { delay: 2 } }}
+                className="font-gmarket text-sm"
+              >
+                더 알아보기 🤔
+              </motion.p>
+            </Button>
           </motion.div>
-          <Button onClick={toggleView}>
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, transition: { delay: 2 } }}
-              className="font-gmarket text-sm"
-            >
-              더 알아보기 🤔
-            </motion.p>
-          </Button>
         </motion.div>
         {view ? <Overlay toggleView={toggleView} /> : null}
       </AnimatePresence>
