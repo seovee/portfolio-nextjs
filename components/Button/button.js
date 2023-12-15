@@ -4,7 +4,7 @@ export default function Button({ children, onClick }) {
   return (
     <>
       <motion.div
-        className="absolute w-full bottom-[-10vh] flex flex-col justify-center items-center cursor-pointer"
+        className="absolute w-full bottom-[-10vh] lg:bottom-[-15vh] flex flex-col justify-center items-center cursor-pointer"
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
         onClick={onClick}
@@ -20,7 +20,13 @@ export default function Button({ children, onClick }) {
           }}
           className="absolute z-10 bg-gray-200 flex flex-row justify-evenly items-center drop-shadow-lg"
         >
-          {children}
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { delay: 2 } }}
+            className="font-gmarket text-sm"
+          >
+            {children}
+          </motion.p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0, zIndex: 1 }}
