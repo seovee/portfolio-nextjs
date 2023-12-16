@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <>
       <Seo />
       <Header />
-      <div>{children}</div>
+      <div className="select-none">{children}</div>
       <Footer />
     </>
   );

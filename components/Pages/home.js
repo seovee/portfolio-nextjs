@@ -28,7 +28,7 @@ export default function Home() {
   };
 
   return (
-    <section id="home" className="relative overflow-hidden select-none">
+    <section id="home" className="relative overflow-hidden">
       <motion.div
         className="h-[150vh] flex flex-col pt-[40vh] justify-start items-center "
         style={{ scrollYProgress, backgroundColor }}
