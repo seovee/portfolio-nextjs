@@ -36,7 +36,7 @@ export default function Contact() {
           CONTACT ME
         </motion.h3>
         <motion.ul
-          className="flex flex-row w-full justify-center mt-2 lg:mt-10 gap-1 lg:gap-20 items-center"
+          className="flex flex-row w-full justify-center mt-2 lg:mt-10 gap-[4px] lg:gap-20 items-center"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{
             opacity: 1,
