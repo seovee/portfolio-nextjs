@@ -4,6 +4,7 @@ import { SiVelog } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { RiMailFill } from "react-icons/ri";
 import { BsPersonWorkspace } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa6";
 import ContactPic from "../../public/mini.png";
 
 export default function Contact() {
@@ -22,7 +23,7 @@ export default function Contact() {
           style={{ objectFit: "contain" }}
         />
       </div>
-      <div className="flex flex-col justify-center items-center md:items-end w-full">
+      <div className="flex flex-col justify-center items-center w-full">
         <motion.h3
           className="font-jalnan font-bold text-5xl sm:text-6xl lg:text-8xl 2xl:text-9xl whitespace-nowrap"
           initial={{ opacity: 0, y: 50 }}
@@ -45,6 +46,7 @@ export default function Contact() {
         >
           <li className="scale-[60%] lg:scale-100">
             <a
+              title="김진섭 이력서"
               href="https://ink-kite-3ad.notion.site/Kim-JinSeob-d88f62b3aaaa497a975b17d834cd85d2?pvs=4"
               target="_blank"
               rel="noopener noreferrer"
@@ -54,6 +56,7 @@ export default function Contact() {
           </li>
           <li className="scale-[60%] lg:scale-100">
             <a
+              title="Github - seovee"
               href="https://github.com/seovee"
               target="_blank"
               rel="noopener noreferrer"
@@ -63,6 +66,7 @@ export default function Contact() {
           </li>
           <li className="scale-[60%] lg:scale-100">
             <a
+              title="Velog"
               href="https://velog.io/@jinseob102"
               target="_blank"
               rel="noopener noreferrer"
@@ -72,6 +76,17 @@ export default function Contact() {
           </li>
           <li className="scale-[60%] lg:scale-100">
             <a
+              title="Instagram"
+              href="https://www.instagram.com/_seovee/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram size="76" className="hover:text-white" />
+            </a>
+          </li>
+          <li className="scale-[60%] lg:scale-100">
+            <a
+              title="Email"
               href="mailto:jinseob102@naver.com"
               target="_blank"
               rel="noopener noreferrer"
