@@ -44,7 +44,7 @@ export const projectData = [
     title: "포트폴리오 웹사이트",
     category: "개인프로젝트",
     date: "2023. 11. 07. ~ 11. 29.",
-    refacDate: "",
+    refacDate: "수시로 업데이트",
     desc: "NextJS로 만든 포트폴리오 웹페이지입니다. Framer-Motion, Gsap을 이용한 애니메이션을 통해 통통튀는 컨셉으로 인터렉티브하게 구현해보았습니다.",
     img: Project_1,
     url: "https://portfolio-nextjs-tan-seven.vercel.app/",
