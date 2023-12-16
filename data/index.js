@@ -25,16 +25,15 @@ export const aboutData = [
   },
 ];
 
-export const skillData = [
-  "HTML / CSS",
-  "JavaScript",
-  "React",
-  "NextJS",
-  "Vue.js",
-  "TypeScript",
-  "Gatsby",
-  "Github",
-  "Notion",
+// 소개 오버레이 Data
+export const overlayData = [
+  {
+    num: 1,
+    date: `2022.12. - 2023.04.`,
+    title: `멋쟁이사자처럼 FE 4기 수료`,
+  },
+  { num: 2, date: `2020.07. - 2022.11.`, title: `포천시청 공무원 재직` },
+  { num: 3, date: `2010.03. - 2018.02.`, title: `강원대학교 환경공학과` },
 ];
 
 // 프로젝트 Data

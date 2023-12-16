@@ -3,7 +3,7 @@ import Image from "next/image";
 import BackImg2 from "../public/assets/etc/background1.jpeg";
 import BackImg1 from "../public/assets/etc/background3.jpeg";
 import Profile from "../public/assets/profile/profile4-1.jpg";
-import { skillData } from "../data";
+import { overlayData, skillData } from "../data";
 
 export default function Overlay({ toggleView }) {
   // overlay 버블링 방지 함수
@@ -64,7 +64,7 @@ export default function Overlay({ toggleView }) {
                 <p className="text-lg lg:text-2xl font-bold">1991. 11. 29.</p>
               </div>
               <div className="font-jalnan text-lg sm:text-3xl text-center lg:text-right text-gray-400">
-                React, NextJS, TypeScript, Vue, JavaScript, ReactQuery , Recoil,
+                React, NextJS, TypeScript, Vue, JavaScript, ReactQuery, Recoil,
                 Redux
               </div>
               <div>
@@ -72,26 +72,15 @@ export default function Overlay({ toggleView }) {
                   {`경력 & 경험`}
                 </span>
                 <ul>
-                  <li className="flex flex-row lg:items-center lg:gap-2">
-                    <p className="text-xs sm:text-lg italic ">
-                      2022.12. - 2023.04.
-                    </p>
-                    <p className="text-xs sm:text-lg">
-                      멋쟁이사자처럼 FE 4기 수료
-                    </p>
-                  </li>
-                  <li className="flex flex-row lg:items-center lg:gap-2">
-                    <p className="text-xs sm:text-lg italic">
-                      2020.07. - 2022.11.
-                    </p>
-                    <p className="text-xs sm:text-lg">포천시청 공무원 재직</p>
-                  </li>
-                  <li className="flex flex-row lg:items-center lg:gap-2">
-                    <p className="text-xs sm:text-lg italic">
-                      2010.03. - 2018.02.
-                    </p>
-                    <p className="text-xs sm:text-lg">강원대학교 환경공학과</p>
-                  </li>
+                  {overlayData.map((data) => (
+                    <li
+                      key={data.num}
+                      className="flex flex-row lg:items-center gap-2 mt-[4px]"
+                    >
+                      <p className="text-xs sm:text-lg italic ">{data.date}</p>
+                      <p className="text-xs sm:text-lg">{data.title}</p>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
