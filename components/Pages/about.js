@@ -47,13 +47,11 @@ export default function About() {
             transition: { delay: 0.5, duration: 1 },
           }}
         >
-          <motion.div className="h-[10rem] w-[10rem] sm:h-[20rem] sm:w-[20rem] lg:h-[35rem] lg:w-[35rem] sm:p-10">
+          <motion.div className="h-[10rem] w-[10rem] sm:h-[20rem] sm:w-[20rem] lg:h-[35rem] lg:w-[35rem]">
             <Image
               src={Profile}
               alt="김진섭 메인프로필 사진"
-              width={400}
-              height={400}
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
               className="rounded-full shadow-2xl"
             />
           </motion.div>
