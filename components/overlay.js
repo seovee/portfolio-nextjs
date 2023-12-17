@@ -48,7 +48,7 @@ export default function Overlay({ toggleView }) {
             </div>
           </div>
           <div className="lg:w-1/2 flex flex-col h-full">
-            <div className="h-1/2 overflow-hidden rounded-tl-[10px] lg:rounded-tl-0 rounded-tr-[10px]">
+            <div className="h-1/2 overflow-hidden rounded-tl-[10px] lg:rounded-tl-[0px] rounded-tr-[10px]">
               <Image
                 src={Profile}
                 alt="소개페이지 메인 사진"

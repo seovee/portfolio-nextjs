@@ -25,7 +25,7 @@ export default function Contact() {
       </div>
       <div className="flex flex-col justify-center items-center w-full">
         <motion.h3
-          className="font-jalnan font-bold text-5xl sm:text-6xl lg:text-8xl 2xl:text-9xl whitespace-nowrap"
+          className="font-jalnan font-bold text-5xl sm:text-6xl lg:text-8xl 2xl:text-9xl whitespace-nowrap tracking-wider"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{
             opacity: 1,
@@ -36,7 +36,7 @@ export default function Contact() {
           CONTACT ME
         </motion.h3>
         <motion.ul
-          className="flex flex-row w-full justify-center mt-2 lg:mt-10 gap-[4px] lg:gap-20 items-center"
+          className="flex flex-row justify-center lg:mt-5 lg:gap-20 items-center"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{
             opacity: 1,
@@ -44,17 +44,20 @@ export default function Contact() {
             transition: { delay: 0.5, duration: 1 },
           }}
         >
-          <li className="scale-[60%] lg:scale-100">
+          <li className="scale-50 lg:scale-100">
             <a
               title="김진섭 이력서"
               href="https://ink-kite-3ad.notion.site/Kim-JinSeob-d88f62b3aaaa497a975b17d834cd85d2?pvs=4"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsPersonWorkspace size="70" className="hover:text-white" />
+              <BsPersonWorkspace
+                size="70"
+                className="focus:text-white hover:text-white"
+              />
             </a>
           </li>
-          <li className="scale-[60%] lg:scale-100">
+          <li className="scale-50 lg:scale-100">
             <a
               title="Github - seovee"
               href="https://github.com/seovee"
@@ -64,7 +67,7 @@ export default function Contact() {
               <FaGithub size="70" className="hover:text-white" />
             </a>
           </li>
-          <li className="scale-[60%] lg:scale-100">
+          <li className="scale-50 lg:scale-100">
             <a
               title="Velog"
               href="https://velog.io/@jinseob102"
@@ -74,7 +77,7 @@ export default function Contact() {
               <SiVelog size="65" className="hover:text-white" />
             </a>
           </li>
-          <li className="scale-[60%] lg:scale-100">
+          <li className="scale-50 lg:scale-100">
             <a
               title="Instagram"
               href="https://www.instagram.com/_seovee/"
@@ -84,7 +87,7 @@ export default function Contact() {
               <FaInstagram size="76" className="hover:text-white" />
             </a>
           </li>
-          <li className="scale-[60%] lg:scale-100">
+          <li className="scale-50 lg:scale-100">
             <a
               title="Email"
               href="mailto:jinseob102@naver.com"
