@@ -30,7 +30,7 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      className="h-[150vh] w-full relative flex flex-col items-center"
+      className="h-[150vh] w-full relative flex flex-col items-center overflow-hidden"
       style={{ scrollYProgress, backgroundColor }}
     >
       <h2 className="absolute hidden sm:block top-0 text-center w-full font-thin">

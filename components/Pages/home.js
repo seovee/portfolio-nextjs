@@ -58,9 +58,9 @@ export default function Home() {
               onInit={(typewriter) => {
                 typewriter
                   .pauseFor(1000)
-                  .typeString("공무원 김진...")
+                  .typeString("공무원 김진ㅅ")
                   .pauseFor(500)
-                  .deleteAll()
+                  .deleteAll(100)
                   .pauseFor(1500)
                   .typeString(
                     `프론트엔드 개발자 <br><span style="font-weight:600;"}>김진섭</span> 입니다.`
