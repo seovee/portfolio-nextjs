@@ -25,7 +25,7 @@ export default function Project() {
       sectionRef.current,
       { translateX: "5vw" },
       {
-        translateX: "-610vw",
+        translateX: "-705vw",
         ease: "none",
         scrollTrigger: {
           trigger: triggerRef.current,
