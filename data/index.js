@@ -40,6 +40,18 @@ export const overlayData = [
 export const projectData = [
   {
     num: 1,
+    title: "실타래(Siltarae)",
+    category: "팀프로젝트(4명) - 위버즈",
+    date: "2023. 11. 07. ~ 11. 29.",
+    refacDate: "",
+    desc: "백엔드와 프론트엔드가 함께 구성된 프로젝트입니다. NextJS를 사용한 프로젝트이며, 실수를 공유하는 웹페이지를 만들었습니다.",
+    img: Project_6,
+    url: "https://portfolio-nextjs-tan-seven.vercel.app/",
+    github_url: "https://github.com/seovee/portfolio-nextjs",
+    skill: ["NextJS", "React", "TypeScript", "Tanstack-Query", "Axios", "Yarn"],
+  },
+  {
+    num: 2,
     title: "포트폴리오 웹사이트",
     category: "개인프로젝트",
     date: "2023. 11. 07. ~ 11. 29.",
@@ -51,7 +63,7 @@ export const projectData = [
     skill: ["NextJS", "React", "Framer-motion", "Gsap", "TypeWriter-effect"],
   },
   {
-    num: 2,
+    num: 3,
     title: "넷플릭스 클론 사이트",
     category: "개인프로젝트 - Nomad Coder",
     date: "2023. 07. 17. ~ 07. 24.",
@@ -70,7 +82,7 @@ export const projectData = [
     ],
   },
   {
-    num: 3,
+    num: 4,
     title: "I's gallary 갤러리",
     category: "팀프로젝트(5명) - 멋쟁이사자처럼",
     date: "2023. 03. 01. ~ 03. 29.",
@@ -82,7 +94,7 @@ export const projectData = [
     skill: ["React", "Framer-motion", "Firebase", "Figma"],
   },
   {
-    num: 4,
+    num: 5,
     title: "티빙 클론 사이트 - Taing",
     category: "팀프로젝트(5명) - 멋쟁이사자처럼",
     date: "2023. 01. 27. ~ 02. 09.",
@@ -94,7 +106,7 @@ export const projectData = [
     skill: ["NextJS", "React", "Framer-motion", "Gsap", "TypeWriter-effect"],
   },
   {
-    num: 5,
+    num: 6,
     title: "회원가입 페이지",
     category: "개인프로젝트 - 원티드",
     date: "2023. 08. 12. ~ 08. 16.",
@@ -106,7 +118,7 @@ export const projectData = [
     skill: ["React", "React-Router", "Style-Component"],
   },
   {
-    num: 6,
+    num: 7,
     title: "반응형 구현 페이지",
     category: "개인프로젝트 - 원티드",
     date: "2023. 08. 21. ~ 08. 24.",
