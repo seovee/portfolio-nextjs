@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { RiMailFill } from "react-icons/ri";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa6";
-import ContactPic from "../../public/mini.png";
+import ContactPic from "../../public/assets/mini.png";
 
 export default function Contact() {
   return (
