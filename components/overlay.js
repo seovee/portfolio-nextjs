@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import BackImg2 from "../public/assets/etc/background1.jpeg";
-import BackImg1 from "../public/assets/etc/background3.jpeg";
-import Profile from "../public/assets/profile/profile4-1.jpg";
-import { overlayData, skillData } from "../data";
+import BackImg1 from "../public/assets/profile/profile6.jpeg";
+import BackImg2 from "../public/assets/profile/profile2.jpg";
+import Profile from "../public/assets/profile/profile4.jpg";
+import { overlayData } from "../data";
 
 export default function Overlay({ toggleView }) {
   // overlay 버블링 방지 함수
@@ -63,7 +63,7 @@ export default function Overlay({ toggleView }) {
                 </h2>
                 <p className="text-lg lg:text-2xl font-bold">1991. 11. 29.</p>
               </div>
-              <div className="font-jalnan text-lg sm:text-3xl text-center lg:text-right text-gray-400">
+              <div className="font-jalnan text-lg sm:text-2xl text-center lg:text-right text-gray-400">
                 React, NextJS, TypeScript, Vue, JavaScript, ReactQuery, Recoil,
                 Redux
               </div>

@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import Button from "../Button/button";
 import Image from "next/image";
-import Profile from "../../public/assets/profile/profile.jpeg";
+import Profile from "../../public/assets/profile/profile1.jpeg";
 import Overlay from "../overlay";
 
 export default function About() {
