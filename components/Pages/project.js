@@ -61,11 +61,11 @@ export default function Project() {
               key={index}
               className="relative justify-center h-[85vh] w-[90vw] px-6 sm:px-10 lg:px-20 pt-16 pb-10 sm:pt-28 lg:pt-36 mr-[10vw] gap-2 rounded-[10px] flex flex-col lg:flex-row items-center shadow-xl bg-white/60 lg:gap-16 lg:justify-around "
             >
-              <span className="absolute top-5 text-white font-extrabold italic drop-shadow-md text-6xl sm:text-7xl left-[-20px] lg:left-[-40px] lg:text-9xl">
+              <span className="absolute top-5 text-white font-bold italic drop-shadow-md text-6xl sm:text-7xl left-[-20px] lg:left-[-40px] lg:text-9xl">
                 {data.num}
               </span>
               <div className="absolute font-gmarket top-8 sm:top-12">
-                <h3 className="text-center font-bold text-xl sm:text-3xl lg:text-6xl ">
+                <h3 className="text-center font-bold text-xl sm:text-3xl lg:text-5xl text-yellow-950 font-samlip">
                   {data.title}
                 </h3>
               </div>
