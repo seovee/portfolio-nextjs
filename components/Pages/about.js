@@ -58,12 +58,12 @@ export default function About() {
           <motion.div className="relative w-[80%] lg:w-1/2">
             <ul className="relative cursor-default">
               {aboutData.map((data, index) => (
-                <li key={index}>
+                <motion.li key={index} whileHover={{}}>
                   <motion.p
-                    className="font-gmarket text-sm lg:text-2xl mt-5 sm:mt-10 mb-1 font-medium hover:underline hover:underline-offset-8"
+                    className="font-gmarket text-sm lg:text-2xl mt-5 sm:mt-10 mb-1 font-medium"
                     whileHover={{
                       scale: 1.1,
-                      x: 10,
+                      originX: 0,
                       fontWeight: 800,
                       color: "rgb(0, 128, 255)",
                       transition: {
@@ -76,7 +76,7 @@ export default function About() {
                   <p className="font-thin text-sm lg:text-xl">
                     {data.contetnt}
                   </p>
-                </li>
+                </motion.li>
               ))}
             </ul>
             <Button onClick={toggleView}>더 알아보기 🤔</Button>
