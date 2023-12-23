@@ -7,19 +7,30 @@ import Project_5 from "../public/assets/project/project5.png";
 import Project_6 from "../public/assets/project/project6.png";
 import Project_7 from "../public/assets/project/project7.png";
 
+// NavBar Data
+export const navBarData = [
+  { num: 1, title: "HOME", asPath: "/#" },
+  { num: 2, title: "ABOUT", asPath: "/#about" },
+  { num: 3, title: "PROJECT", asPath: "/#project" },
+  { num: 4, title: "CONTACT", asPath: "/#contact" },
+];
+
 // 소개 Data
 export const aboutData = [
   {
+    num: 1,
     title: "프론트엔드 스페셜리스트로 성장하고 싶습니다.",
     contetnt:
       "프론트엔드 기본교육 뿐만아니라 Next.js, Veu.js, TypeScript와 다양한 기술스택을 경험하며, 매번 업데이트되는 기술스택을 숙지함으로써 프론트엔드 숙명에 적응하고 있습니다.",
   },
   {
+    num: 2,
     title: "어려움은 성장의 기회라 생각합니다.",
     contetnt:
       "2가지 프로젝트를 경험하며 팀원은 이끄는 방법, 협업의 어려움 등에 대한 인사이트를 얻을 수 있었으며, 실무적인 경험을 더해 더욱 성장하고 싶은 열망이 있습니다.",
   },
   {
+    num: 3,
     title: "함께 일하고 싶은 동료가 되고 싶습니다.",
     contetnt:
       "긍정적인 분위기로 모범 공무원상을 받았던 경험으로 개발자가 돼서도 주변 분위기를 밝히고 동료들과 원활한 협업을 이끌어 프로젝트를 성공적으로 완수해 나가겠습니다.",

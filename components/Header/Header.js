@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
+import { navBarData } from "../../data/index";
 
 export default function Header() {
+  const router = useRouter();
   return (
     // 불투명한 배너 사용(backdrop)
     <motion.header
@@ -30,50 +33,25 @@ export default function Header() {
       </motion.h1>
       <nav className="w-full flex items-center justify-center">
         <ul className="flex gap-5 text-sm font-normal font-samlip sm:text-md sm:gap-10 lg:gap-20 lg:text-xl">
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
-          >
-            <Link
-              href="#"
-              className="font-semibold hover:underline hover:underline-offset-8"
+          {navBarData.map((data) => (
+            <motion.li
+              key={data.num}
+              // whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
+              className="relative"
             >
-              HOME
-            </Link>
-          </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
-          >
-            <Link
-              href="#about"
-              className="font-semibold hover:underline hover:underline-offset-8"
-            >
-              ABOUT
-            </Link>
-          </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
-          >
-            <Link
-              href="#project"
-              className="font-semibold hover:underline hover:underline-offset-8"
-            >
-              PROJECT
-            </Link>
-          </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
-          >
-            <Link
-              href="#contact"
-              className="font-semibold hover:underline hover:underline-offset-8"
-            >
-              CONTACT
-            </Link>
-          </motion.li>
+              <Link href={data.asPath} className="font-semibold">
+                {data.title}
+              </Link>
+              {router.asPath === `${data.asPath}` && (
+                <motion.span
+                  className="absolute w-4 h-[2px] rounded-full bottom-[-10px] bg-gray-700 left-0 right-0 mx-auto"
+                  animate={{ transition: { type: "tween" } }}
+                  layoutId="underline"
+                />
+              )}
+            </motion.li>
+          ))}
         </ul>
       </nav>
     </motion.header>
