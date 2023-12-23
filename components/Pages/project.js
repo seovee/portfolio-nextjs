@@ -92,17 +92,17 @@ export default function Project() {
                   {data.skill.map((i, index) => (
                     <span
                       key={index}
-                      className="inline-blockt text-[10px] bg-gray-300 px-2 py-1 rounded-md text-blue-600 font-bold whitespace-nowrap italic sm:text-xs lg:text-lg"
+                      className="inline-blockt text-[10px] bg-gray-300 px-2 py-[0.2rem] rounded-lg text-blue-600 font-bold whitespace-nowrap italic sm:text-xs lg:text-lg"
                     >
                       {i}
                     </span>
                   ))}
                 </div>
                 <div className="flex flex-col lg:gap-2">
-                  <p className="font-gmarket text-xl hidden lg:block">
+                  <p className="font-gmarket text-sm lg:text-2xl">
                     {data.category}
                   </p>
-                  <p className="text-lg lg:text-4xl font-thin whitespace-nowrap">
+                  <p className="text-cd lg:text-3xl font-thin whitespace-nowrap">
                     {data.date}
                   </p>
                   {data.refacDate && (

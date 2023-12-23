@@ -5,6 +5,7 @@ import Project_3 from "../public/assets/project/project3.png";
 import Project_4 from "../public/assets/project/project4.png";
 import Project_5 from "../public/assets/project/project5.png";
 import Project_6 from "../public/assets/project/project6.png";
+import Project_7 from "../public/assets/project/project7.png";
 
 // 소개 Data
 export const aboutData = [
@@ -42,13 +43,20 @@ export const projectData = [
     num: 1,
     title: "실타래(Siltarae)",
     category: "팀프로젝트(4명) - 위버즈",
-    date: "2023. 11. 07. ~ 11. 29.",
+    date: "2023. 11. 19. ~ 진행중",
     refacDate: "",
-    desc: "백엔드와 프론트엔드가 함께 구성된 프로젝트입니다. NextJS를 사용한 프로젝트이며, 실수를 공유하는 웹페이지를 만들었습니다.",
-    img: Project_6,
-    url: "https://portfolio-nextjs-tan-seven.vercel.app/",
-    github_url: "https://github.com/seovee/portfolio-nextjs",
-    skill: ["NextJS", "React", "TypeScript", "Tanstack-Query", "Axios", "Yarn"],
+    desc: "백엔드와 협업으로 구현한 프로젝트입니다. NextJS + TypeScript를 기반으로 '실수'를 공유하는 웹페이지를 구현했습니다.",
+    img: Project_7,
+    url: "https://github.com/coding-union-kr/siltarae-fe",
+    github_url: "https://github.com/coding-union-kr/siltarae-fe",
+    skill: [
+      "NextJS",
+      "React",
+      "TypeScript",
+      "Tanstack-Query",
+      "Axios",
+      "YarnBerry",
+    ],
   },
   {
     num: 2,
