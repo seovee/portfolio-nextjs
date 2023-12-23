@@ -24,17 +24,18 @@ export default function Contact() {
         />
       </div>
       <div className="flex flex-col justify-center items-center w-full">
-        <motion.h3
-          className="font-jalnan font-bold text-5xl sm:text-6xl lg:text-8xl 2xl:text-9xl whitespace-nowrap tracking-wider"
+        <motion.div
+          className="font-jalnan inline-block font-bold text-5xl sm:text-6xl lg:text-8xl 2xl:text-9xl whitespace-nowrap tracking-wider"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{
             opacity: 1,
             y: 0,
-            transition: { delay: 0.5, duration: 1 },
           }}
         >
-          CONTACT ME
-        </motion.h3>
+          <h3 className="hover:text-white hover:transition hover:duration-500">
+            CONTACT ME
+          </h3>
+        </motion.div>
         <motion.ul
           className="flex flex-row justify-center lg:mt-5 lg:gap-20 items-center"
           initial={{ opacity: 0, y: 50 }}
@@ -53,7 +54,7 @@ export default function Contact() {
             >
               <BsPersonWorkspace
                 size="70"
-                className="focus:text-white hover:text-white"
+                className="focus:text-white hover:text-white hover:transition hover:duration-500"
               />
             </a>
           </li>
@@ -64,7 +65,10 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub size="70" className="hover:text-white" />
+              <FaGithub
+                size="70"
+                className="focus:text-white hover:text-white hover:transition hover:duration-500"
+              />
             </a>
           </li>
           <li className="scale-50 lg:scale-100">
@@ -74,7 +78,10 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <SiVelog size="65" className="hover:text-white" />
+              <SiVelog
+                size="65"
+                className="focus:text-white hover:text-white hover:transition hover:duration-500"
+              />
             </a>
           </li>
           <li className="scale-50 lg:scale-100">
@@ -84,7 +91,10 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram size="76" className="hover:text-white" />
+              <FaInstagram
+                size="76"
+                className="focus:text-white hover:text-white hover:transition hover:duration-500"
+              />
             </a>
           </li>
           <li className="scale-50 lg:scale-100">
@@ -94,7 +104,10 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <RiMailFill size="76" className="hover:text-white" />
+              <RiMailFill
+                size="76"
+                className="focus:text-white hover:text-white hover:transition hover:duration-500"
+              />
             </a>
           </li>
         </motion.ul>
