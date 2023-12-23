@@ -112,7 +112,9 @@ export default function Project() {
                   )}
                 </div>
                 <div className="flex flex-col gap-2">
-                  <p className="font-gmarket text-sm sm:text-lg">{data.desc}</p>
+                  <p className="font-gmarket text-sm sm:text-md lg:text-lg">
+                    {data.desc}
+                  </p>
                   <div className="flex gap-1 sm:gap-5">
                     <a
                       href={data.github_url}
