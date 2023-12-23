@@ -61,14 +61,16 @@ export default function Overlay({ toggleView }) {
                 <h2 className="text-2xl lg:text-3xl font-bold">
                   김진섭(Kim JinSeob)
                 </h2>
-                <p className="text-lg lg:text-2xl font-bold">1991. 11. 29.</p>
+                <p className="text-lg lg:text-xl font-bold italic">
+                  1991. 11. 29.
+                </p>
               </div>
-              <div className="font-jalnan text-lg sm:text-2xl text-center lg:text-right text-gray-400">
+              <div className="font-jalnan text-lg sm:text-2xl text-center lg:text-right text-gray-400 italic">
                 React, NextJS, TypeScript, Vue, JavaScript, ReactQuery, Recoil,
                 Redux
               </div>
               <div>
-                <span className="text-sm sm:text-xl lg:text-3xl font-semibold">
+                <span className="text-sm sm:text-xl lg:text-2xl font-bold">
                   {`경력 & 경험`}
                 </span>
                 <ul>
