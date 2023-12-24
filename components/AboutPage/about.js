@@ -10,8 +10,8 @@ import { useState } from "react";
 import Button from "../Button/button";
 import Image from "next/image";
 import Profile from "../../public/assets/profile/profile1.jpeg";
-import Overlay from "../ProjectPage/ProjectOverlay";
 import HeaderTitle from "../HeaderTitle";
+import Overlay from "./AboutOverlay";
 
 export default function About() {
   const router = useRouter();

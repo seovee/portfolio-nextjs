@@ -1,6 +1,6 @@
-import About from "../../components/Pages/about";
+import About from "../../components/AboutPage/about";
 import Contact from "../../components/ContactPage/contact";
-import Home from "../../components/Pages/home";
+import Home from "../../components/HomePage/home";
 import Project from "../../components/ProjectPage/project";
 
 export default function Main() {
