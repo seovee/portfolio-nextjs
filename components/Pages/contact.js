@@ -6,6 +6,7 @@ import { RiMailFill } from "react-icons/ri";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa6";
 import ContactPic from "../../public/assets/mini.png";
+import HeaderTitle from "../HeaderTitle";
 
 export default function Contact() {
   return (
@@ -13,9 +14,7 @@ export default function Contact() {
       id="contact"
       className="relative flex flex-col md:flex-row justify-center gap-10 lg:justify-between items-center bg-gradient-to-b from-lime-300 to-emerald-400 w-full h-[100vh] overflow-hidden pt-20"
     >
-      <h2 className="absolute hidden sm:block top-0 text-center w-full font-thin">
-        - C O N T A C T -
-      </h2>
+      <HeaderTitle title="- C O N T A C T -" />
       <div className="w-full items-center flex">
         <Image
           src={ContactPic}

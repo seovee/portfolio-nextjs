@@ -10,7 +10,8 @@ import { useState } from "react";
 import Button from "../Button/button";
 import Image from "next/image";
 import Profile from "../../public/assets/profile/profile1.jpeg";
-import Overlay from "../overlay";
+import Overlay from "../ProjectPage/ProjectOverlay";
+import HeaderTitle from "../HeaderTitle";
 
 export default function About() {
   const router = useRouter();
@@ -33,9 +34,7 @@ export default function About() {
       className="h-[150vh] w-full relative flex flex-col items-center overflow-hidden"
       style={{ scrollYProgress, backgroundColor }}
     >
-      <h2 className="absolute hidden sm:block top-0 text-center w-full font-thin">
-        - A B O U T -
-      </h2>
+      <HeaderTitle title="- A B O U T -" />
       <AnimatePresence>
         <motion.div
           className="h-screen flex flex-col items-center justify-center lg:justify-evenly lg:flex-row"

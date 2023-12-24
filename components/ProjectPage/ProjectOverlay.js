@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import BackImg1 from "../public/assets/profile/profile6.jpeg";
-import BackImg2 from "../public/assets/profile/profile2.jpg";
-import Profile from "../public/assets/profile/profile4.jpg";
-import { overlayData } from "../data";
+import BackImg1 from "../../public/assets/profile/profile6.jpeg";
+import BackImg2 from "../../public/assets/profile/profile2.jpg";
+import Profile from "../../public/assets/profile/profile4.jpg";
+import { overlayData } from "../../data";
 
 export default function Overlay({ toggleView }) {
   // overlay 버블링 방지 함수
