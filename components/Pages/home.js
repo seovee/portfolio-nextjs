@@ -10,12 +10,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Home() {
   const router = useRouter();
-  // useScroll을 이용한 title부분 애니메이션 구현
   const { scrollYProgress, scrollY } = useScroll();
-  // Y 비율 확인 함수
-  // useMotionValueEvent(scrollYProgress, "change", (latest) => {
-  //   console.log("Page scroll: ", latest);
-  // });
   const opacity = useTransform(scrollY, [0, 100], [1, 0]);
   const scale = useTransform(scrollY, [0, 500], [1, 3]);
   const backgroundColor = useTransform(
