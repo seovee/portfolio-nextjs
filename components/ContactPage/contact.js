@@ -33,9 +33,7 @@ export default function Contact() {
             y: 0,
           }}
         >
-          <h3 className="hover:text-white hover:transition hover:duration-500">
-            CONTACT ME
-          </h3>
+          <h3>CONTACT ME</h3>
         </motion.div>
         <ContactIconList />
       </div>
