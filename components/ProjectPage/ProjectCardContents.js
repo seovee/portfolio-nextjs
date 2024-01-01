@@ -10,7 +10,7 @@ export default function ProjectCardContents() {
       {projectData.map((data, index) => (
         <div
           key={index}
-          className="relative justify-center h-[85vh] w-[90vw] px-6 sm:px-10 lg:px-20 pt-16 pb-10 sm:pt-28 lg:pt-36 mr-[10vw] gap-2 rounded-[10px] flex flex-col lg:flex-row items-center shadow-xl bg-white/60 lg:gap-16 lg:justify-around "
+          className="relative justify-center h-[85vh] w-[90vw] px-6 sm:px-10 lg:px-20 pt-16 pb-10 sm:pt-28 lg:pt-36 mr-[10vw] gap-2 rounded-[10px] flex flex-col lg:flex-row items-center shadow-xl bg-white/40 lg:gap-16 lg:justify-around "
         >
           <span className="absolute top-5 text-white font-bold italic drop-shadow-md text-6xl sm:text-7xl left-[-20px] lg:left-[-40px] lg:text-9xl">
             {data.num}

@@ -26,9 +26,9 @@ export default function Overlay({ toggleView }) {
         className="absolute left-0 right-0 mx-auto my-0 top-[10vh] lg:top-[5vh] bottom-auto h-[80vh] lg:h-[90vh] w-[90vw] rounded-[15px] bg-white"
         onClick={WrapperClick}
       >
-        <section className="flex flex-row p-5 sm:p-8 lg:p-10 h-full">
-          <div className="hidden lg:grid lg:grid-cols-2 lg:w-1/2">
-            <div className="hidden lg:block overflow-hidden rounded-tl-[10px]">
+        <section className="flex flex-row p-5 gap-5 sm:p-8 lg:p-8 h-full">
+          <div className="hidden lg:grid lg:grid-cols-2 gap-5 lg:w-1/2">
+            <div className="hidden lg:block overflow-hidden rounded-tl-[15px]">
               <Image
                 src={BackImg1}
                 alt="첫번째 배경 이미지"
@@ -47,8 +47,8 @@ export default function Overlay({ toggleView }) {
               />
             </div>
           </div>
-          <div className="lg:w-1/2 flex flex-col h-full">
-            <div className="h-1/2 overflow-hidden rounded-tl-[10px] lg:rounded-tl-[0px] rounded-tr-[10px]">
+          <div className="lg:w-1/2 flex flex-col gap-5 h-full">
+            <div className="h-1/2 overflow-hidden rounded-tl-[15px] lg:rounded-tl-[0px] rounded-tr-[15px]">
               <Image
                 src={Profile}
                 alt="소개페이지 메인 사진"
@@ -56,7 +56,7 @@ export default function Overlay({ toggleView }) {
                 className="shadow-md"
               />
             </div>
-            <div className="h-full lg:h-1/2 font-gmarket justify-between flex flex-col lg:pl-5 pt-5">
+            <div className="h-full lg:h-1/2 font-gmarket justify-between flex flex-col">
               <div>
                 <h2 className="text-2xl lg:text-3xl font-bold">
                   김진섭(Kim JinSeob)
