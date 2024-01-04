@@ -50,6 +50,7 @@ export default function About() {
             <Image
               src={Profile}
               alt="김진섭 메인프로필 사진"
+              priority={true}
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
               className="rounded-full shadow-2xl"
             />
@@ -59,7 +60,7 @@ export default function About() {
               {aboutData.map((data, index) => (
                 <motion.li key={index} whileHover={{}}>
                   <motion.p
-                    className="font-gmarket text-sm lg:text-2xl mt-5 sm:mt-10 mb-1 font-medium"
+                    className="font-samlip text-xs lg:text-3xl mt-5 sm:mt-10 mb-1 font-medium "
                     whileHover={{
                       scale: 1.1,
                       originX: 0,
@@ -72,7 +73,7 @@ export default function About() {
                   >
                     {data.title}
                   </motion.p>
-                  <p className="font-thin text-sm lg:text-xl">
+                  <p className="font-thin text-xs lg:text-xl">
                     {data.contetnt}
                   </p>
                 </motion.li>

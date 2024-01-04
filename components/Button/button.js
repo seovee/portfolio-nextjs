@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 export default function Button({ children, onClick }) {
   return (
-    <>
+    <div className="scale-75 sm:scale-100">
       <motion.div
-        className="absolute w-full bottom-[-10vh] lg:bottom-[-15vh] flex flex-col justify-center items-center cursor-pointer"
+        className="absolute w-full bottom-[-15vh] flex flex-col justify-center items-center cursor-pointer"
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
         onClick={onClick}
@@ -38,6 +38,6 @@ export default function Button({ children, onClick }) {
           className="bg-blue-500 h-20 w-20 rounded-full"
         ></motion.div>
       </motion.div>
-    </>
+    </div>
   );
 }
