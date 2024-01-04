@@ -26,7 +26,7 @@ export default function ProjectCardContents() {
               target="_blank"
               rel="noopener noreferrer"
               className="shadow-2xl w-full block rounded-[10px] overflow-hidden"
-              whileHover={{ y: -30 }}
+              whileHover={{ scale: 1.05, y: -60 }}
             >
               <Image
                 src={data.img}
@@ -38,7 +38,7 @@ export default function ProjectCardContents() {
               />
             </motion.a>
           </div>
-          <div className="flex flex-col mt-2 justify-evenly h-full w-[90%] lg:w-2/5">
+          <div className="flex flex-col mt-2 justify-evenly gap-1 h-full w-[90%] lg:w-2/5">
             <div className="flex flex-wrap gap-1 sm:gap-2 mb-2">
               {data.skill.map((i, index) => (
                 <span
@@ -63,26 +63,31 @@ export default function ProjectCardContents() {
               )}
             </div>
             <div className="flex flex-col gap-2">
-              <p className="font-gmarket text-sm sm:text-md lg:text-lg">
+              <p className="font-light text-sm sm:text-md lg:text-lg">
                 {data.desc}
               </p>
               <div className="flex gap-1 sm:gap-5">
-                <a
+                <motion.a
                   href={data.github_url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
                 >
-                  <FaGithub
-                    size="40"
-                    className="scale-[70%] sm:scale-100 hover:text-white"
-                  />
-                </a>
-                <a href={data.url} target="_blank" rel="noopener noreferrer">
+                  <FaGithub size="40" className="scale-[70%] sm:scale-100" />
+                </motion.a>
+                <motion.a
+                  href={data.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
+                >
                   <MdOutlineWeb
                     size="40"
-                    className="scale-[70%] sm:scale-100 hover:text-white"
+                    className="scale-[70%] sm:scale-100"
                   />
-                </a>
+                </motion.a>
               </div>
             </div>
           </div>
