@@ -31,6 +31,7 @@ export default function Contact() {
           whileInView={{
             opacity: 1,
             y: 0,
+            transition: { delay: 0.3 },
           }}
         >
           <h3>CONTACT ME</h3>

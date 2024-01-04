@@ -13,41 +13,26 @@ export default function ContactIconList() {
       whileInView={{
         opacity: 1,
         y: 0,
-        transition: { delay: 0.5, duration: 1 },
+        transition: { delay: 0.5 },
       }}
     >
       <ContactIcon
         title="김진섭 이력서"
         url="https://ink-kite-3ad.notion.site/Kim-JinSeob-d88f62b3aaaa497a975b17d834cd85d2?pvs=4"
       >
-        <BsPersonWorkspace
-          size="70"
-          className="focus:text-white hover:text-white hover:transition hover:duration-500"
-        />
+        <BsPersonWorkspace size="70" />
       </ContactIcon>
       <ContactIcon title="Github - seovee" url="https://github.com/seovee">
-        <FaGithub
-          size="70"
-          className="focus:text-white hover:text-white hover:transition hover:duration-500"
-        />
+        <FaGithub size="70" />
       </ContactIcon>
       <ContactIcon title="Velog" url="https://velog.io/@jinseob102">
-        <SiVelog
-          size="65"
-          className="focus:text-white hover:text-white hover:transition hover:duration-500"
-        />
+        <SiVelog size="65" />
       </ContactIcon>
       <ContactIcon title="Instagram" url="https://www.instagram.com/_seovee/">
-        <FaInstagram
-          size="76"
-          className="focus:text-white hover:text-white hover:transition hover:duration-500"
-        />
+        <FaInstagram size="76" />
       </ContactIcon>
       <ContactIcon title="Email" url="mailto:jinseob102@naver.com">
-        <RiMailFill
-          size="76"
-          className="focus:text-white hover:text-white hover:transition hover:duration-500"
-        />
+        <RiMailFill size="76" />
       </ContactIcon>
     </motion.ul>
   );
