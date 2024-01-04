@@ -36,20 +36,13 @@ export default function Header() {
           {navBarData.map((data) => (
             <motion.li
               key={data.num}
-              // whileHover={{ scale: 1.2 }}
+              whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
               className="relative"
             >
               <Link href={data.asPath} className="font-semibold">
                 {data.title}
               </Link>
-              {router.asPath === `${data.asPath}` && (
-                <motion.span
-                  className="absolute w-4 h-[2px] rounded-full bottom-[-10px] bg-gray-700 left-0 right-0 mx-auto"
-                  animate={{ transition: { type: "tween" } }}
-                  layoutId="underline"
-                />
-              )}
             </motion.li>
           ))}
         </ul>
