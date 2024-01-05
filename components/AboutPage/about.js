@@ -60,7 +60,7 @@ export default function About() {
               {aboutData.map((data, index) => (
                 <motion.li key={index} whileHover={{}}>
                   <motion.p
-                    className="font-samlip text-xs lg:text-3xl mt-5 sm:mt-10 mb-1 font-medium "
+                    className="font-samlip text-xs sm:text-lg lg:text-3xl mt-5 sm:mt-10 mb-1 font-medium "
                     whileHover={{
                       scale: 1.1,
                       originX: 0,
@@ -73,7 +73,7 @@ export default function About() {
                   >
                     {data.title}
                   </motion.p>
-                  <p className="font-thin text-xs lg:text-xl">
+                  <p className="font-thin text-xs sm:text-md lg:text-xl">
                     {data.contetnt}
                   </p>
                 </motion.li>
