@@ -29,10 +29,10 @@ export default function ContactIconList() {
         <SiVelog size="65" />
       </ContactIcon>
       <ContactIcon title="Instagram" url="https://www.instagram.com/_seovee/">
-        <FaInstagram size="76" />
+        <FaInstagram size="75" />
       </ContactIcon>
       <ContactIcon title="Email" url="mailto:jinseob102@naver.com">
-        <RiMailFill size="76" />
+        <RiMailFill size="75" />
       </ContactIcon>
     </motion.ul>
   );
