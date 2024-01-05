@@ -36,8 +36,18 @@ export default function Overlay({ toggleView }) {
                 className="shadow-md"
               />
             </div>
-            <div className="hidden lg:block"></div>
-            <div className="hidden lg:block"></div>
+            <div className="hidden lg:block">
+              <h2 className="flex justify-center items-center text-center h-full font-samlip text-4xl">
+                김진섭
+                <br />
+                (Kim JinSeob)
+              </h2>
+            </div>
+            <div className="hidden lg:block">
+              <p className="flex justify-center items-center h-full font-samlip text-4xl font-bold">
+                1991. 11. 29.
+              </p>
+            </div>
             <div className="hidden lg:block overflow-hidden">
               <Image
                 src={BackImg2}
@@ -56,8 +66,8 @@ export default function Overlay({ toggleView }) {
                 className="shadow-md"
               />
             </div>
-            <div className="h-full lg:h-1/2 font-gmarket justify-between flex flex-col">
-              <div>
+            <div className="h-1/2 font-samlip justify-between flex flex-col">
+              <div className="lg:hidden">
                 <h2 className="text-2xl lg:text-3xl font-bold">
                   김진섭(Kim JinSeob)
                 </h2>
@@ -65,22 +75,19 @@ export default function Overlay({ toggleView }) {
                   1991. 11. 29.
                 </p>
               </div>
-              <div className="font-jalnan text-lg sm:text-2xl text-center lg:text-right text-gray-400 italic">
+              <div className="font-jalnan text-lg sm:text-3xl text-gray-400 italic">
                 React, NextJS, TypeScript, JavaScript, ReactQuery, Recoil,
                 Redux, FramerMotion, Tailwind
               </div>
-              <div>
-                <span className="text-sm sm:text-xl lg:text-2xl font-bold">
-                  {`경력 & 경험`}
-                </span>
+              <div className="font-gmarket">
                 <ul>
                   {overlayData.map((data) => (
                     <li
                       key={data.num}
                       className="flex flex-row lg:items-center gap-2 mt-[4px]"
                     >
-                      <p className="text-xs sm:text-lg italic ">{data.date}</p>
-                      <p className="text-xs sm:text-lg">{data.title}</p>
+                      <p className="text-xs sm:text-2xl">{data.date}</p>
+                      <p className="text-xs sm:text-2xl">{data.title}</p>
                     </li>
                   ))}
                 </ul>
