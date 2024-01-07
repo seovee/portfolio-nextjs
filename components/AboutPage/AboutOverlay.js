@@ -66,14 +66,12 @@ export default function Overlay({ toggleView }) {
                 className="shadow-md"
               />
             </div>
-            <div className="h-1/2 font-samlip justify-between flex flex-col">
+            <div className="h-[90%] sm:h-1/2 font-samlip justify-between flex flex-col">
               <div className="lg:hidden">
-                <h2 className="text-2xl lg:text-3xl font-bold">
+                <h2 className="text-xl lg:text-3xl font-bold">
                   김진섭(Kim JinSeob)
                 </h2>
-                <p className="text-lg lg:text-xl font-bold italic">
-                  1991. 11. 29.
-                </p>
+                <p className="text-lg lg:text-xl font-bold">1991. 11. 29.</p>
               </div>
               <div className="font-jalnan text-lg sm:text-3xl text-gray-400 italic">
                 React, NextJS, TypeScript, JavaScript, ReactQuery, Recoil,
