@@ -75,7 +75,7 @@ export default function Overlay({ toggleView }) {
               </div>
               <div className="font-jalnan text-lg sm:text-3xl text-gray-400 italic">
                 React, NextJS, TypeScript, JavaScript, ReactQuery, Recoil,
-                Redux, FramerMotion, Tailwind
+                Redux, FramerMotion, TailwindCSS, StyledComponent
               </div>
               <div className="font-gmarket">
                 <ul>
