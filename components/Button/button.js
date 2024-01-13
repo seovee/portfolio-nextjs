@@ -4,10 +4,9 @@ export default function Button({ children, onClick }) {
   return (
     <div className="scale-75 sm:scale-100">
       <motion.div
-        className="absolute w-full bottom-[-15vh] flex flex-col justify-center items-center cursor-pointer"
-        whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
+        className="absolute w-full bottom-[-15vh] flex flex-col justify-center items-center"
         onClick={onClick}
+        whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
       >
         <motion.div
           initial={{ scale: 0 }}
@@ -18,7 +17,7 @@ export default function Button({ children, onClick }) {
             borderRadius: [0, 60, 60, 30],
             transition: { delay: 1, duration: 1 },
           }}
-          className="absolute z-10 bg-gray-200 flex flex-row justify-evenly items-center drop-shadow-lg"
+          className="absolute z-10 bg-gray-200 flex flex-row justify-evenly items-center drop-shadow-lg cursor-pointer"
         >
           <motion.p
             initial={{ opacity: 0 }}

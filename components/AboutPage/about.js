@@ -46,33 +46,31 @@ export default function About() {
             transition: { delay: 0.5, duration: 1 },
           }}
         >
-          <motion.div className="h-[10rem] w-[10rem] sm:h-[20rem] sm:w-[20rem] lg:h-[35rem] lg:w-[35rem]">
+          <motion.div
+            className="h-[10rem] w-[10rem] sm:h-[20rem] sm:w-[20rem] lg:h-[35rem] lg:w-[35rem]"
+            whileHover={{ y: -10 }}
+          >
             <Image
               src={Profile}
               alt="김진섭 메인프로필 사진"
               priority={true}
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              className="rounded-full shadow-2xl"
+              className="rounded-full shadow-lg"
             />
           </motion.div>
           <motion.div className="relative w-[80%] lg:w-1/2">
             <ul className="relative cursor-default">
               {aboutData.map((data, index) => (
-                <motion.li key={index} whileHover={{}}>
-                  <motion.p
-                    className="font-samlip text-xs sm:text-lg lg:text-3xl mt-5 sm:mt-10 mb-1 font-medium "
-                    whileHover={{
-                      scale: 1.1,
-                      originX: 0,
-                      fontWeight: 800,
-                      color: "rgb(0, 128, 255)",
-                      transition: {
-                        type: "tween",
-                      },
-                    }}
-                  >
+                <motion.li
+                  key={index}
+                  whileHover={{
+                    scale: 1.15,
+                    transition: { duration: 0.5 },
+                  }}
+                >
+                  <p className="block font-samlip text-xs sm:text-lg lg:text-3xl mt-5 sm:mt-10 mb-1 font-medium text-black">
                     {data.title}
-                  </motion.p>
+                  </p>
                   <p className="font-thin text-xs sm:text-md lg:text-xl">
                     {data.contetnt}
                   </p>
