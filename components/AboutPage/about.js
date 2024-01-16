@@ -64,11 +64,11 @@ export default function About() {
                 <motion.li
                   key={index}
                   whileHover={{
-                    scale: 1.15,
+                    scale: 1.1,
                     transition: { duration: 0.5 },
                   }}
                 >
-                  <p className="block font-samlip text-xs sm:text-lg lg:text-3xl mt-5 sm:mt-10 mb-1 font-medium text-black">
+                  <p className="block font-samlip text-xs sm:text-lg lg:text-3xl mt-5 sm:mt-10 mb-1 text-black">
                     {data.title}
                   </p>
                   <p className="font-thin text-xs sm:text-md lg:text-xl">
