@@ -19,21 +19,21 @@ export const navBarData = [
 export const aboutData = [
   {
     num: 1,
-    title: "Studying중인 프론트엔드 개발자입니다.",
+    title: "매일 studying 프론트엔드 개발자.",
     contetnt:
-      "프론트엔드 개발자로서 경험과 지식이 부족한 점이 단점입니다. 하지만 이를 극복하기 위해 매일 조금씩 정보를 정리하고, 공식문서를 반복적으로 읽는 노력을 하였습니다. 덕분에 기본적인 기술스택을 쌓을 수 있었으며, 항상 도전적인 자세로 일에 임하고자 합니다.",
+      "비전공 프론트엔드 개발자로서 부족한 정보량을 극복하기 위해 매일 조금씩 정보를 정리하고, 공식 문서를 반복적으로 읽는 노력을 하였습니다. 덕분에 필요 기술 스택을 쌓을 수 있었고, 항상 도전적인 자세로 일에 임하고자 합니다.",
   },
   {
     num: 2,
     title: "코드에 Life를 불어넣는 것을 좋아합니다.",
     contetnt:
-      "애니메이션은 사용자 경험을 더욱 풍부하게 만들어주는 힘이라고 믿습니다. 각 프로젝트에서 애니메이션을 통해 이야기를 전달하는 것을 즐기며, 사용자가 웹페이지를 탐험하는 과정에서의 매력을 찾고자 노력합니다.",
+      "웹 애니메이션은 사용자 경험을 더욱 풍부하게 만들어주는 힘이라고 생각합니다. 이를 통해 사용자에게 이야기를 전달하는 것을 즐기며, 웹페이지를 탐험하는 과정에서의 매력을 찾을 수 있도록 노력합니다.",
   },
   {
     num: 3,
     title: "Ice Breaking능력과 상대방에게 호기심이 많습니다.",
     contetnt:
-      "팀원들과의 즐거운 협업은 프로젝트를 성공하는데 중요한 역할입니다. 제 친화력과 긍정적인 태도는 팀에 활기를 불어넣으며, 함께 일하고 싶은 동료가 되기 위해 노력하고 있습니다.",
+      "팀원과 즐거운 협업은 프로젝트 성공에 중요한 역할을 합니다. 제 긍정적인 태도와 친화력은 팀에 활기를 불어넣으며, 매번 함께 일하고 싶은 동료가 되기 위해 노력합니다.",
   },
 ];
 
@@ -55,27 +55,27 @@ export const projectData = [
     title: "실타래(Siltarae)",
     category: "팀프로젝트(4명) - 위버즈",
     date: "2023. 11. 19. ~ 2023. 12. 29.",
-    refacDate: "2023. 1. 2. ~ 진행 예정",
-    desc: "백엔드 협업으로 구현한 프로젝트입니다. NextJS + TypeScript를 기반으로 '실수'를 공유하는 웹페이지를 구현했습니다.",
+    refacDate: "2023. 1. 2. ~ 진행중",
+    desc: "백엔드 협업으로 구현한 프로젝트입니다. NextJS, TypeScript를 기반으로 '실수'를 공유하는 웹페이지를 구현했습니다.",
     img: Project_7,
     url: "https://github.com/coding-union-kr/siltarae-fe",
     github_url: "https://github.com/coding-union-kr/siltarae-fe",
     skill: [
       "NextJS",
-      "React",
       "TypeScript",
       "Tanstack-Query",
       "Axios",
+      "Tailwind",
       "YarnBerry",
     ],
   },
   {
     num: 2,
-    title: "포트폴리오 웹사이트",
+    title: "포트폴리오 웹페이지",
     category: "개인프로젝트",
     date: "2023. 11. 07. ~ 11. 29.",
     refacDate: "수시로 업데이트",
-    desc: "NextJS로 만든 포트폴리오 웹페이지입니다. TailwindCSS로 모바일, 태블릿, 데스크탑 반응형을 구성해보았고, Framer-Motion, Gsap을 이용한 통통튀는 애니메이션 컨셉으로 만들었습니다.",
+    desc: "NextJS로 만든 포트폴리오 웹페이지입니다. TailwindCSS로 모바일, 태블릿, 데스크탑 반응형을 적용했고, Framer-Motion, Gsap을 이용한 인터렉티브한 애니메이션 페이지를 만들었습니다.",
     img: Project_1,
     url: "https://portfolio-nextjs-tan-seven.vercel.app/",
     github_url: "https://github.com/seovee/portfolio-nextjs",
@@ -90,21 +90,20 @@ export const projectData = [
   },
   {
     num: 3,
-    title: "넷플릭스 클론 사이트",
+    title: "넷플릭스 Clone 웹페이지",
     category: "개인프로젝트 - Nomad Coder",
     date: "2023. 07. 17. ~ 07. 24.",
-    refacDate: "예정",
-    desc: "React, TypeScript를 이용한 넷플릭스 클론코딩입니다. Recoil로 상태관리를 하고, React-Query로 API를 받아와 최신, 인기 영화를 보여줍니다.",
+    refacDate: "2024. 01. 17 ~ 진행중",
+    desc: "React, TypeScript를 이용한 넷플릭스 클론코딩입니다. fetch된 영화 API를 React-Query로 업데이트하도록 구현했습니다.",
     img: Project_2,
     url: "https://seovee.github.io/masterClass-Fin",
     github_url: "https://github.com/seovee/masterClass-Fin",
     skill: [
       "React",
       "TypeScript",
-      "Recoil",
       "React-route",
-      "Framer-motion",
       "React-Query",
+      "Framer-motion",
     ],
   },
   {
@@ -137,11 +136,11 @@ export const projectData = [
     category: "개인프로젝트 - 원티드",
     date: "2023. 08. 12. ~ 08. 16.",
     refacDate: "예정",
-    desc: "회원가입, 로그인 기능구현 웹페이지입니다.",
+    desc: "React-hook-form 라이브러리를 이용한 회원가입, 로그인 기능구현 웹페이지입니다.",
     img: Project_5,
     url: "https://seovee.github.io/wanted-pre-onboarding-frontend/",
     github_url: "https://github.com/seovee/wanted-pre-onboarding-frontend",
-    skill: ["React", "React-Router", "Style-Component"],
+    skill: ["React", "React-Router", "React-hook-form", "Style-Component"],
   },
   {
     num: 7,
