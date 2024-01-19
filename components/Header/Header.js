@@ -24,7 +24,7 @@ export default function Header() {
         whileHover={{ scale: 1.5 }}
         whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
       >
-        <Link href="/" className="text-md font-samlip">
+        <Link title="홈페이지로 가기" href="/" className="text-md font-samlip">
           seovee
           <p className="font-normal font-extralight text-xs text-center">
             PORTFOLIO
@@ -40,7 +40,11 @@ export default function Header() {
               whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
               className="relative"
             >
-              <Link href={data.asPath} className="font-semibold">
+              <Link
+                title={data.title}
+                href={data.asPath}
+                className="font-semibold"
+              >
                 {data.title}
               </Link>
             </motion.li>

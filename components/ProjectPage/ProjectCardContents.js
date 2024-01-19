@@ -23,6 +23,7 @@ export default function ProjectCardContents() {
           <div className="flex font-gmarket items-start justify-start lg:w-3/5 mt-5 ">
             <motion.a
               href={data.url}
+              title={`${data.title} 배포페이지 바로가기`}
               target="_blank"
               rel="noopener noreferrer"
               className="shadow-2xl w-full block rounded-[10px] overflow-hidden"
@@ -69,6 +70,7 @@ export default function ProjectCardContents() {
               <div className="flex gap-1 sm:gap-5">
                 <motion.a
                   href={data.github_url}
+                  title={`${data.title} gihub 바로가기`}
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2 }}
@@ -78,6 +80,7 @@ export default function ProjectCardContents() {
                 </motion.a>
                 <motion.a
                   href={data.url}
+                  title={`${data.title} 배포페이지 바로가기`}
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2 }}
