@@ -1,13 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { SiVelog } from "react-icons/si";
-import { FaGithub } from "react-icons/fa";
-import { RiMailFill } from "react-icons/ri";
-import { BsPersonWorkspace } from "react-icons/bs";
-import { FaInstagram } from "react-icons/fa6";
 import ContactPic from "../../public/assets/mini.png";
 import HeaderTitle from "../HeaderTitle";
-import ContactIcon from "./ContactIcon";
 import ContactIconList from "./ContactIconList";
 
 export default function Contact() {

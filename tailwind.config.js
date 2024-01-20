@@ -18,7 +18,6 @@ module.exports = {
       normal: ["sans-serif", "Helvetica", "Arial"],
       jalnan: ["JalnanGothic", "Helvetica", "Arial", "sans-serif"],
       gmarket: ["GmarketSansMedium", "Helvetica", "Arial", "sans-serif"],
-      aggro: ["SBAggroB", "Helvetica", "Arial", "sans-serif"],
       samlip: ["SDSamliphopangche_Outline", "Helvetica", "Arial", "sans-serif"],
     },
   },
