@@ -1,8 +1,8 @@
-import { MdOutlineWeb } from "react-icons/md";
-import { FaGithub } from "react-icons/fa";
 import { projectData } from "../../data";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+import { FaHome } from "@react-icons/all-files/fa/FaHome";
 
 export default function ProjectCardContents() {
   return (
@@ -35,7 +35,7 @@ export default function ProjectCardContents() {
                 width={400}
                 height={400}
                 style={{ width: "100%", height: "auto" }}
-                quality={100}
+                priority={true}
               />
             </motion.a>
           </div>
@@ -86,10 +86,7 @@ export default function ProjectCardContents() {
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
                 >
-                  <MdOutlineWeb
-                    size="40"
-                    className="scale-[70%] sm:scale-100"
-                  />
+                  <FaHome size="40" className="scale-[70%] sm:scale-100" />
                 </motion.a>
               </div>
             </div>

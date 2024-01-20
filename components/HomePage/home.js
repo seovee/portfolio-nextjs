@@ -1,11 +1,6 @@
-import {
-  motion,
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useRouter } from "next/router";
-import { FiChevronDown } from "react-icons/fi";
+import { FiChevronDown } from "@react-icons/all-files/fi/FiChevronDown";
 import Typewriter from "typewriter-effect";
 
 export default function Home() {
@@ -18,7 +13,7 @@ export default function Home() {
     [0, 0.1],
     ["rgb(253 224 71)", "rgb(125 211 252)"]
   );
-  const titleClick = () => {
+  const onClickNext = () => {
     router.push("#about");
   };
 
@@ -39,10 +34,10 @@ export default function Home() {
               duration: 1,
             },
           }}
-          className="text-4xl mb-5 font-samlip sm:text-6xl lg:text-9xl"
+          className="text-4xl mb-5 font-samlip sm:text-5xl lg:text-8xl"
           style={{ scrollY, scale }}
         >
-          {`Hello, Every One`}
+          Hello, Every One
         </motion.h1>
         <motion.div
           className="flex flex-col items-center mt-2 lg:mt-10"
@@ -81,7 +76,7 @@ export default function Home() {
               delay: 8,
             },
           }}
-          onClick={titleClick}
+          onClick={onClickNext}
         >
           <div className="flex">
             <FiChevronDown />
