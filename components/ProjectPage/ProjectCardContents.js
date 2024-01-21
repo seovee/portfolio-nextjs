@@ -15,19 +15,19 @@ export default function ProjectCardContents() {
           <span className="absolute top-5 text-white font-bold italic drop-shadow-md text-6xl sm:text-7xl left-[-20px] lg:left-[-40px] lg:text-9xl">
             {data.num}
           </span>
-          <div className="absolute font-gmarket top-8 sm:top-12">
-            <h3 className="text-center font-bold text-xl sm:text-3xl lg:text-5xl text-yellow-950 font-samlip">
+          <div className="absolute top-8 sm:top-12">
+            <h3 className="font-samlip text-center  text-xl sm:text-3xl lg:text-5xl text-yellow-950">
               {data.title}
             </h3>
           </div>
-          <div className="flex font-gmarket items-start justify-start lg:w-3/5 mt-5 ">
+          <div className="flex items-start justify-start lg:w-3/5 mt-5 ">
             <motion.a
               href={data.url}
               title={`${data.title} 배포페이지 바로가기`}
               target="_blank"
               rel="noopener noreferrer"
               className="shadow-2xl w-full block rounded-[10px] overflow-hidden"
-              whileHover={{ scale: 1.05, y: -60 }}
+              whileHover={{ scale: 1.05, y: -20 }}
             >
               <Image
                 src={data.img}
@@ -44,21 +44,21 @@ export default function ProjectCardContents() {
               {data.skill.map((i, index) => (
                 <span
                   key={index}
-                  className="inline-blockt text-[10px] bg-gray-300 px-2 py-[0.2rem] rounded-lg text-blue-600 font-bold whitespace-nowrap italic sm:text-xs lg:text-lg"
+                  className="inline-blockt text-[10px] bg-gray-300 px-2 py-[0.2rem] rounded-lg text-blue-600 font-bold whitespace-nowrap sm:text-xs lg:text-lg"
                 >
                   {i}
                 </span>
               ))}
             </div>
             <div className="flex flex-col lg:gap-2">
-              <p className="font-gmarket text-sm lg:text-2xl">
+              <p className="font-semibold text-sm md:text-xl lg:text-3xl">
                 {data.category}
               </p>
-              <p className="text-cd lg:text-3xl font-thin whitespace-nowrap">
+              <p className="font-thin text-md md:text-2xl lg:text-3xl xl:text-4xl whitespace-nowrap">
                 {data.date}
               </p>
               {data.refacDate && (
-                <p className="font-thin text-sm sm:text-lg">
+                <p className="font-thin text-xs sm:text-lg">
                   리팩토링 : {data.refacDate}
                 </p>
               )}

@@ -86,7 +86,7 @@ export default function Overlay({ toggleView }) {
                 React, NextJS, TypeScript, JavaScript, ReactQuery, Recoil,
                 Redux, FramerMotion, TailwindCSS, StyledComponent
               </div>
-              <div className="font-gmarket text-black">
+              <div className="text-black">
                 <ul>
                   {overlayData.map((data) => (
                     <li

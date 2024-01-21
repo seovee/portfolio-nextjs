@@ -22,7 +22,7 @@ export default function Button({ children, onClick }) {
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, transition: { delay: 2 } }}
-            className="font-gmarket text-sm"
+            className="font-thin text-lg"
           >
             {children}
           </motion.p>

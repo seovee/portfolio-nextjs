@@ -80,7 +80,7 @@ export default function About() {
                 </motion.li>
               ))}
             </ul>
-            <Button onClick={toggleView}>더 알아보기 🤔</Button>
+            <Button onClick={toggleView}>M O R E 😎</Button>
           </motion.div>
         </motion.div>
         {view ? <Overlay toggleView={toggleView} /> : null}
