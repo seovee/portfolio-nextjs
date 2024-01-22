@@ -66,21 +66,20 @@ export default function Home() {
           </span>
         </motion.div>
         <motion.div
-          className="absolute flex gap-2 justify-center items-center bottom-[50vh] my-0 font-thin text-xl cursor-pointer w-screen h-16 hover:bg-white/30 lg:text-3xl lg:h-20"
+          className="absolute flex gap-2 justify-center items-center bottom-[50vh] my-0 font-thin text-xl cursor-pointer w-screen h-12 hover:bg-white/30 lg:text-3xl lg:h-16"
           initial={{ opacity: 0 }}
           animate={{
             opacity: [0, 1, 0],
             transition: {
               duration: 1,
               repeat: Infinity,
-              delay: 8,
             },
           }}
           onClick={onClickNext}
         >
           <div className="flex">
             <FiChevronDown />
-            <span className="text-sm lg:text-lg">Next</span>
+            <span className="text-sm lg:text-lg">A B O U T</span>
           </div>
         </motion.div>
       </motion.div>
