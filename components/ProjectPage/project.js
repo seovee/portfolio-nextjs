@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ProjectCardContents from "./ProjectCardContents";
 import { useEffect, useRef } from "react";
-import HeaderTitle from "../HeaderTitle";
+import HeaderTitle from "../util/HeaderTitle";
 import { gsap } from "gsap";
 
 export default function Project() {

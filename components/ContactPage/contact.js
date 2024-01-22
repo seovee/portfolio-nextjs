@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import ContactPic from "../../public/assets/mini.png";
-import HeaderTitle from "../HeaderTitle";
+import HeaderTitle from "../util/HeaderTitle";
 import ContactIconList from "./ContactIconList";
 
 export default function Contact() {
