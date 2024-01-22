@@ -4,12 +4,24 @@ import BackImg1 from "../../public/assets/profile/profile6.jpeg";
 import BackImg2 from "../../public/assets/profile/profile2.jpg";
 import Profile from "../../public/assets/profile/profile4.jpg";
 import { overlayData } from "../../data";
+import { FaAngleRight } from "@react-icons/all-files/fa/FaAngleRight";
+import { useRouter } from "next/router";
 
 export default function Overlay({ toggleView }) {
+  const router = useRouter();
+
   // overlay 버블링 방지 함수
   const WrapperClick = (e) => {
     e.stopPropagation();
   };
+
+  const onClickNext = () => {
+    toggleView();
+    setTimeout(() => {
+      router.push("/#project");
+    }, 200);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -86,7 +98,7 @@ export default function Overlay({ toggleView }) {
                 React, NextJS, TypeScript, JavaScript, ReactQuery, Recoil,
                 Redux, FramerMotion, TailwindCSS, StyledComponent
               </div>
-              <div className="text-black">
+              <div className="relative text-black">
                 <ul>
                   {overlayData.map((data) => (
                     <li
@@ -98,6 +110,23 @@ export default function Overlay({ toggleView }) {
                     </li>
                   ))}
                 </ul>
+                <motion.div
+                  className="absolute bottom-0 right-0 flex justify-center items-center font-thin cursor-pointer h-10 hover:bg-black/20 py-1 px-3 rounded-[15px] text-sm"
+                  initial={{ opacity: 0 }}
+                  whileInView={{
+                    opacity: [0, 1, 0],
+                    transition: {
+                      duration: 1,
+                      repeat: Infinity,
+                    },
+                  }}
+                  onClick={onClickNext}
+                >
+                  <div className="flex items-center justify-center w-auto">
+                    <span className="block text-center">P R O J E C T</span>
+                    <FaAngleRight />
+                  </div>
+                </motion.div>
               </div>
             </div>
           </div>
