@@ -123,7 +123,9 @@ export default function Overlay({ toggleView }) {
                   onClick={onClickNext}
                 >
                   <div className="flex items-center justify-center w-auto">
-                    <span className="block text-center">P R O J E C T</span>
+                    <span className="hidden sm:block text-center">
+                      P R O J E C T
+                    </span>
                     <FaAngleRight />
                   </div>
                 </motion.div>
