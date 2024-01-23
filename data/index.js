@@ -60,6 +60,8 @@ export const projectData = [
     img: Project_7,
     url: "https://github.com/coding-union-kr/siltarae-fe",
     github_url: "https://github.com/coding-union-kr/siltarae-fe",
+    notion_url:
+      "https://ink-kite-3ad.notion.site/siltarae-dafff73e87e94276a3680eccc20d2754?pvs=4",
     skill: [
       "NextJS",
       "TypeScript",
@@ -71,7 +73,7 @@ export const projectData = [
   },
   {
     num: 2,
-    title: "포트폴리오 웹페이지",
+    title: "포트폴리오",
     category: "개인프로젝트",
     date: "2023. 11. 07. ~ 11. 29.",
     refacDate: "수시로 업데이트",
@@ -79,6 +81,8 @@ export const projectData = [
     img: Project_1,
     url: "https://portfolio-nextjs-tan-seven.vercel.app/",
     github_url: "https://github.com/seovee/portfolio-nextjs",
+    notion_url:
+      "https://ink-kite-3ad.notion.site/00331ba12bbe425f827303b6fd5450b6?pvs=4",
     skill: [
       "NextJS",
       "React",
@@ -90,7 +94,7 @@ export const projectData = [
   },
   {
     num: 3,
-    title: "넷플릭스 Clone 웹페이지",
+    title: "넷플릭스 클론페이지",
     category: "개인프로젝트 - Nomad Coder",
     date: "2023. 07. 17. ~ 07. 24.",
     refacDate: "2024. 01. 17 ~ 진행중",
@@ -98,6 +102,8 @@ export const projectData = [
     img: Project_2,
     url: "https://seovee.github.io/masterClass-Fin",
     github_url: "https://github.com/seovee/masterClass-Fin",
+    notion_url:
+      "https://ink-kite-3ad.notion.site/0cd84273002545b48e919741d08601ed?pvs=4",
     skill: [
       "React",
       "TypeScript",
@@ -116,11 +122,13 @@ export const projectData = [
     img: Project_3,
     url: "https://likelion-fe4-rp11.github.io/Asparagus/",
     github_url: "https://github.com/seovee/masterClass-Fin",
+    notion_url:
+      "https://ink-kite-3ad.notion.site/I-s-gallery-1f16669e89c342e09f13b68a625bee48?pvs=4",
     skill: ["React", "Framer-motion", "Firebase", "Figma"],
   },
   {
     num: 5,
-    title: "티빙 클론 사이트 - Taing",
+    title: "티빙 클론 - Taing",
     category: "팀프로젝트(5명) - 멋쟁이사자처럼",
     date: "2023. 01. 27. ~ 02. 09.",
     refacDate: "예정",
@@ -128,11 +136,13 @@ export const projectData = [
     img: Project_4,
     url: "https://likelion-fe4-rp11.github.io/Asparagus/",
     github_url: "https://github.com/seovee/masterClass-Fin",
+    notion_url:
+      "https://ink-kite-3ad.notion.site/Taing-6887a72330f94cb2835629827d96bbc8?pvs=4",
     skill: ["NextJS", "React", "Framer-motion", "Gsap", "TypeWriter-effect"],
   },
   {
     num: 6,
-    title: "회원가입 페이지",
+    title: "회원가입 구현",
     category: "개인프로젝트 - 원티드",
     date: "2023. 08. 12. ~ 08. 16.",
     refacDate: "예정",
@@ -140,11 +150,13 @@ export const projectData = [
     img: Project_5,
     url: "https://seovee.github.io/wanted-pre-onboarding-frontend/",
     github_url: "https://github.com/seovee/wanted-pre-onboarding-frontend",
+    notion_url:
+      "https://ink-kite-3ad.notion.site/2a1b45c9a5e2488fae6157f39fb11036?pvs=4",
     skill: ["React", "React-Router", "React-hook-form", "Style-Component"],
   },
   {
     num: 7,
-    title: "반응형 구현 페이지",
+    title: "바닐라 반응형 구현",
     category: "개인프로젝트 - 원티드",
     date: "2023. 08. 21. ~ 08. 24.",
     refacDate: "예정",

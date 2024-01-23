@@ -1,6 +1,7 @@
 import { projectData } from "../../data";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { BiMessageError } from "@react-icons/all-files/bi/BiMessageError";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaHome } from "@react-icons/all-files/fa/FaHome";
 
@@ -64,7 +65,7 @@ export default function ProjectCardContents() {
               )}
             </div>
             <div className="flex flex-col gap-2">
-              <p className="font-normal text-sm sm:text-md lg:text-lg">
+              <p className="font-normal text-sm sm:text-lg lg:text-xl">
                 {data.desc}
               </p>
               <div className="flex gap-1 sm:gap-5">
@@ -80,13 +81,26 @@ export default function ProjectCardContents() {
                 </motion.a>
                 <motion.a
                   href={data.url}
-                  title={`${data.title} 배포페이지 바로가기`}
+                  title={`${data.title} 배포 바로가기`}
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
                 >
                   <FaHome size="40" className="scale-[70%] sm:scale-100" />
+                </motion.a>
+                <motion.a
+                  href={data.notion_url}
+                  title={`${data.title} 트러블슈팅 & 정리 바로가기`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.2 }}
+                  whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
+                >
+                  <BiMessageError
+                    size="40"
+                    className="scale-[70%] sm:scale-100"
+                  />
                 </motion.a>
               </div>
             </div>
