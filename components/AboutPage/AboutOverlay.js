@@ -94,7 +94,7 @@ export default function Overlay({ toggleView }) {
                 </h2>
                 <p className="text-lg lg:text-xl font-bold">1991. 11. 29.</p>
               </div>
-              <div className="font-jalnan text-lg sm:text-3xl italic ">
+              <div className="font-jalnan text-lg sm:text-3xl">
                 React, NextJS, TypeScript, JavaScript, ReactQuery, Recoil,
                 Redux, FramerMotion, TailwindCSS, StyledComponent
               </div>
@@ -103,10 +103,10 @@ export default function Overlay({ toggleView }) {
                   {overlayData.map((data) => (
                     <li
                       key={data.num}
-                      className="flex flex-row lg:items-center gap-2 mt-[4px]"
+                      className="flex flex-row lg:items-center gap-2 mt-[4px] text-xs sm:text-2xl italic"
                     >
-                      <p className="text-xs sm:text-2xl italic">{data.date}</p>
-                      <p className="text-xs sm:text-2xl">{data.title}</p>
+                      <p className="font-thin">{data.date}</p>
+                      <p className="">{data.title}</p>
                     </li>
                   ))}
                 </ul>
