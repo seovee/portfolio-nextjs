@@ -1,5 +1,5 @@
-# 개인 포트폴리오 페이지
-> NextJS 프레임워크로 제작한 첫 [포트폴리오 페이지](https://portfolio-nextjs-tan-seven.vercel.app/)입니다. 
+# 😎 개인 포트폴리오 페이지
+NextJS 프레임워크로 제작한 첫 [포트폴리오 페이지](https://portfolio-nextjs-tan-seven.vercel.app/)입니다. 
 
 
 
