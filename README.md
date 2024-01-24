@@ -1,5 +1,5 @@
 # 개인 포트폴리오 페이지(with NextJS)
-[김진섭 포트폴리오 바로가기😎](https://portfolio-nextjs-tan-seven.vercel.app/)
+[포트폴리오 바로가기😎](https://portfolio-nextjs-tan-seven.vercel.app/)
 
 ### 데스크탑 반응형
 
