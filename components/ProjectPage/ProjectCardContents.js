@@ -4,6 +4,7 @@ import Image from "next/image";
 import { BiMessageError } from "@react-icons/all-files/bi/BiMessageError";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaHome } from "@react-icons/all-files/fa/FaHome";
+import { Tooltip } from "@mui/material";
 
 export default function ProjectCardContents() {
   return (
@@ -69,39 +70,49 @@ export default function ProjectCardContents() {
                 {data.desc}
               </p>
               <div className="flex gap-1 sm:gap-5">
-                <motion.a
-                  href={data.github_url}
-                  title={`${data.title} gihub 바로가기`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
+                <Tooltip title="Github" placement="top" color="primary">
+                  <motion.a
+                    href={data.github_url}
+                    title={`${data.title} gihub 바로가기`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
+                  >
+                    <FaGithub size="40" className="scale-[70%] sm:scale-100" />
+                  </motion.a>
+                </Tooltip>
+                <Tooltip title="배포사이트" placement="top" color="primary">
+                  <motion.a
+                    href={data.url}
+                    title={`${data.title} 배포 바로가기`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
+                  >
+                    <FaHome size="40" className="scale-[70%] sm:scale-100" />
+                  </motion.a>
+                </Tooltip>
+                <Tooltip
+                  title="트러블&정리 노션"
+                  placement="top"
+                  color="primary"
                 >
-                  <FaGithub size="40" className="scale-[70%] sm:scale-100" />
-                </motion.a>
-                <motion.a
-                  href={data.url}
-                  title={`${data.title} 배포 바로가기`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
-                >
-                  <FaHome size="40" className="scale-[70%] sm:scale-100" />
-                </motion.a>
-                <motion.a
-                  href={data.notion_url}
-                  title={`${data.title} 트러블슈팅 & 정리 바로가기`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
-                >
-                  <BiMessageError
-                    size="40"
-                    className="scale-[70%] sm:scale-100"
-                  />
-                </motion.a>
+                  <motion.a
+                    href={data.notion_url}
+                    title={`${data.title} 트러블슈팅 & 정리 바로가기`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
+                  >
+                    <BiMessageError
+                      size="40"
+                      className="scale-[70%] sm:scale-100"
+                    />
+                  </motion.a>
+                </Tooltip>
               </div>
             </div>
           </div>
